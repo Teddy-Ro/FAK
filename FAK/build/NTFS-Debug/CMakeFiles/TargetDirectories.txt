@@ -1,9 +1,0 @@
-C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/CMakeFiles/FAK.dir
-C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/CMakeFiles/edit_cache.dir
-C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/CMakeFiles/list_install_components.dir
-C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/CMakeFiles/install.dir
-C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/CMakeFiles/install/local.dir
-C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/CMakeFiles/install/strip.dir
-C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/CMakeFiles/FAK_autogen_timestamp_deps.dir
-C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/CMakeFiles/FAK_autogen.dir
