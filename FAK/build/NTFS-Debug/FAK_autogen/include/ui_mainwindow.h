@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -31,6 +32,12 @@ public:
     QPushButton *pushButton;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayoutForButtons;
+    QLabel *label;
+    QVBoxLayout *verticalLayout_4;
+    QVBoxLayout *verticalLayout_5;
+    QPushButton *pushButton_3;
+    QSpacerItem *verticalSpacer;
+    QPushButton *pushButton_2;
     QSpacerItem *horizontalSpacer;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -55,8 +62,37 @@ public:
         horizontalLayout->setObjectName("horizontalLayout");
         verticalLayoutForButtons = new QVBoxLayout();
         verticalLayoutForButtons->setObjectName("verticalLayoutForButtons");
+        label = new QLabel(centralwidget);
+        label->setObjectName("label");
+
+        verticalLayoutForButtons->addWidget(label);
+
 
         horizontalLayout->addLayout(verticalLayoutForButtons);
+
+        verticalLayout_4 = new QVBoxLayout();
+        verticalLayout_4->setObjectName("verticalLayout_4");
+        verticalLayout_5 = new QVBoxLayout();
+        verticalLayout_5->setObjectName("verticalLayout_5");
+        pushButton_3 = new QPushButton(centralwidget);
+        pushButton_3->setObjectName("pushButton_3");
+
+        verticalLayout_5->addWidget(pushButton_3);
+
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+
+        verticalLayout_5->addItem(verticalSpacer);
+
+
+        verticalLayout_4->addLayout(verticalLayout_5);
+
+        pushButton_2 = new QPushButton(centralwidget);
+        pushButton_2->setObjectName("pushButton_2");
+
+        verticalLayout_4->addWidget(pushButton_2);
+
+
+        horizontalLayout->addLayout(verticalLayout_4);
 
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
 
@@ -86,6 +122,9 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "1", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "2", nullptr));
     } // retranslateUi
 
 };
