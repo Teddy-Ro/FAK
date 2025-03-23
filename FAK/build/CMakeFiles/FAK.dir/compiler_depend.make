@@ -400,8 +400,13 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
@@ -927,8 +932,13 @@ CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o: FAK_autogen/mocs_compilat
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
@@ -1334,9 +1344,14 @@ CMakeFiles/FAK.dir/main.cpp.o: /home/korsar/chest/GitHub/FAK/FAK/main.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
@@ -1747,6 +1762,7 @@ CMakeFiles/FAK.dir/mainwindow.cpp.o: /home/korsar/chest/GitHub/FAK/FAK/mainwindo
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
@@ -1761,6 +1777,7 @@ CMakeFiles/FAK.dir/mainwindow.cpp.o: /home/korsar/chest/GitHub/FAK/FAK/mainwindo
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
@@ -1850,10 +1867,6 @@ FAK_autogen/include/ui_mainwindow.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
-
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
@@ -1906,6 +1919,16 @@ FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake:
 
+/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:
+
+/usr/share/cmake-3.28/Modules/GNUInstallDirs.cmake:
+
+/usr/share/cmake-3.28/Modules/FindVulkan.cmake:
+
+/usr/share/cmake-3.28/Modules/FindThreads.cmake:
+
+/usr/share/cmake-3.28/Modules/FindPkgConfig.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
 
 /usr/include/math.h:
@@ -1927,8 +1950,6 @@ FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /usr/include/x86_64-linux-gnu/bits/syscall.h:
 
 /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake:
-
-/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
@@ -2236,12 +2257,6 @@ FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 FAK_autogen/moc_predefs.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
-
-/usr/include/c++/13/bits/shared_ptr_base.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
-
 /usr/include/c++/13/bits/iterator_concepts.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget:
@@ -2536,6 +2551,8 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h:
+
 /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake:
 
 /usr/include/c++/13/tr1/poly_hermite.tcc:
@@ -2606,6 +2623,10 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
@@ -2615,6 +2636,12 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/13/bits/erase_if.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/c++/13/bits/shared_ptr_base.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
 
 /home/korsar/chest/GitHub/FAK/FAK/mainwindow.h:
 
@@ -2629,6 +2656,8 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydatapointer.h:
 
@@ -2677,10 +2706,6 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h:
 
@@ -2826,6 +2851,12 @@ FAK_autogen/mocs_compilation.cpp:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-none.cmake:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfig.cmake:
+
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h:
@@ -2916,13 +2947,9 @@ FAK_autogen/mocs_compilation.cpp:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfig.cmake:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
-
-/usr/share/cmake-3.28/Modules/FindVulkan.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h:
 
@@ -2943,8 +2970,6 @@ FAK_autogen/mocs_compilation.cpp:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake:
-
-/usr/share/cmake-3.28/Modules/FindPkgConfig.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h:
 
@@ -2985,8 +3010,6 @@ FAK_autogen/mocs_compilation.cpp:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets-none.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets.cmake:
-
-/usr/share/cmake-3.28/Modules/FindThreads.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
@@ -3035,5 +3058,3 @@ FAK_autogen/mocs_compilation.cpp:
 /usr/share/cmake-3.28/Modules/FeatureSummary.cmake:
 
 /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake:
-
-/usr/share/cmake-3.28/Modules/GNUInstallDirs.cmake:

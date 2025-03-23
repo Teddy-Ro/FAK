@@ -341,4 +341,9 @@ CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h

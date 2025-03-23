@@ -390,8 +390,13 @@
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
