@@ -5,7 +5,9 @@
 #include <QPushButton>
 #include <QCheckBox>
 #include <QHBoxLayout>
+#include <QVBoxLayout>
 #include <QWidget>
+#include <QScrollArea>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -13,9 +15,22 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // Делаем поле ввода всегда видимым
+    // Настройка интерфейса (устраняем дублирование кода)
     ui->textInput->setVisible(true);
     ui->textInput->setFocus();
+
+    // Создаем новый виджет для списка и скролл области
+    QWidget* scrollContents = new QWidget();
+    QVBoxLayout* taskListLayout = new QVBoxLayout(scrollContents);
+    taskListLayout->setAlignment(Qt::AlignTop); // Важно! Выравнивание по верхнему краю
+    taskListLayout->setSpacing(5);
+
+    // Настраиваем область прокрутки
+    ui->scrollArea->setWidget(scrollContents);
+    ui->scrollArea->setWidgetResizable(true);
+
+    // Заменяем указатель на layout в UI
+    ui->buttonsLayout = taskListLayout;
 
     // Связываем сигнал нажатия Enter в поле ввода с слотом
     QObject::connect(ui->textInput, &QLineEdit::returnPressed, this, &MainWindow::createButtonFromInput);
@@ -35,6 +50,9 @@ void MainWindow::createButtonFromInput()
         // Создаем виджет-контейнер для задачи
         QWidget* taskWidget = new QWidget();
 
+        // Настраиваем политику размеров для правильного растягивания
+        taskWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
+
         // Создаем горизонтальный layout для этого виджета
         QHBoxLayout* taskLayout = new QHBoxLayout(taskWidget);
         taskLayout->setContentsMargins(0, 0, 0, 0);
@@ -42,10 +60,12 @@ void MainWindow::createButtonFromInput()
 
         // Создаем чекбокс
         QCheckBox* checkbox = new QCheckBox();
+        checkbox->setMaximumWidth(20); // Ограничиваем ширину чекбокса
 
         // Создаем кнопку с текстом и выравниванием по левой стороне
         QPushButton* newButton = new QPushButton(buttonText);
         newButton->setStyleSheet("text-align: left; padding-left: 10px;");
+        newButton->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
 
         // Сохраняем указатель на кнопку в свойстве чекбокса
         checkbox->setProperty("associatedButton", QVariant::fromValue((void*)newButton));
