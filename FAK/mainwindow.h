@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "ui_mainwindow.h"
+#include <QListWidgetItem>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -13,16 +13,14 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+    MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+private slots:
+
 
 private:
     Ui::MainWindow *ui;
-    int counter = 0; // Для уникальных названий кнопок
 
-    // Слоты
-    void createNewButton();
-    void handleNewButton();
 };
-
 #endif // MAINWINDOW_H
