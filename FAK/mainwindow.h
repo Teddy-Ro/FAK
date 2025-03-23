@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QPushButton>
+#include <QCheckBox>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,9 +18,9 @@ public:
     ~MainWindow();
 
 private slots:
-    void showInputField();             // Показать поле ввода
     void createButtonFromInput();      // Создать кнопку из введенного текста
     void handleNewButton();            // Обработать нажатие на созданную кнопку
+    void handleCheckboxToggle(bool checked); // Обработка нажатия на чекбокс
 
 private:
     Ui::MainWindow *ui;

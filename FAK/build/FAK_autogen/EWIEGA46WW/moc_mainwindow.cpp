@@ -26,28 +26,31 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_MainWindow_t {
-    uint offsetsAndSizes[10];
+    uint offsetsAndSizes[12];
     char stringdata0[11];
-    char stringdata1[15];
+    char stringdata1[22];
     char stringdata2[1];
-    char stringdata3[22];
-    char stringdata4[16];
+    char stringdata3[16];
+    char stringdata4[21];
+    char stringdata5[8];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_MainWindow_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
         QT_MOC_LITERAL(0, 10),  // "MainWindow"
-        QT_MOC_LITERAL(11, 14),  // "showInputField"
-        QT_MOC_LITERAL(26, 0),  // ""
-        QT_MOC_LITERAL(27, 21),  // "createButtonFromInput"
-        QT_MOC_LITERAL(49, 15)   // "handleNewButton"
+        QT_MOC_LITERAL(11, 21),  // "createButtonFromInput"
+        QT_MOC_LITERAL(33, 0),  // ""
+        QT_MOC_LITERAL(34, 15),  // "handleNewButton"
+        QT_MOC_LITERAL(50, 20),  // "handleCheckboxToggle"
+        QT_MOC_LITERAL(71, 7)   // "checked"
     },
     "MainWindow",
-    "showInputField",
-    "",
     "createButtonFromInput",
-    "handleNewButton"
+    "",
+    "handleNewButton",
+    "handleCheckboxToggle",
+    "checked"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -68,12 +71,12 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
        1,    0,   32,    2, 0x08,    1 /* Private */,
        3,    0,   33,    2, 0x08,    2 /* Private */,
-       4,    0,   34,    2, 0x08,    3 /* Private */,
+       4,    1,   34,    2, 0x08,    3 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::Bool,    5,
 
        0        // eod
 };
@@ -87,12 +90,13 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_MainWindow_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
-        // method 'showInputField'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'createButtonFromInput'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'handleNewButton'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'handleCheckboxToggle'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>
     >,
     nullptr
 } };
@@ -103,13 +107,12 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->showInputField(); break;
-        case 1: _t->createButtonFromInput(); break;
-        case 2: _t->handleNewButton(); break;
+        case 0: _t->createButtonFromInput(); break;
+        case 1: _t->handleNewButton(); break;
+        case 2: _t->handleCheckboxToggle((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *MainWindow::metaObject() const
