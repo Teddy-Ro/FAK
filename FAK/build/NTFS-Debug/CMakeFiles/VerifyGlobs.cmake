@@ -43,6 +43,7 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Teddy/Documents/prog
 set(OLD_GLOB
   "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/CMakeFiles/3.31.5/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp"
+  "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/EWIEGA46WW/qrc_resources.cpp"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/mocs_compilation.cpp"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/main.cpp"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.cpp"
@@ -148,6 +149,7 @@ endif()
 # _directory_contents at C:/msys64/mingw64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Teddy/Documents/proga/FAK/FAK/*.qrc")
 set(OLD_GLOB
+  "C:/Users/Teddy/Documents/proga/FAK/FAK/resources.qrc"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -167,6 +169,7 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Teddy/Documents/proga/FAK/FAK/*.ui")
 set(OLD_GLOB
   "C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.ui"
+  "C:/Users/Teddy/Documents/proga/FAK/FAK/taskList.ui"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

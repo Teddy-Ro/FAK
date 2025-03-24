@@ -278,6 +278,8 @@ QPushButton:hover {
                 QLabel {
                 color: #888888;
                 font-size: 14px;
+                border-radius: 5px;
+
                 }
 
                 QPushButton {
@@ -285,13 +287,14 @@ QPushButton:hover {
                 text-align: left;
                 padding: 10px;
                 color: white;
-                border-radius: 5px;
                 font-size: 16px;
                 background-color: transparent;
                 }
 
                 QPushButton:hover {
                 background-color: #333333;
+                border-radius: 5px;
+
                 }
 
                 QPushButton#tasksButton {
@@ -499,7 +502,21 @@ QPushButton:hover {
               </widget>
              </item>
              <item>
-              <layout class="QVBoxLayout" name="verticalLayout_6"/>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <widget class="QWidget" name="widget_2" native="true">
+                 <layout class="QVBoxLayout" name="verticalLayout_4">
+                  <item>
+                   <widget class="QPushButton" name="pushButton">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </widget>
@@ -511,89 +528,16 @@ QPushButton:hover {
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_3">
              <item>
-              <widget class="QLabel" name="categoryTitle">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <pointsize>14</pointsize>
-                 <italic>false</italic>
-                 <bold>true</bold>
-                 <underline>false</underline>
-                 <strikeout>false</strikeout>
-                 <kerning>true</kerning>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background-color: rgba(103, 89, 122, 80);
-border-radius: 10px;
-border: 1px solid black;
-</string>
-               </property>
-               <property name="text">
-                <string>Сегодня</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QScrollArea" name="tasksScrollArea">
-               <property name="styleSheet">
-                <string notr="true">border: none;</string>
-               </property>
-               <property name="widgetResizable">
-                <bool>true</bool>
-               </property>
-               <widget class="QWidget" name="scrollAreaWidgetContents">
-                <property name="geometry">
-                 <rect>
-                  <x>0</x>
-                  <y>0</y>
-                  <width>732</width>
-                  <height>491</height>
-                 </rect>
-                </property>
-                <layout class="QVBoxLayout" name="tasksLayout">
-                 <item>
-                  <widget class="QPushButton" name="addTaskButton">
-                   <property name="minimumSize">
-                    <size>
-                     <width>0</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <italic>false</italic>
-                     <bold>false</bold>
-                     <underline>false</underline>
-                     <strikeout>false</strikeout>
-                     <kerning>true</kerning>
-                    </font>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">QPushButton {
-    text-align: left;
-    padding-left: 10px;
-    color: #FF5544;
-    border: none;
-    background-color: transparent;
-}
-QPushButton:hover {
-    background-color: #F5F5F5;
-    border-radius: 5px;
-}</string>
-                   </property>
-                   <property name="text">
-                    <string>+ Добавить задачу</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
+              <widget class="QWidget" name="widget_3" native="true">
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <widget class="QPushButton" name="changeButton">
+                  <property name="text">
+                   <string>changeButton</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
               </widget>
              </item>
             </layout>
