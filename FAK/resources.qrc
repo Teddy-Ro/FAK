@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/ui">
-        <file>taskList.ui</file>
+        <file>ui/importantList.ui</file>
+        <file>ui/planned.ui</file>
+        <file>classes/myDayTasks.ui</file>
     </qresource>
 </RCC>

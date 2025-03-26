@@ -1,4 +1,4 @@
-C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.h \
+C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp: C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.h \
   C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/moc_predefs.h \
   C:/msys64/mingw64/include/_mingw.h \
   C:/msys64/mingw64/include/_mingw_mac.h \
@@ -333,12 +333,14 @@ C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/EWIEGA46WW/m
   C:/msys64/mingw64/include/qt6/QtGui/qtransform.h \
   C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs.h \
   C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs_win.h \
+  C:/msys64/mingw64/include/qt6/QtWidgets/QCheckBox \
   C:/msys64/mingw64/include/qt6/QtWidgets/QMainWindow \
-  C:/msys64/mingw64/include/qt6/QtWidgets/QStackedWidget \
-  C:/msys64/mingw64/include/qt6/QtWidgets/qframe.h \
+  C:/msys64/mingw64/include/qt6/QtWidgets/QPushButton \
+  C:/msys64/mingw64/include/qt6/QtWidgets/qabstractbutton.h \
+  C:/msys64/mingw64/include/qt6/QtWidgets/qcheckbox.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qmainwindow.h \
+  C:/msys64/mingw64/include/qt6/QtWidgets/qpushbutton.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qsizepolicy.h \
-  C:/msys64/mingw64/include/qt6/QtWidgets/qstackedwidget.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qtabwidget.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qtwidgets-config.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qtwidgetsexports.h \

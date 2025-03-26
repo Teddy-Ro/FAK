@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "classes/myDayTasks.h"
 #include <QAction>
 #include <QCheckBox>
 #include <QFile>
@@ -16,51 +17,60 @@
 MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
 
-    // buttons
-    connect(ui->myDayButton, &QPushButton::clicked, this, &MainWindow::on_myDayButton_clicked);
+    // Инициализируем QStackedWidget
+    stackedWidget = new QStackedWidget();
+    QVBoxLayout* layout = qobject_cast<QVBoxLayout*>(ui->widget_3->layout());
+    if (layout) {
+        layout->addWidget(stackedWidget);
+    }
+
+    // Добавляем начальную страницу
+    stackedWidget->addWidget(new QWidget());
+
+    // Подключаем кнопки
+    connect(ui->myDayButton, &QPushButton::clicked, [this]() { loadTabContent(0); });
+    connect(ui->importantButton, &QPushButton::clicked, [this]() { loadTabContent(1); });
+    connect(ui->plannedButton, &QPushButton::clicked, [this]() { loadTabContent(2); });
 }
 
 MainWindow::~MainWindow() {
     delete ui;
 }
 
-void MainWindow::on_myDayButton_clicked() {
-    // 1. Находим кнопку changeButton в структуре виджетов
-    QPushButton* changeButton = ui->widget_3->findChild<QPushButton*>("changeButton");
-    if (!changeButton) {
-        qWarning() << "Не удалось найти changeButton";
+void MainWindow::loadTabContent(int index) {
+    if (!stackedWidget) return;
+
+    // Удаляем старый контент
+    if (stackedWidget->count() > index) {
+        QWidget* oldWidget = stackedWidget->widget(index);
+        stackedWidget->removeWidget(oldWidget);
+        delete oldWidget;
+    }
+
+    // Создаем виджет без QUiLoader для MyDayTasks
+    if (index == 0) {
+        MyDayTasks* myDayWidget = new MyDayTasks();
+        stackedWidget->insertWidget(index, myDayWidget);
+        stackedWidget->setCurrentIndex(index);
         return;
     }
 
-    // 2. Удаляем кнопку из layout
-    QLayout* layout = ui->widget_3->layout();
-    if (layout) {
-        QLayoutItem* item;
-        while ((item = layout->takeAt(0))) {
-            if (item->widget()) {
-                item->widget()->deleteLater();
-            }
-            delete item;
+    // Для остальных вкладок оставляем текущую логику
+    QString filePath;
+    switch (index) {
+        case 1: filePath = ":/ui/ui/importantList.ui"; break;
+        case 2: filePath = ":/ui/ui/planned.ui"; break;
+        default: return;
+    }
+
+    QUiLoader loader;
+    QFile file(filePath);
+    if (file.open(QFile::ReadOnly)) {
+        QWidget* tabContent = loader.load(&file);
+        file.close();
+        if (tabContent) {
+            stackedWidget->insertWidget(index, tabContent);
+            stackedWidget->setCurrentIndex(index);
         }
     }
-
-    // 3. Загружаем UI-файл
-    QUiLoader loader;
-    QFile file(":/ui/taskList.ui");
-    if (!file.open(QFile::ReadOnly)) {
-        qWarning() << "Не удалось открыть файл taskList.ui:" << file.errorString();
-        return;
-    }
-
-    // 4. Создаем виджет из UI-файла
-    QWidget* taskListWidget = loader.load(&file);
-    file.close();
-
-    if (!taskListWidget) {
-        qWarning() << "Не удалось загрузить UI из файла";
-        return;
-    }
-
-    // 5. Добавляем загруженный виджет на место changeButton
-    ui->widget_3->layout()->addWidget(taskListWidget);
 }

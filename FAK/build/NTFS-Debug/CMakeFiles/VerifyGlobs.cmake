@@ -44,7 +44,9 @@ set(OLD_GLOB
   "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/CMakeFiles/3.31.5/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/EWIEGA46WW/qrc_resources.cpp"
+  "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/mocs_compilation.cpp"
+  "C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.cpp"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/main.cpp"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.cpp"
   )
@@ -66,7 +68,9 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Teddy/Documents/proga/FAK/FAK/*.h")
 set(OLD_GLOB
   "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/include/ui_mainwindow.h"
+  "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/include/ui_myDayTasks.h"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/moc_predefs.h"
+  "C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.h"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -168,8 +172,10 @@ endif()
 # _directory_contents at C:/msys64/mingw64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/Teddy/Documents/proga/FAK/FAK/*.ui")
 set(OLD_GLOB
+  "C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.ui"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.ui"
-  "C:/Users/Teddy/Documents/proga/FAK/FAK/taskList.ui"
+  "C:/Users/Teddy/Documents/proga/FAK/FAK/ui/importantList.ui"
+  "C:/Users/Teddy/Documents/proga/FAK/FAK/ui/planned.ui"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

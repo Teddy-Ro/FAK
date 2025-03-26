@@ -256,7 +256,7 @@ QPushButton:hover {
              <bool>false</bool>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: rgb(19, 17, 24)
+             <string notr="true">background-color: rgb(19, 17, 24);
 </string>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0">
@@ -296,6 +296,11 @@ QPushButton:hover {
                 border-radius: 5px;
 
                 }
+
+				 QPushButton:checked {
+      			 background-color: #333333;
+        		 border-left: 3px solid #3b7be0;
+    			 }
 
                 QPushButton#tasksButton {
                 background-color: #333333;
@@ -346,6 +351,9 @@ QPushButton:hover {
                       <iconset>
                        <normaloff>icons/sun.png</normaloff>icons/sun.png</iconset>
                      </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
                     </widget>
                    </item>
                   </layout>
@@ -374,6 +382,9 @@ QPushButton:hover {
                      <property name="icon">
                       <iconset>
                        <normaloff>icons/star.png</normaloff>icons/star.png</iconset>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
                      </property>
                     </widget>
                    </item>
@@ -404,6 +415,9 @@ QPushButton:hover {
                       <iconset>
                        <normaloff>icons/calendar.png</normaloff>icons/calendar.png</iconset>
                      </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
                     </widget>
                    </item>
                   </layout>
@@ -433,6 +447,9 @@ QPushButton:hover {
                       <iconset>
                        <normaloff>icons/user.png</normaloff>icons/user.png</iconset>
                      </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
                     </widget>
                    </item>
                   </layout>
@@ -461,6 +478,9 @@ QPushButton:hover {
                      <property name="icon">
                       <iconset>
                        <normaloff>icons/flag.png</normaloff>icons/flag.png</iconset>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
                      </property>
                     </widget>
                    </item>
@@ -529,15 +549,7 @@ QPushButton:hover {
             <layout class="QVBoxLayout" name="verticalLayout_3">
              <item>
               <widget class="QWidget" name="widget_3" native="true">
-               <layout class="QVBoxLayout" name="verticalLayout_5">
-                <item>
-                 <widget class="QPushButton" name="changeButton">
-                  <property name="text">
-                   <string>changeButton</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
+               <layout class="QVBoxLayout" name="verticalLayout_5"/>
               </widget>
              </item>
             </layout>

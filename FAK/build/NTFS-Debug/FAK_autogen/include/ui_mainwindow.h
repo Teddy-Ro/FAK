@@ -71,7 +71,6 @@ public:
     QVBoxLayout *verticalLayout_3;
     QWidget *widget_3;
     QVBoxLayout *verticalLayout_5;
-    QPushButton *changeButton;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -186,7 +185,7 @@ public:
         sidebarWidget->setMinimumSize(QSize(250, 0));
         sidebarWidget->setMaximumSize(QSize(250, 16777215));
         sidebarWidget->setAutoFillBackground(false);
-        sidebarWidget->setStyleSheet(QString::fromUtf8("background-color: rgb(19, 17, 24)\n"
+        sidebarWidget->setStyleSheet(QString::fromUtf8("background-color: rgb(19, 17, 24);\n"
 ""));
         verticalLayout = new QVBoxLayout(sidebarWidget);
         verticalLayout->setObjectName("verticalLayout");
@@ -221,9 +220,15 @@ public:
 "\n"
 "                }\n"
 "\n"
+"				 QPushButton:checked {\n"
+"      			 background-color: #333333;\n"
+"        		 border-left: 3px solid #3b7be0;\n"
+"    			 }\n"
+"\n"
 "                QPushButton#tasksButton {\n"
 "                background-color: #333333;\n"
-"                border-left: 3px solid #3b7be0;\n"
+"                bord"
+                        "er-left: 3px solid #3b7be0;\n"
 "                }\n"
 ""));
         sidebarFrame->setFrameShape(QFrame::NoFrame);
@@ -241,6 +246,7 @@ public:
         QIcon icon;
         icon.addFile(QString::fromUtf8("icons/sun.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
         myDayButton->setIcon(icon);
+        myDayButton->setCheckable(true);
 
         horizontalLayout1->addWidget(myDayButton);
 
@@ -257,6 +263,7 @@ public:
         QIcon icon1;
         icon1.addFile(QString::fromUtf8("icons/star.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
         importantButton->setIcon(icon1);
+        importantButton->setCheckable(true);
 
         horizontalLayout_21->addWidget(importantButton);
 
@@ -273,6 +280,7 @@ public:
         QIcon icon2;
         icon2.addFile(QString::fromUtf8("icons/calendar.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
         plannedButton->setIcon(icon2);
+        plannedButton->setCheckable(true);
 
         horizontalLayout_31->addWidget(plannedButton);
 
@@ -289,6 +297,7 @@ public:
         QIcon icon3;
         icon3.addFile(QString::fromUtf8("icons/user.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
         assignedToMeButton->setIcon(icon3);
+        assignedToMeButton->setCheckable(true);
 
         horizontalLayout_4->addWidget(assignedToMeButton);
 
@@ -305,6 +314,7 @@ public:
         QIcon icon4;
         icon4.addFile(QString::fromUtf8("icons/flag.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
         flaggedButton->setIcon(icon4);
+        flaggedButton->setCheckable(true);
 
         horizontalLayout_5->addWidget(flaggedButton);
 
@@ -356,11 +366,6 @@ public:
         widget_3->setObjectName("widget_3");
         verticalLayout_5 = new QVBoxLayout(widget_3);
         verticalLayout_5->setObjectName("verticalLayout_5");
-        changeButton = new QPushButton(widget_3);
-        changeButton->setObjectName("changeButton");
-
-        verticalLayout_5->addWidget(changeButton);
-
 
         verticalLayout_3->addWidget(widget_3);
 
@@ -394,7 +399,6 @@ public:
         assignedToMeButton->setText(QCoreApplication::translate("MainWindow", "  \320\235\320\260\320\267\320\275\320\260\321\207\320\265\320\275 \320\274\320\275\320\265", nullptr));
         flaggedButton->setText(QCoreApplication::translate("MainWindow", "  \320\237\320\276\320\274\320\265\321\207\320\265\320\275\320\275\321\213\320\265 \321\201\320\276\320\276\320\261\321\211\320\265\320\275\320\270\321\217", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        changeButton->setText(QCoreApplication::translate("MainWindow", "changeButton", nullptr));
     } // retranslateUi
 
 };

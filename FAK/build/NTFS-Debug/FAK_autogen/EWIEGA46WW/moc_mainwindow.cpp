@@ -38,8 +38,9 @@ struct qt_meta_tag_ZN10MainWindowE_t {};
 #ifdef QT_MOC_HAS_STRINGDATA
 static constexpr auto qt_meta_stringdata_ZN10MainWindowE = QtMocHelpers::stringData(
     "MainWindow",
-    "on_myDayButton_clicked",
-    ""
+    "loadTabContent",
+    "",
+    "index"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -59,10 +60,10 @@ Q_CONSTINIT static const uint qt_meta_data_ZN10MainWindowE[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   20,    2, 0x08,    1 /* Private */,
+       1,    1,   20,    2, 0x08,    1 /* Private */,
 
  // slots: parameters
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    3,
 
        0        // eod
 };
@@ -76,8 +77,9 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_tag_ZN10MainWindowE_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
-        // method 'on_myDayButton_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        // method 'loadTabContent'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>
     >,
     nullptr
 } };
@@ -87,11 +89,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     auto *_t = static_cast<MainWindow *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->on_myDayButton_clicked(); break;
+        case 0: _t->loadTabContent((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *MainWindow::metaObject() const

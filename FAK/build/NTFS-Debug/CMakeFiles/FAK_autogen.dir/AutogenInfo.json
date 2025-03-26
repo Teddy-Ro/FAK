@@ -379,6 +379,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.h",
+			"MU",
+			"QESDO5J2AP/moc_myDayTasks.cpp",
+			null
+		],
+		[
 			"C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -416,6 +422,10 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"C:/Users/Teddy/Documents/proga/FAK/FAK",
+		"C:/Users/Teddy/Documents/proga/FAK/FAK/classes",
+		"C:/Users/Teddy/Documents/proga/FAK/FAK/ui",
+		"C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug",
 		"C:/msys64/mingw64/include/qt6/QtCore",
 		"C:/msys64/mingw64/include/qt6",
 		"C:/msys64/mingw64/share/qt6/mkspecs/win32-g++",
@@ -464,6 +474,11 @@
 	"SETTINGS_FILE" : "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/CMakeFiles/FAK_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.cpp",
+			"MU",
+			null
+		],
 		[ "C:/Users/Teddy/Documents/proga/FAK/FAK/main.cpp", "MU", null ],
 		[ "C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.cpp", "MU", null ]
 	],

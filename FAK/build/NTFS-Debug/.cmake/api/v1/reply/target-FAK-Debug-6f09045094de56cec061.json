@@ -23,7 +23,8 @@
 			"include",
 			"find_package",
 			"find_dependency",
-			"_qt_internal_find_qt_dependencies"
+			"_qt_internal_find_qt_dependencies",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -79,13 +80,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 81,
+				"line" : 93,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 56,
+				"line" : 61,
 				"parent" : 0
 			},
 			{
@@ -331,6 +332,12 @@
 				"file" : 17,
 				"line" : 61,
 				"parent" : 51
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 70,
+				"parent" : 0
 			}
 		]
 	},
@@ -417,6 +424,22 @@
 					"path" : "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/include"
 				},
 				{
+					"backtrace" : 53,
+					"path" : "C:/Users/Teddy/Documents/proga/FAK/FAK"
+				},
+				{
+					"backtrace" : 53,
+					"path" : "C:/Users/Teddy/Documents/proga/FAK/FAK/classes"
+				},
+				{
+					"backtrace" : 53,
+					"path" : "C:/Users/Teddy/Documents/proga/FAK/FAK/ui"
+				},
+				{
+					"backtrace" : 53,
+					"path" : "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug"
+				},
+				{
 					"backtrace" : 23,
 					"isSystem" : true,
 					"path" : "C:/msys64/mingw64/include/qt6/QtCore"
@@ -472,7 +495,8 @@
 				0,
 				1,
 				2,
-				11
+				7,
+				17
 			],
 			"sysroot" : 
 			{
@@ -619,7 +643,8 @@
 				0,
 				1,
 				2,
-				11
+				7,
+				17
 			]
 		},
 		{
@@ -627,8 +652,11 @@
 			"sourceIndexes" : 
 			[
 				3,
-				8,
-				9
+				6,
+				12,
+				13,
+				14,
+				15
 			]
 		},
 		{
@@ -636,7 +664,9 @@
 			"sourceIndexes" : 
 			[
 				4,
-				6
+				8,
+				9,
+				10
 			]
 		},
 		{
@@ -644,22 +674,22 @@
 			"sourceIndexes" : 
 			[
 				5,
-				10
+				16
 			]
 		},
 		{
 			"name" : "Resources",
 			"sourceIndexes" : 
 			[
-				7
+				11
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				12,
-				13
+				18,
+				19
 			]
 		}
 	],
@@ -701,7 +731,28 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "taskList.ui",
+			"path" : "classes/myDayTasks.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "classes/myDayTasks.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "classes/myDayTasks.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "ui/importantList.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "ui/planned.ui",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -718,7 +769,19 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/NTFS-Debug/FAK_autogen/include/ui_taskList.h",
+			"path" : "build/NTFS-Debug/FAK_autogen/include/classes/ui_myDayTasks.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/NTFS-Debug/FAK_autogen/include/ui/ui_importantList.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/NTFS-Debug/FAK_autogen/include/ui/ui_planned.h",
 			"sourceGroupIndex" : 1
 		},
 		{

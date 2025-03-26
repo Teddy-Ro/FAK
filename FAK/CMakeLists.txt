@@ -27,7 +27,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(FAK
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        taskList.ui
+
+        classes/myDayTasks.h
+        classes/myDayTasks.cpp
+        classes/myDayTasks.ui
+        ui/importantList.ui
+        ui/planned.ui
         resources.qrc
     )
 # Define target properties for Android with Qt 6 as:
@@ -61,6 +66,13 @@ target_link_libraries(FAK PRIVATE
 )
 
 target_sources(FAK PRIVATE ${RESOURCES})
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/classes
+    ${CMAKE_CURRENT_SOURCE_DIR}/ui
+    ${CMAKE_CURRENT_BINARY_DIR}
+)
 
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
