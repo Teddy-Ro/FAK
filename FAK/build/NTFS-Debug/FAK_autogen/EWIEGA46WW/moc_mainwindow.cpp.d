@@ -333,8 +333,10 @@ C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/EWIEGA46WW/m
   C:/msys64/mingw64/include/qt6/QtGui/qtransform.h \
   C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs.h \
   C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs_win.h \
+  C:/msys64/mingw64/include/qt6/QtWidgets/QButtonGroup \
   C:/msys64/mingw64/include/qt6/QtWidgets/QMainWindow \
   C:/msys64/mingw64/include/qt6/QtWidgets/QStackedWidget \
+  C:/msys64/mingw64/include/qt6/QtWidgets/qbuttongroup.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qframe.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qmainwindow.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/qsizepolicy.h \

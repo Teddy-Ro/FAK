@@ -344,11 +344,13 @@ FAK_autogen/timestamp: \
 	C:/msys64/mingw64/include/qt6/QtGui/qtransform.h \
 	C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs.h \
 	C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs_win.h \
+	C:/msys64/mingw64/include/qt6/QtWidgets/QButtonGroup \
 	C:/msys64/mingw64/include/qt6/QtWidgets/QCheckBox \
 	C:/msys64/mingw64/include/qt6/QtWidgets/QMainWindow \
 	C:/msys64/mingw64/include/qt6/QtWidgets/QPushButton \
 	C:/msys64/mingw64/include/qt6/QtWidgets/QStackedWidget \
 	C:/msys64/mingw64/include/qt6/QtWidgets/qabstractbutton.h \
+	C:/msys64/mingw64/include/qt6/QtWidgets/qbuttongroup.h \
 	C:/msys64/mingw64/include/qt6/QtWidgets/qcheckbox.h \
 	C:/msys64/mingw64/include/qt6/QtWidgets/qframe.h \
 	C:/msys64/mingw64/include/qt6/QtWidgets/qmainwindow.h \

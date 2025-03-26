@@ -1,6 +1,6 @@
 #include "mainwindow.h"
-#include "classes/myDayTasks.h"
 #include <QAction>
+#include <QButtonGroup>
 #include <QCheckBox>
 #include <QFile>
 #include <QFrame>
@@ -12,10 +12,20 @@
 #include <QTimer>
 #include <QVBoxLayout>
 #include <QtUiTools/QUiLoader>
+#include "classes/myDayTasks.h"
 #include "ui_mainwindow.h"
+
 
 MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
+
+    buttonGroup = new QButtonGroup(this);
+    buttonGroup->setExclusive(true);  // Делаем группу эксклюзивной
+
+    // Добавляем кнопки в группу
+    buttonGroup->addButton(ui->myDayButton, 0);
+    buttonGroup->addButton(ui->importantButton, 1);
+    buttonGroup->addButton(ui->plannedButton, 2);
 
     // Инициализируем QStackedWidget
     stackedWidget = new QStackedWidget();
@@ -38,7 +48,8 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::loadTabContent(int index) {
-    if (!stackedWidget) return;
+    if (!stackedWidget)
+        return;
 
     // Удаляем старый контент
     if (stackedWidget->count() > index) {
@@ -58,9 +69,14 @@ void MainWindow::loadTabContent(int index) {
     // Для остальных вкладок оставляем текущую логику
     QString filePath;
     switch (index) {
-        case 1: filePath = ":/ui/ui/importantList.ui"; break;
-        case 2: filePath = ":/ui/ui/planned.ui"; break;
-        default: return;
+        case 1:
+            filePath = ":/ui/ui/importantList.ui";
+            break;
+        case 2:
+            filePath = ":/ui/ui/planned.ui";
+            break;
+        default:
+            return;
     }
 
     QUiLoader loader;

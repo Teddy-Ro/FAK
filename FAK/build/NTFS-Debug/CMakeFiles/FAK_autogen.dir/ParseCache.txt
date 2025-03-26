@@ -341,8 +341,10 @@ C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.h
  mdp:C:/msys64/mingw64/include/qt6/QtGui/qtransform.h
  mdp:C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs.h
  mdp:C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs_win.h
+ mdp:C:/msys64/mingw64/include/qt6/QtWidgets/QButtonGroup
  mdp:C:/msys64/mingw64/include/qt6/QtWidgets/QMainWindow
  mdp:C:/msys64/mingw64/include/qt6/QtWidgets/QStackedWidget
+ mdp:C:/msys64/mingw64/include/qt6/QtWidgets/qbuttongroup.h
  mdp:C:/msys64/mingw64/include/qt6/QtWidgets/qframe.h
  mdp:C:/msys64/mingw64/include/qt6/QtWidgets/qmainwindow.h
  mdp:C:/msys64/mingw64/include/qt6/QtWidgets/qsizepolicy.h
