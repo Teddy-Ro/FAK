@@ -383,6 +383,12 @@
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
+		],
+		[
+			"C:/Users/Teddy/Documents/proga/FAK/FAK/task.h",
+			"MU",
+			"EWIEGA46WW/moc_task.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -465,7 +471,8 @@
 	"SOURCES" : 
 	[
 		[ "C:/Users/Teddy/Documents/proga/FAK/FAK/main.cpp", "MU", null ],
-		[ "C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.cpp", "MU", null ]
+		[ "C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.cpp", "MU", null ],
+		[ "C:/Users/Teddy/Documents/proga/FAK/FAK/task.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

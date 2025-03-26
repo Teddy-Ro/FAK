@@ -1,6 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "task.h"
+#include <QList>
 #include <QListWidgetItem>
 #include <QMainWindow>
 
@@ -19,8 +21,25 @@ class MainWindow : public QMainWindow {
 
  private slots:
     void on_myDayButton_clicked();
+    void on_importantButton_clicked();
+    void on_plannedButton_clicked();
+    // Удален метод on_tasksButton_clicked();
+    void on_addTaskButton_clicked();
+    void on_deleteTask_clicked();
+    void on_editTask_clicked();
 
  private:
     Ui::MainWindow* ui;
+    void loadTaskListUI(const QString& title);
+    void connectTaskListSignals(QWidget* taskListWidget);
+
+    QList<Task> m_tasks;
+
+    void displayTaskList(const QString& title, std::function<bool(const Task&)> filter);
+    QWidget* createTaskWidget(int taskIndex);
+    void addTask(const QString& text, bool important, bool planned, bool inMyDay);
+    void updateTaskList();
+    void saveTasksToFile();
+    void loadTasksFromFile();
 };
 #endif  // MAINWINDOW_H

@@ -47,6 +47,7 @@ set(OLD_GLOB
   "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/mocs_compilation.cpp"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/main.cpp"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.cpp"
+  "C:/Users/Teddy/Documents/proga/FAK/FAK/task.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -68,6 +69,7 @@ set(OLD_GLOB
   "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/include/ui_mainwindow.h"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/moc_predefs.h"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.h"
+  "C:/Users/Teddy/Documents/proga/FAK/FAK/task.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

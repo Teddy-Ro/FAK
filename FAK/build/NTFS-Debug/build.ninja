@@ -73,6 +73,14 @@ build CMakeFiles/FAK.dir/mainwindow.cpp.obj: CXX_COMPILER__FAK_unscanned_Debug C
   OBJECT_DIR = CMakeFiles\FAK.dir
   OBJECT_FILE_DIR = CMakeFiles\FAK.dir
 
+build CMakeFiles/FAK.dir/task.cpp.obj: CXX_COMPILER__FAK_unscanned_Debug C$:/Users/Teddy/Documents/proga/FAK/FAK/task.cpp || cmake_object_order_depends_target_FAK
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64
+  DEP_FILE = CMakeFiles\FAK.dir\task.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fansi-escape-codes -fcolor-diagnostics
+  INCLUDES = -IC:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/include -isystem C:/msys64/mingw64/include/qt6/QtCore -isystem C:/msys64/mingw64/include/qt6 -isystem C:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/qt6/QtWidgets -isystem C:/msys64/mingw64/include/qt6/QtGui -isystem C:/msys64/mingw64/include/qt6/QtUiTools -isystem C:/msys64/mingw64/include/qt6/QtOpenGLWidgets -isystem C:/msys64/mingw64/include/qt6/QtOpenGL
+  OBJECT_DIR = CMakeFiles\FAK.dir
+  OBJECT_FILE_DIR = CMakeFiles\FAK.dir
+
 build CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CXX_COMPILER__FAK_unscanned_Debug C$:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/EWIEGA46WW/qrc_resources.cpp || cmake_object_order_depends_target_FAK
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64
   DEP_FILE = CMakeFiles\FAK.dir\FAK_autogen\EWIEGA46WW\qrc_resources.cpp.obj.d
@@ -89,7 +97,7 @@ build CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CXX_COMPI
 #############################################
 # Link the executable FAK.exe
 
-build FAK.exe: CXX_EXECUTABLE_LINKER__FAK_Debug CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.obj CMakeFiles/FAK.dir/main.cpp.obj CMakeFiles/FAK.dir/mainwindow.cpp.obj CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.obj | C$:/msys64/mingw64/lib/libQt6UiTools.dll.a C$:/msys64/mingw64/lib/libQt6OpenGLWidgets.dll.a C$:/msys64/mingw64/lib/libQt6Widgets.dll.a C$:/msys64/mingw64/lib/libQt6OpenGL.dll.a C$:/msys64/mingw64/lib/libQt6Gui.dll.a C$:/msys64/mingw64/lib/libQt6Core.dll.a C$:/msys64/mingw64/lib/libQt6EntryPoint.a || FAK_autogen FAK_autogen_timestamp_deps
+build FAK.exe: CXX_EXECUTABLE_LINKER__FAK_Debug CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.obj CMakeFiles/FAK.dir/main.cpp.obj CMakeFiles/FAK.dir/mainwindow.cpp.obj CMakeFiles/FAK.dir/task.cpp.obj CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.obj | C$:/msys64/mingw64/lib/libQt6UiTools.dll.a C$:/msys64/mingw64/lib/libQt6OpenGLWidgets.dll.a C$:/msys64/mingw64/lib/libQt6Widgets.dll.a C$:/msys64/mingw64/lib/libQt6OpenGL.dll.a C$:/msys64/mingw64/lib/libQt6Gui.dll.a C$:/msys64/mingw64/lib/libQt6Core.dll.a C$:/msys64/mingw64/lib/libQt6EntryPoint.a || FAK_autogen FAK_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/msys64/mingw64/lib/libQt6UiTools.dll.a  C:/msys64/mingw64/lib/libQt6OpenGLWidgets.dll.a  C:/msys64/mingw64/lib/libQt6Widgets.dll.a  C:/msys64/mingw64/lib/libQt6OpenGL.dll.a  C:/msys64/mingw64/lib/libQt6Gui.dll.a  C:/msys64/mingw64/lib/libQt6Core.dll.a  -lmpr  -luserenv  -lmingw32  C:/msys64/mingw64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

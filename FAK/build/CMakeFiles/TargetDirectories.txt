@@ -1,0 +1,9 @@
+C:/Users/Teddy/Documents/proga/FAK/FAK/build/CMakeFiles/FAK.dir
+C:/Users/Teddy/Documents/proga/FAK/FAK/build/CMakeFiles/edit_cache.dir
+C:/Users/Teddy/Documents/proga/FAK/FAK/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Teddy/Documents/proga/FAK/FAK/build/CMakeFiles/list_install_components.dir
+C:/Users/Teddy/Documents/proga/FAK/FAK/build/CMakeFiles/install.dir
+C:/Users/Teddy/Documents/proga/FAK/FAK/build/CMakeFiles/install/local.dir
+C:/Users/Teddy/Documents/proga/FAK/FAK/build/CMakeFiles/install/strip.dir
+C:/Users/Teddy/Documents/proga/FAK/FAK/build/CMakeFiles/FAK_autogen_timestamp_deps.dir
+C:/Users/Teddy/Documents/proga/FAK/FAK/build/CMakeFiles/FAK_autogen.dir
