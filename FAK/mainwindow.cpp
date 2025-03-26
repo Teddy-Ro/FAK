@@ -1,21 +1,29 @@
 #include "mainwindow.h"
-#include <QAction>
+#include "ui_mainwindow.h"
 #include <QCheckBox>
-#include <QFile>
-#include <QFrame>
-#include <QHBoxLayout>
-#include <QInputDialog>
 #include <QLabel>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QFrame>
 #include <QMenu>
+#include <QAction>
+#include <QInputDialog>
 #include <QMessageBox>
 #include <QTimer>
+<<<<<<< HEAD
 #include <QVBoxLayout>
 #include <QtUiTools/QUiLoader>
 #include "ui_mainwindow.h"
 #include "task.h" // Подключаем наш новый класс Task
+=======
+>>>>>>> parent of a50667e (один раз открывается вкладка, добавлена возможность открыть  ui)
 
-MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
+{
     ui->setupUi(this);
+<<<<<<< HEAD
 
     // Подключаем кнопки навигации
     connect(ui->myDayButton, &QPushButton::clicked, this, &MainWindow::on_myDayButton_clicked);
@@ -279,3 +287,12 @@ void MainWindow::loadTasksFromFile() {
         m_tasks.append(Task("Позвонить другу", false, true, false));
     }
 }
+=======
+}
+
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
+
+>>>>>>> parent of a50667e (один раз открывается вкладка, добавлена возможность открыть  ui)

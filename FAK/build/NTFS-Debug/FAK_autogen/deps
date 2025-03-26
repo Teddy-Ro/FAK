@@ -8,9 +8,12 @@ FAK_autogen/timestamp: \
 	C:/Users/Teddy/Documents/proga/FAK/FAK/main.cpp \
 	C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.cpp \
 	C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.h \
+<<<<<<< HEAD
 	C:/Users/Teddy/Documents/proga/FAK/FAK/resources.qrc \
 	C:/Users/Teddy/Documents/proga/FAK/FAK/task.cpp \
 	C:/Users/Teddy/Documents/proga/FAK/FAK/task.h \
+=======
+>>>>>>> parent of a50667e (один раз открывается вкладка, добавлена возможность открыть  ui)
 	C:/msys64/mingw64/include/_mingw.h \
 	C:/msys64/mingw64/include/_mingw_mac.h \
 	C:/msys64/mingw64/include/_mingw_off_t.h \
@@ -519,37 +522,6 @@ FAK_autogen/timestamp: \
 	C:/msys64/mingw64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets-relwithdebinfo.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsVersionlessTargets.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGL/Qt6OpenGLAdditionalTargetInfo.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGL/Qt6OpenGLConfig.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGL/Qt6OpenGLConfigVersion.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGL/Qt6OpenGLConfigVersionImpl.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGL/Qt6OpenGLDependencies.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGL/Qt6OpenGLTargets-relwithdebinfo.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGL/Qt6OpenGLTargets.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGL/Qt6OpenGLVersionlessAliasTargets.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsAdditionalTargetInfo.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfig.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersion.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersionImpl.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsDependencies.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets-relwithdebinfo.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsVersionlessAliasTargets.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiPlugin/Qt6UiPluginAdditionalTargetInfo.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiPlugin/Qt6UiPluginConfig.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiPlugin/Qt6UiPluginConfigVersion.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiPlugin/Qt6UiPluginConfigVersionImpl.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiPlugin/Qt6UiPluginDependencies.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiPlugin/Qt6UiPluginTargets.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiPlugin/Qt6UiPluginVersionlessAliasTargets.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiTools/Qt6UiToolsAdditionalTargetInfo.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiTools/Qt6UiToolsConfig.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiTools/Qt6UiToolsConfigVersion.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiTools/Qt6UiToolsConfigVersionImpl.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiTools/Qt6UiToolsDependencies.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiTools/Qt6UiToolsTargets-relwithdebinfo.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiTools/Qt6UiToolsTargets.cmake \
-	C:/msys64/mingw64/lib/cmake/Qt6UiTools/Qt6UiToolsVersionlessAliasTargets.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake \

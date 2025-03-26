@@ -1,24 +1,28 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+<<<<<<< HEAD
 #include "task.h"
 #include <QList>
 #include <QListWidgetItem>
+=======
+>>>>>>> parent of a50667e (один раз открывается вкладка, добавлена возможность открыть  ui)
 #include <QMainWindow>
+#include <QListWidgetItem>
 
 QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
+namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow {
+class MainWindow : public QMainWindow
+{
     Q_OBJECT
 
- public:
-    MainWindow(QWidget* parent = nullptr);
+public:
+    MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+<<<<<<< HEAD
  private slots:
     void on_myDayButton_clicked();
     void on_importantButton_clicked();
@@ -41,5 +45,13 @@ class MainWindow : public QMainWindow {
     void updateTaskList();
     void saveTasksToFile();
     void loadTasksFromFile();
+=======
+private slots:
+
+
+private:
+    Ui::MainWindow *ui;
+
+>>>>>>> parent of a50667e (один раз открывается вкладка, добавлена возможность открыть  ui)
 };
-#endif  // MAINWINDOW_H
+#endif // MAINWINDOW_H

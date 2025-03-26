@@ -18,6 +18,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QScrollArea>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -63,15 +64,20 @@ public:
     QHBoxLayout *horizontalLayout_6;
     QSpacerItem *verticalSpacer;
     QVBoxLayout *verticalLayout_6;
+<<<<<<< HEAD
     QWidget *widget_2;
     QVBoxLayout *verticalLayout_4;
     QPushButton *pushButton_2;
     QPushButton *pushButton;
+=======
+>>>>>>> parent of a50667e (один раз открывается вкладка, добавлена возможность открыть  ui)
     QWidget *tasksWidget1;
     QVBoxLayout *verticalLayout_3;
-    QWidget *widget_3;
-    QVBoxLayout *verticalLayout_5;
-    QPushButton *changeButton;
+    QLabel *categoryTitle;
+    QScrollArea *tasksScrollArea;
+    QWidget *scrollAreaWidgetContents;
+    QVBoxLayout *tasksLayout;
+    QPushButton *addTaskButton;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -202,8 +208,6 @@ public:
 "                QLabel {\n"
 "                color: #888888;\n"
 "                font-size: 14px;\n"
-"                border-radius: 5px;\n"
-"\n"
 "                }\n"
 "\n"
 "                QPushButton {\n"
@@ -211,14 +215,13 @@ public:
 "                text-align: left;\n"
 "                padding: 10px;\n"
 "                color: white;\n"
+"                border-radius: 5px;\n"
 "                font-size: 16px;\n"
 "                background-color: transparent;\n"
 "                }\n"
 "\n"
 "                QPushButton:hover {\n"
 "                background-color: #333333;\n"
-"                border-radius: 5px;\n"
-"\n"
 "                }\n"
 "\n"
 "                QPushButton#tasksButton {\n"
@@ -320,6 +323,7 @@ public:
 
         verticalLayout_6 = new QVBoxLayout();
         verticalLayout_6->setObjectName("verticalLayout_6");
+<<<<<<< HEAD
         widget_2 = new QWidget(sidebarWidget);
         widget_2->setObjectName("widget_2");
         verticalLayout_4 = new QVBoxLayout(widget_2);
@@ -337,6 +341,8 @@ public:
 
         verticalLayout_6->addWidget(widget_2);
 
+=======
+>>>>>>> parent of a50667e (один раз открывается вкладка, добавлена возможность открыть  ui)
 
         verticalLayout->addLayout(verticalLayout_6);
 
@@ -349,17 +355,60 @@ public:
         tasksWidget1->setStyleSheet(QString::fromUtf8("background-color: rgb(12, 22, 24)"));
         verticalLayout_3 = new QVBoxLayout(tasksWidget1);
         verticalLayout_3->setObjectName("verticalLayout_3");
-        widget_3 = new QWidget(tasksWidget1);
-        widget_3->setObjectName("widget_3");
-        verticalLayout_5 = new QVBoxLayout(widget_3);
-        verticalLayout_5->setObjectName("verticalLayout_5");
-        changeButton = new QPushButton(widget_3);
-        changeButton->setObjectName("changeButton");
+        categoryTitle = new QLabel(tasksWidget1);
+        categoryTitle->setObjectName("categoryTitle");
+        categoryTitle->setMinimumSize(QSize(0, 35));
+        QFont font;
+        font.setPointSize(14);
+        font.setBold(true);
+        font.setItalic(false);
+        font.setUnderline(false);
+        font.setStrikeOut(false);
+        font.setKerning(true);
+        categoryTitle->setFont(font);
+        categoryTitle->setStyleSheet(QString::fromUtf8("background-color: rgba(103, 89, 122, 80);\n"
+"border-radius: 10px;\n"
+"border: 1px solid black;\n"
+""));
 
-        verticalLayout_5->addWidget(changeButton);
+        verticalLayout_3->addWidget(categoryTitle);
 
+        tasksScrollArea = new QScrollArea(tasksWidget1);
+        tasksScrollArea->setObjectName("tasksScrollArea");
+        tasksScrollArea->setStyleSheet(QString::fromUtf8("border: none;"));
+        tasksScrollArea->setWidgetResizable(true);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName("scrollAreaWidgetContents");
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 732, 491));
+        tasksLayout = new QVBoxLayout(scrollAreaWidgetContents);
+        tasksLayout->setObjectName("tasksLayout");
+        addTaskButton = new QPushButton(scrollAreaWidgetContents);
+        addTaskButton->setObjectName("addTaskButton");
+        addTaskButton->setMinimumSize(QSize(0, 40));
+        QFont font1;
+        font1.setBold(false);
+        font1.setItalic(false);
+        font1.setUnderline(false);
+        font1.setStrikeOut(false);
+        font1.setKerning(true);
+        addTaskButton->setFont(font1);
+        addTaskButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    text-align: left;\n"
+"    padding-left: 10px;\n"
+"    color: #FF5544;\n"
+"    border: none;\n"
+"    background-color: transparent;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #F5F5F5;\n"
+"    border-radius: 5px;\n"
+"}"));
 
-        verticalLayout_3->addWidget(widget_3);
+        tasksLayout->addWidget(addTaskButton);
+
+        tasksScrollArea->setWidget(scrollAreaWidgetContents);
+
+        verticalLayout_3->addWidget(tasksScrollArea);
 
 
         horizontalLayout_3->addWidget(tasksWidget1);
@@ -389,9 +438,14 @@ public:
         importantButton->setText(QCoreApplication::translate("MainWindow", "  \320\222\320\260\320\266\320\275\320\276", nullptr));
         plannedButton->setText(QCoreApplication::translate("MainWindow", "  \320\227\320\260\320\277\320\273\320\260\320\275\320\270\321\200\320\276\320\262\320\260\320\275\320\276", nullptr));
         flaggedButton->setText(QCoreApplication::translate("MainWindow", "  \320\237\320\276\320\274\320\265\321\207\320\265\320\275\320\275\321\213\320\265 \321\201\320\276\320\276\320\261\321\211\320\265\320\275\320\270\321\217", nullptr));
+<<<<<<< HEAD
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         changeButton->setText(QCoreApplication::translate("MainWindow", "changeButton", nullptr));
+=======
+        categoryTitle->setText(QCoreApplication::translate("MainWindow", "\320\241\320\265\320\263\320\276\320\264\320\275\321\217", nullptr));
+        addTaskButton->setText(QCoreApplication::translate("MainWindow", "+ \320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\267\320\260\320\264\320\260\321\207\321\203", nullptr));
+>>>>>>> parent of a50667e (один раз открывается вкладка, добавлена возможность открыть  ui)
     } // retranslateUi
 
 };

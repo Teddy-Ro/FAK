@@ -11,7 +11,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets UiTools)
 
 set(TS_FILES FAK_ru_RU.ts)
 
@@ -27,9 +26,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(FAK
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+<<<<<<< HEAD
         taskList.ui
         resources.qrc
         task.h task.cpp
+=======
+>>>>>>> parent of a50667e (один раз открывается вкладка, добавлена возможность открыть  ui)
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET FAK APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -53,16 +55,7 @@ else()
     qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 endif()
 
-
-target_link_libraries(FAK PRIVATE
-    Qt${QT_VERSION_MAJOR}::Widgets
-    Qt${QT_VERSION_MAJOR}::Core
-    Qt${QT_VERSION_MAJOR}::Gui
-    Qt${QT_VERSION_MAJOR}::UiTools
-)
-
-target_sources(FAK PRIVATE ${RESOURCES})
-
+target_link_libraries(FAK PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

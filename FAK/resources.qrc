@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/ui">
-        <file>taskList.ui</file>
-    </qresource>
-</RCC>
