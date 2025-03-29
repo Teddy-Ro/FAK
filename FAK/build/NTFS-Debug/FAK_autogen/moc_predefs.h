@@ -4,6 +4,7 @@
 #define QT_NEEDS_QMAIN 1
 #define QT_OPENGLWIDGETS_LIB 1
 #define QT_OPENGL_LIB 1
+#define QT_SQL_LIB 1
 #define QT_UITOOLS_LIB 1
 #define QT_WIDGETS_LIB 1
 #define SIZEOF_DPTR (sizeof(void*))

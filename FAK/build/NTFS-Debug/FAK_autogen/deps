@@ -256,6 +256,7 @@ FAK_autogen/timestamp: \
 	C:/msys64/mingw64/include/qt6/QtCore/qmargins.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qmath.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qmetacontainer.h \
+	C:/msys64/mingw64/include/qt6/QtCore/qmetaobject.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qmetatype.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qminmax.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qnamespace.h \
@@ -344,6 +345,13 @@ FAK_autogen/timestamp: \
 	C:/msys64/mingw64/include/qt6/QtGui/qtransform.h \
 	C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs.h \
 	C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs_win.h \
+	C:/msys64/mingw64/include/qt6/QtSql/QSqlDatabase \
+	C:/msys64/mingw64/include/qt6/QtSql/QSqlQuery \
+	C:/msys64/mingw64/include/qt6/QtSql/qsqldatabase.h \
+	C:/msys64/mingw64/include/qt6/QtSql/qsqlquery.h \
+	C:/msys64/mingw64/include/qt6/QtSql/qtsql-config.h \
+	C:/msys64/mingw64/include/qt6/QtSql/qtsqlexports.h \
+	C:/msys64/mingw64/include/qt6/QtSql/qtsqlglobal.h \
 	C:/msys64/mingw64/include/qt6/QtWidgets/QButtonGroup \
 	C:/msys64/mingw64/include/qt6/QtWidgets/QCheckBox \
 	C:/msys64/mingw64/include/qt6/QtWidgets/QMainWindow \
@@ -520,6 +528,35 @@ FAK_autogen/timestamp: \
 	C:/msys64/mingw64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets-relwithdebinfo.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsVersionlessAliasTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QIBaseDriverPluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QMYSQLDriverPluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QMYSQLDriverPluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QMYSQLDriverPluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QMYSQLDriverPluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6SqlConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6SqlDependencies.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6SqlPlugins.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6SqlTargets-relwithdebinfo.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6SqlTargets.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt6Sql/Qt6SqlVersionlessAliasTargets.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6UiPlugin/Qt6UiPluginAdditionalTargetInfo.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6UiPlugin/Qt6UiPluginConfig.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt6UiPlugin/Qt6UiPluginConfigVersion.cmake \

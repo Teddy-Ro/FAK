@@ -527,9 +527,12 @@ QPushButton:hover {
                 <widget class="QWidget" name="widget_2" native="true">
                  <layout class="QVBoxLayout" name="verticalLayout_4">
                   <item>
-                   <widget class="QPushButton" name="pushButton">
+                   <widget class="QLabel" name="label">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255, 0, 0)</string>
+                    </property>
                     <property name="text">
-                     <string>PushButton</string>
+                     <string>Кирилл ничего не сделал(</string>
                     </property>
                    </widget>
                   </item>

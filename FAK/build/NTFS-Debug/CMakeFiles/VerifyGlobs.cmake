@@ -71,6 +71,7 @@ set(OLD_GLOB
   "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/include/ui_myDayTasks.h"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/moc_predefs.h"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.h"
+  "C:/Users/Teddy/Documents/proga/FAK/FAK/libs/sqlite3/sqlite3.h"
   "C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

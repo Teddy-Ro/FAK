@@ -4,4 +4,7 @@
         <file>ui/planned.ui</file>
         <file>classes/myDayTasks.ui</file>
     </qresource>
+    <qresource prefix="/lib">
+        <file>libs/sqlite3/sqlite3.dll</file>
+    </qresource>
 </RCC>

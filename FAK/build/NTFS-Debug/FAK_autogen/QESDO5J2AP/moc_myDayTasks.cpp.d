@@ -245,6 +245,7 @@ C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/QESDO5J2AP/m
   C:/msys64/mingw64/include/qt6/QtCore/qmargins.h \
   C:/msys64/mingw64/include/qt6/QtCore/qmath.h \
   C:/msys64/mingw64/include/qt6/QtCore/qmetacontainer.h \
+  C:/msys64/mingw64/include/qt6/QtCore/qmetaobject.h \
   C:/msys64/mingw64/include/qt6/QtCore/qmetatype.h \
   C:/msys64/mingw64/include/qt6/QtCore/qminmax.h \
   C:/msys64/mingw64/include/qt6/QtCore/qnamespace.h \
@@ -333,6 +334,13 @@ C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/QESDO5J2AP/m
   C:/msys64/mingw64/include/qt6/QtGui/qtransform.h \
   C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs.h \
   C:/msys64/mingw64/include/qt6/QtGui/qwindowdefs_win.h \
+  C:/msys64/mingw64/include/qt6/QtSql/QSqlDatabase \
+  C:/msys64/mingw64/include/qt6/QtSql/QSqlQuery \
+  C:/msys64/mingw64/include/qt6/QtSql/qsqldatabase.h \
+  C:/msys64/mingw64/include/qt6/QtSql/qsqlquery.h \
+  C:/msys64/mingw64/include/qt6/QtSql/qtsql-config.h \
+  C:/msys64/mingw64/include/qt6/QtSql/qtsqlexports.h \
+  C:/msys64/mingw64/include/qt6/QtSql/qtsqlglobal.h \
   C:/msys64/mingw64/include/qt6/QtWidgets/QCheckBox \
   C:/msys64/mingw64/include/qt6/QtWidgets/QMainWindow \
   C:/msys64/mingw64/include/qt6/QtWidgets/QPushButton \

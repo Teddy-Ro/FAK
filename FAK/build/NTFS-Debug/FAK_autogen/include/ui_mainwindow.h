@@ -66,7 +66,7 @@ public:
     QVBoxLayout *verticalLayout_6;
     QWidget *widget_2;
     QVBoxLayout *verticalLayout_4;
-    QPushButton *pushButton;
+    QLabel *label;
     QWidget *tasksWidget1;
     QVBoxLayout *verticalLayout_3;
     QWidget *widget_3;
@@ -342,10 +342,11 @@ public:
         widget_2->setObjectName("widget_2");
         verticalLayout_4 = new QVBoxLayout(widget_2);
         verticalLayout_4->setObjectName("verticalLayout_4");
-        pushButton = new QPushButton(widget_2);
-        pushButton->setObjectName("pushButton");
+        label = new QLabel(widget_2);
+        label->setObjectName("label");
+        label->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0)"));
 
-        verticalLayout_4->addWidget(pushButton);
+        verticalLayout_4->addWidget(label);
 
 
         verticalLayout_6->addWidget(widget_2);
@@ -398,7 +399,7 @@ public:
         plannedButton->setText(QCoreApplication::translate("MainWindow", "  \320\227\320\260\320\277\320\273\320\260\320\275\320\270\321\200\320\276\320\262\320\260\320\275\320\276", nullptr));
         assignedToMeButton->setText(QCoreApplication::translate("MainWindow", "  \320\235\320\260\320\267\320\275\320\260\321\207\320\265\320\275 \320\274\320\275\320\265", nullptr));
         flaggedButton->setText(QCoreApplication::translate("MainWindow", "  \320\237\320\276\320\274\320\265\321\207\320\265\320\275\320\275\321\213\320\265 \321\201\320\276\320\276\320\261\321\211\320\265\320\275\320\270\321\217", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "\320\232\320\270\321\200\320\270\320\273\320\273 \320\275\320\270\321\207\320\265\320\263\320\276 \320\275\320\265 \321\201\320\264\320\265\320\273\320\260\320\273(", nullptr));
     } // retranslateUi
 
 };

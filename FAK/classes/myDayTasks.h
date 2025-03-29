@@ -4,7 +4,8 @@
 #include <QCheckBox>
 #include <QMainWindow>
 #include <QPushButton>
-
+#include <QSqlDatabase>
+#include <QSqlQuery>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -26,5 +27,11 @@ class MyDayTasks : public QWidget {
 
  private:
     Ui::MyDayTasks* ui;
+    QSqlDatabase db;    // Объект базы данных
+
+    void initDatabase();  // Инициализация базы данных
+    void saveTaskToDatabase(const QString &taskText, bool completed = false);  // Сохранение задачи
+    void updateTaskStatusInDatabase(const QString &taskText, bool completed);  // Обновление статуса
+    void loadTasksFromDatabase();  // Загрузка задач
 };
 #endif  // MYDAYTASKS_H
