@@ -9,6 +9,7 @@
 	"INCLUDE_DIR" : "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/include",
 	"INPUTS" : 
 	[
+		"C:/Users/Teddy/Documents/proga/FAK/FAK/img/icon.png",
 		"C:/Users/Teddy/Documents/proga/FAK/FAK/ui/importantList.ui",
 		"C:/Users/Teddy/Documents/proga/FAK/FAK/ui/planned.ui",
 		"C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.ui",

@@ -7,4 +7,7 @@
     <qresource prefix="/lib">
         <file>libs/sqlite3/sqlite3.dll</file>
     </qresource>
+    <qresource prefix="/img">
+        <file>img/icon.png</file>
+    </qresource>
 </RCC>

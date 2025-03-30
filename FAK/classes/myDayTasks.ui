@@ -150,7 +150,7 @@ border: none;</string>
   <customwidget>
    <class>MyDayTasks</class>
    <extends>QWidget</extends>
-   <header>MyDayTasks.h</header>
+   <header>myDayTasks.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
