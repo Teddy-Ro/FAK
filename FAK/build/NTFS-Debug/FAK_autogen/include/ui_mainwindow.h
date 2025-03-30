@@ -15,7 +15,6 @@
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
@@ -31,14 +30,6 @@ public:
     QHBoxLayout *horizontalLayout;
     QWidget *widget;
     QVBoxLayout *verticalLayout_2;
-    QWidget *headerWidget;
-    QHBoxLayout *horizontalLayout_2;
-    QLabel *logoLabel;
-    QLineEdit *searchEdit;
-    QSpacerItem *horizontalSpacer;
-    QPushButton *addButton;
-    QPushButton *notificationButton;
-    QPushButton *profileButton;
     QWidget *contentWidget;
     QHBoxLayout *horizontalLayout_3;
     QWidget *sidebarWidget;
@@ -49,7 +40,7 @@ public:
     QHBoxLayout *horizontalLayout1;
     QPushButton *myDayButton;
     QWidget *importantWidget;
-    QHBoxLayout *horizontalLayout_21;
+    QHBoxLayout *horizontalLayout_2;
     QPushButton *importantButton;
     QWidget *plannedWidget;
     QHBoxLayout *horizontalLayout_31;
@@ -69,6 +60,9 @@ public:
     QLabel *label;
     QWidget *tasksWidget1;
     QVBoxLayout *verticalLayout_3;
+    QWidget *titleBar;
+    QHBoxLayout *horizontalLayout_7;
+    QPushButton *pushButton;
     QWidget *widget_3;
     QVBoxLayout *verticalLayout_5;
 
@@ -90,90 +84,6 @@ public:
         verticalLayout_2->setSpacing(0);
         verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        headerWidget = new QWidget(widget);
-        headerWidget->setObjectName("headerWidget");
-        headerWidget->setMinimumSize(QSize(0, 50));
-        headerWidget->setAutoFillBackground(false);
-        headerWidget->setStyleSheet(QString::fromUtf8("background-color: rgb(38, 34, 47)"));
-        horizontalLayout_2 = new QHBoxLayout(headerWidget);
-        horizontalLayout_2->setObjectName("horizontalLayout_2");
-        logoLabel = new QLabel(headerWidget);
-        logoLabel->setObjectName("logoLabel");
-        logoLabel->setMinimumSize(QSize(30, 30));
-        logoLabel->setMaximumSize(QSize(30, 30));
-
-        horizontalLayout_2->addWidget(logoLabel);
-
-        searchEdit = new QLineEdit(headerWidget);
-        searchEdit->setObjectName("searchEdit");
-        searchEdit->setMinimumSize(QSize(200, 30));
-        searchEdit->setMaximumSize(QSize(300, 30));
-        searchEdit->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 50);\n"
-"border-radius: 15px;\n"
-"padding-left: 10px;\n"
-"color: white;\n"
-""));
-
-        horizontalLayout_2->addWidget(searchEdit);
-
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
-
-        horizontalLayout_2->addItem(horizontalSpacer);
-
-        addButton = new QPushButton(headerWidget);
-        addButton->setObjectName("addButton");
-        addButton->setMinimumSize(QSize(30, 30));
-        addButton->setMaximumSize(QSize(30, 30));
-        addButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    color: white;\n"
-"    background-color: transparent;\n"
-"    border: none;\n"
-"    font-size: 20px;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: rgba(255, 255, 255, 50);\n"
-"    border-radius: 15px;\n"
-"}"));
-
-        horizontalLayout_2->addWidget(addButton);
-
-        notificationButton = new QPushButton(headerWidget);
-        notificationButton->setObjectName("notificationButton");
-        notificationButton->setMinimumSize(QSize(30, 30));
-        notificationButton->setMaximumSize(QSize(30, 30));
-        notificationButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    color: white;\n"
-"    background-color: transparent;\n"
-"    border: none;\n"
-"    font-size: 16px;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: rgba(255, 255, 255, 50);\n"
-"    border-radius: 15px;\n"
-"}"));
-
-        horizontalLayout_2->addWidget(notificationButton);
-
-        profileButton = new QPushButton(headerWidget);
-        profileButton->setObjectName("profileButton");
-        profileButton->setMinimumSize(QSize(30, 30));
-        profileButton->setMaximumSize(QSize(30, 30));
-        profileButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    color: white;\n"
-"    background-color: transparent;\n"
-"    border: none;\n"
-"    font-size: 16px;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: rgba(255, 255, 255, 50);\n"
-"    border-radius: 15px;\n"
-"}"));
-
-        horizontalLayout_2->addWidget(profileButton);
-
-
-        verticalLayout_2->addWidget(headerWidget);
-
         contentWidget = new QWidget(widget);
         contentWidget->setObjectName("contentWidget");
         horizontalLayout_3 = new QHBoxLayout(contentWidget);
@@ -255,9 +165,9 @@ public:
 
         importantWidget = new QWidget(sidebarFrame);
         importantWidget->setObjectName("importantWidget");
-        horizontalLayout_21 = new QHBoxLayout(importantWidget);
-        horizontalLayout_21->setObjectName("horizontalLayout_21");
-        horizontalLayout_21->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout_2 = new QHBoxLayout(importantWidget);
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
         importantButton = new QPushButton(importantWidget);
         importantButton->setObjectName("importantButton");
         QIcon icon1;
@@ -265,7 +175,7 @@ public:
         importantButton->setIcon(icon1);
         importantButton->setCheckable(true);
 
-        horizontalLayout_21->addWidget(importantButton);
+        horizontalLayout_2->addWidget(importantButton);
 
 
         verticalLayout_21->addWidget(importantWidget);
@@ -363,6 +273,18 @@ public:
         tasksWidget1->setStyleSheet(QString::fromUtf8("background-color: rgb(12, 22, 24)"));
         verticalLayout_3 = new QVBoxLayout(tasksWidget1);
         verticalLayout_3->setObjectName("verticalLayout_3");
+        titleBar = new QWidget(tasksWidget1);
+        titleBar->setObjectName("titleBar");
+        horizontalLayout_7 = new QHBoxLayout(titleBar);
+        horizontalLayout_7->setObjectName("horizontalLayout_7");
+        pushButton = new QPushButton(titleBar);
+        pushButton->setObjectName("pushButton");
+
+        horizontalLayout_7->addWidget(pushButton);
+
+
+        verticalLayout_3->addWidget(titleBar);
+
         widget_3 = new QWidget(tasksWidget1);
         widget_3->setObjectName("widget_3");
         verticalLayout_5 = new QVBoxLayout(widget_3);
@@ -389,17 +311,13 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\274\320\265\321\202\320\272\320\270 \320\270 \320\267\320\260\320\264\320\260\321\207\320\270", nullptr));
-        logoLabel->setText(QString());
-        searchEdit->setPlaceholderText(QCoreApplication::translate("MainWindow", "\320\221\321\213\321\201\321\202\321\200\321\213\320\271 \320\277\320\276\320\270\321\201\320\272", nullptr));
-        addButton->setText(QCoreApplication::translate("MainWindow", "+", nullptr));
-        notificationButton->setText(QCoreApplication::translate("MainWindow", "\360\237\224\224", nullptr));
-        profileButton->setText(QCoreApplication::translate("MainWindow", "\360\237\221\244", nullptr));
         myDayButton->setText(QCoreApplication::translate("MainWindow", "  \320\234\320\276\320\271 \320\264\320\265\320\275\321\214", nullptr));
         importantButton->setText(QCoreApplication::translate("MainWindow", "  \320\222\320\260\320\266\320\275\320\276", nullptr));
         plannedButton->setText(QCoreApplication::translate("MainWindow", "  \320\227\320\260\320\277\320\273\320\260\320\275\320\270\321\200\320\276\320\262\320\260\320\275\320\276", nullptr));
         assignedToMeButton->setText(QCoreApplication::translate("MainWindow", "  \320\235\320\260\320\267\320\275\320\260\321\207\320\265\320\275 \320\274\320\275\320\265", nullptr));
         flaggedButton->setText(QCoreApplication::translate("MainWindow", "  \320\237\320\276\320\274\320\265\321\207\320\265\320\275\320\275\321\213\320\265 \321\201\320\276\320\276\320\261\321\211\320\265\320\275\320\270\321\217", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "\320\232\320\270\321\200\320\270\320\273\320\273 \320\275\320\270\321\207\320\265\320\263\320\276 \320\275\320\265 \321\201\320\264\320\265\320\273\320\260\320\273(", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "\320\276\320\261\320\273\320\260\321\201\321\202\321\214 \320\264\320\273\321\217 \320\275\320\260\320\267\320\262\320\275\320\270\321\217 \320\273\320\270\321\201\321\202\320\260 \320\270 \320\272\320\275\320\276\320\277\320\276\320\272 \320\267\320\260\320\272\321\200\321\213\321\202\320\270\321\217 \320\277\321\200\320\270\320\273\320\276\320\266\320\265\320\275\320\270\321\217", nullptr));
     } // retranslateUi
 
 };
