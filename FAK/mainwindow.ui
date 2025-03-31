@@ -20,7 +20,7 @@
       <item>
        <widget class="QLineEdit" name="textInput">
         <property name="placeholderText">
-         <string>Введите текст и нажмите Enter</string>
+         <string>Добавить новую задачу +</string>
         </property>
        </widget>
       </item>
@@ -34,8 +34,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>770</width>
-           <height>510</height>
+           <width>774</width>
+           <height>483</height>
           </rect>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_3">
