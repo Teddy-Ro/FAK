@@ -3,9 +3,18 @@ FAK_autogen/timestamp: \
 	/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
 	/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
 	/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/moc_predefs.h \
+<<<<<<< Updated upstream
 	/home/korsar/chest/GitHub/FAK/FAK/main.cpp \
 	/home/korsar/chest/GitHub/FAK/FAK/mainwindow.cpp \
 	/home/korsar/chest/GitHub/FAK/FAK/mainwindow.h \
+=======
+	/home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.cpp \
+	/home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.h \
+	/home/korsar/chest/GitHub/FAK/FAK/main.cpp \
+	/home/korsar/chest/GitHub/FAK/FAK/mainwindow.cpp \
+	/home/korsar/chest/GitHub/FAK/FAK/mainwindow.h \
+	/home/korsar/chest/GitHub/FAK/FAK/resources.qrc \
+>>>>>>> Stashed changes
 	/usr/include/alloca.h \
 	/usr/include/asm-generic/errno-base.h \
 	/usr/include/asm-generic/errno.h \
@@ -396,6 +405,7 @@ FAK_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+<<<<<<< Updated upstream
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
@@ -404,6 +414,28 @@ FAK_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
+=======
+	/usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+	/usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQuery \
+	/usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlquery.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStackedWidget \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedwidget.h \
+>>>>>>> Stashed changes
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
@@ -500,6 +532,48 @@ FAK_autogen/timestamp: \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets-none.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsVersionlessTargets.cmake \
+<<<<<<< Updated upstream
+=======
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLAdditionalTargetInfo.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfig.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfigVersion.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfigVersionImpl.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLDependencies.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLTargets-none.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLTargets.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLVersionlessTargets.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsAdditionalTargetInfo.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfig.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersion.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersionImpl.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsDependencies.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets-none.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsVersionlessTargets.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfig.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlDependencies.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlTargets-none.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlTargets.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginAdditionalTargetInfo.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginConfig.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginConfigVersion.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginConfigVersionImpl.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginDependencies.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginTargets.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginVersionlessTargets.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsAdditionalTargetInfo.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsConfig.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsConfigVersion.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsConfigVersionImpl.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsDependencies.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsTargets-none.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsTargets.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsVersionlessTargets.cmake \
+>>>>>>> Stashed changes
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake \
@@ -551,5 +625,9 @@ FAK_autogen/timestamp: \
 	/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/Linux.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake \
+<<<<<<< Updated upstream
+=======
+	/home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.ui \
+>>>>>>> Stashed changes
 	/home/korsar/chest/GitHub/FAK/FAK/mainwindow.ui \
 	/usr/bin/cmake

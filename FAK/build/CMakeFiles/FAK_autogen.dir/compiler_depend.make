@@ -5,10 +5,20 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
   CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
   CMakeFiles/3.28.3/CMakeSystem.cmake \
   FAK_autogen/moc_predefs.h \
+<<<<<<< Updated upstream
+=======
+  /home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.cpp \
+  /home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.h \
+  /home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.ui \
+>>>>>>> Stashed changes
   /home/korsar/chest/GitHub/FAK/FAK/main.cpp \
   /home/korsar/chest/GitHub/FAK/FAK/mainwindow.cpp \
   /home/korsar/chest/GitHub/FAK/FAK/mainwindow.h \
   /home/korsar/chest/GitHub/FAK/FAK/mainwindow.ui \
+<<<<<<< Updated upstream
+=======
+  /home/korsar/chest/GitHub/FAK/FAK/resources.qrc \
+>>>>>>> Stashed changes
   /usr/bin/cmake \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -400,9 +410,32 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+<<<<<<< Updated upstream
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
+=======
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQuery \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlquery.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStackedWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedwidget.h \
+>>>>>>> Stashed changes
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
@@ -499,6 +532,48 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets-none.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsVersionlessTargets.cmake \
+<<<<<<< Updated upstream
+=======
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLAdditionalTargetInfo.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfig.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfigVersion.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfigVersionImpl.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLDependencies.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLTargets-none.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLVersionlessTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsAdditionalTargetInfo.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfig.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersion.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersionImpl.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsDependencies.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets-none.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsVersionlessTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfig.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlDependencies.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlTargets-none.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginAdditionalTargetInfo.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginConfig.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginConfigVersion.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginConfigVersionImpl.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginDependencies.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginVersionlessTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsAdditionalTargetInfo.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsConfig.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsConfigVersion.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsConfigVersionImpl.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsDependencies.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsTargets-none.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsVersionlessTargets.cmake \
+>>>>>>> Stashed changes
   /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake \
@@ -608,6 +683,7 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux.cmake \
+<<<<<<< Updated upstream
   /usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake \
   /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
   CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
@@ -7231,6 +7307,11 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h:
 
+=======
+  /usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake
+
+
+>>>>>>> Stashed changes
 /usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake:
 
 /usr/share/cmake-3.28/Modules/Platform/Linux.cmake:
@@ -7259,8 +7340,11 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/share/cmake-3.28/Modules/FindPackageMessage.cmake:
 
+<<<<<<< Updated upstream
 /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:
 
+=======
+>>>>>>> Stashed changes
 /usr/share/cmake-3.28/Modules/FeatureSummary.cmake:
 
 /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake:
@@ -7273,8 +7357,11 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake:
 
+<<<<<<< Updated upstream
 /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake:
 
+=======
+>>>>>>> Stashed changes
 /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake:
 
 /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake:
@@ -7307,8 +7394,11 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake:
 
+<<<<<<< Updated upstream
 /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
 
+=======
+>>>>>>> Stashed changes
 /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake:
 
 /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake:
@@ -7319,8 +7409,75 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake:
 
+<<<<<<< Updated upstream
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
 
+=======
+/usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeParseArguments.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
+
+/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-none.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsVersionlessTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsTargets-none.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsDependencies.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsConfigVersionImpl.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsConfig.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsAdditionalTargetInfo.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginVersionlessTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginDependencies.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginConfigVersion.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginConfig.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlTargets.cmake:
+
+>>>>>>> Stashed changes
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
@@ -7331,8 +7488,11 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:
 
+<<<<<<< Updated upstream
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
+=======
+>>>>>>> Stashed changes
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/syscall.h:
@@ -7341,6 +7501,11 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/time.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginTargets.cmake:
+
+>>>>>>> Stashed changes
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
@@ -7353,15 +7518,26 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLAdditionalTargetInfo.cmake:
+
+>>>>>>> Stashed changes
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h:
 
 /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake:
 
+<<<<<<< Updated upstream
 /usr/include/x86_64-linux-gnu/asm/unistd_64.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h:
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginConfigVersionImpl.cmake:
+
+/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
+>>>>>>> Stashed changes
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
@@ -7371,6 +7547,11 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h:
+
+>>>>>>> Stashed changes
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h:
 
 /usr/include/string.h:
@@ -7383,8 +7564,11 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
 
+<<<<<<< Updated upstream
 /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake:
 
+=======
+>>>>>>> Stashed changes
 /usr/include/pthread.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
@@ -7395,6 +7579,17 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake:
+
+/usr/include/ctype.h:
+
+>>>>>>> Stashed changes
 /usr/include/c++/13/vector:
 
 /usr/include/c++/13/utility:
@@ -7405,10 +7600,13 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/c++/13/bits/allocator.h:
 
+<<<<<<< Updated upstream
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/c++/13/bits/nested_exception.h:
 
+=======
+>>>>>>> Stashed changes
 /usr/include/stdc-predef.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsTargets-none.cmake:
@@ -7417,14 +7615,22 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/c++/13/bits/ranges_base.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLDependencies.cmake:
+
+>>>>>>> Stashed changes
 /usr/include/c++/13/tr1/legendre_function.tcc:
 
 /usr/include/c++/13/bits/range_access.h:
 
 /usr/include/c++/13/initializer_list:
 
+<<<<<<< Updated upstream
 /usr/include/c++/13/tr1/bessel_function.tcc:
 
+=======
+>>>>>>> Stashed changes
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h:
 
 /usr/include/c++/13/tr1/exp_integral.tcc:
@@ -7435,14 +7641,40 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/c++/13/string_view:
 
+<<<<<<< Updated upstream
+=======
+/usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake:
+
+/usr/include/c++/13/map:
+
+>>>>>>> Stashed changes
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
+<<<<<<< Updated upstream
 /usr/include/strings.h:
 
 /usr/include/c++/13/exception:
 
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlTargets-none.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets-none.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/strings.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfig.cmake:
+
+/usr/include/c++/13/exception:
+
+/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qnumeric.h:
+
+>>>>>>> Stashed changes
 /usr/include/c++/13/ext/alloc_traits.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake:
@@ -7467,9 +7699,13 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/c++/13/ext/string_conversions.h:
 
+<<<<<<< Updated upstream
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:
 
 /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake:
+=======
+/home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.cpp:
+>>>>>>> Stashed changes
 
 /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake:
 
@@ -7479,10 +7715,13 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
+<<<<<<< Updated upstream
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qnumeric.h:
 
 /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake:
 
+=======
+>>>>>>> Stashed changes
 /usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/13/ext/concurrence.h:
@@ -7495,8 +7734,11 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
+<<<<<<< Updated upstream
 /usr/include/c++/13/bits/utility.h:
 
+=======
+>>>>>>> Stashed changes
 /usr/include/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
@@ -7505,12 +7747,19 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h:
 
+<<<<<<< Updated upstream
 /usr/include/c++/13/cwchar:
+=======
+/usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
+>>>>>>> Stashed changes
 
 /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
+<<<<<<< Updated upstream
 /usr/include/stdio.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
@@ -7538,11 +7787,21 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusMacros.cmake:
+=======
+/usr/include/c++/13/memory:
+
+/usr/include/c++/13/pstl/glue_numeric_defs.h:
+
+/usr/include/c++/13/concepts:
+
+/usr/include/c++/13/compare:
+>>>>>>> Stashed changes
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
 /usr/include/c++/13/bits/uniform_int_dist.h:
 
+<<<<<<< Updated upstream
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/c++/13/optional:
@@ -7552,6 +7811,15 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 /usr/include/wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake:
+
+/usr/include/c++/13/streambuf:
+
+/usr/include/c++/13/pstl/glue_memory_defs.h:
+
+/usr/include/c++/13/bits/memory_resource.h:
+>>>>>>> Stashed changes
 
 /usr/include/c++/13/bits/exception.h:
 
@@ -7575,29 +7843,68 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemdetection.h:
 
+<<<<<<< Updated upstream
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
+=======
+>>>>>>> Stashed changes
 /usr/include/c++/13/bits/char_traits.h:
 
 /usr/include/c++/13/bits/std_function.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake:
+
+/usr/include/c++/13/bits/atomic_wait.h:
+
+>>>>>>> Stashed changes
 /usr/include/c++/13/string:
 
 /usr/include/features.h:
 
 /usr/include/alloca.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+
+/usr/include/c++/13/bits/invoke.h:
+
+/usr/include/c++/13/bits/ranges_algo.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusMacros.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/wchar.h:
+
+>>>>>>> Stashed changes
 /usr/include/c++/13/atomic:
 
 /usr/include/c++/13/bits/streambuf.tcc:
 
+<<<<<<< Updated upstream
 /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
 
 /usr/include/c++/13/bits/hash_bytes.h:
 
 /usr/include/c++/13/array:
+=======
+/usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake:
+
+/usr/include/c++/13/bits/basic_ios.h:
+
+/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h:
+>>>>>>> Stashed changes
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
@@ -7607,6 +7914,7 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /home/korsar/chest/GitHub/FAK/FAK/mainwindow.cpp:
 
+<<<<<<< Updated upstream
 /usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
@@ -7626,6 +7934,13 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 /usr/include/assert.h:
 
 /usr/include/c++/13/backward/auto_ptr.h:
+=======
+/usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
+
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/usr/include/c++/13/array:
+>>>>>>> Stashed changes
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets-none.cmake:
 
@@ -7641,6 +7956,7 @@ FAK_autogen/timestamp: /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt \
 
 /home/korsar/chest/GitHub/FAK/FAK/mainwindow.ui:
 
+<<<<<<< Updated upstream
 FAK_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
@@ -7653,14 +7969,55 @@ FAK_autogen/moc_predefs.h:
 
 /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:
 
+=======
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/c++/13/algorithm:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginAdditionalTargetInfo.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiTargets-none.cmake:
+
+/usr/include/c++/13/bits/cxxabi_forced.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+FAK_autogen/moc_predefs.h:
+
+/usr/include/c++/13/bits/iterator_concepts.h:
+
+>>>>>>> Stashed changes
 /usr/include/c++/13/bits/stl_tree.h:
 
 CMakeFiles/3.28.3/CMakeSystem.cmake:
 
+<<<<<<< Updated upstream
 /usr/include/c++/13/bits/memoryfwd.h:
 
 /home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt:
 
+=======
+>>>>>>> Stashed changes
 /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake:
 
 /usr/include/c++/13/cwctype:
@@ -7673,6 +8030,7 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/c++/13/bits/localefwd.h:
 
+<<<<<<< Updated upstream
 /usr/include/c++/13/algorithm:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h:
@@ -7684,6 +8042,19 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
+=======
+/usr/include/c++/13/backward/auto_ptr.h:
+
+/usr/include/c++/13/bits/utility.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets-none.cmake:
+
+/usr/include/assert.h:
+
+/usr/include/c++/13/bits/exception_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+>>>>>>> Stashed changes
 
 /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake:
 
@@ -7699,6 +8070,27 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/c++/13/bits/allocated_ptr.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/include/c++/13/bits/locale_facets.h:
+
+/usr/include/c++/13/bit:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/home/korsar/chest/GitHub/FAK/FAK/resources.qrc:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h:
+
+/usr/include/c++/13/bits/move.h:
+
+/home/korsar/chest/GitHub/FAK/FAK/CMakeLists.txt:
+
+/usr/include/c++/13/bits/memoryfwd.h:
+
+>>>>>>> Stashed changes
 /usr/include/c++/13/bits/stl_uninitialized.h:
 
 /usr/include/c++/13/bits/new_allocator.h:
@@ -7711,6 +8103,7 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/c++/13/bits/ranges_cmp.h:
 
+<<<<<<< Updated upstream
 /usr/include/c++/13/debug/assertions.h:
 
 /usr/include/c++/13/debug/debug.h:
@@ -7723,6 +8116,8 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/c++/13/cerrno:
 
+=======
+>>>>>>> Stashed changes
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
@@ -7737,6 +8132,7 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
 
+<<<<<<< Updated upstream
 /usr/include/c++/13/bits/locale_facets.h:
 
 /usr/include/c++/13/bit:
@@ -7750,6 +8146,29 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/13/bits/move.h:
+=======
+/usr/include/c++/13/debug/assertions.h:
+
+/usr/include/c++/13/debug/debug.h:
+
+/usr/include/c++/13/bits/stl_list.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h:
+
+/usr/include/c++/13/bits/stringfwd.h:
+
+/usr/include/c++/13/cerrno:
+
+/usr/include/stdio.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
+
+/usr/include/c++/13/bits/mofunc_impl.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigExtras.cmake:
+>>>>>>> Stashed changes
 
 /usr/include/c++/13/bits/parse_numbers.h:
 
@@ -7757,20 +8176,38 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/c++/13/bits/std_abs.h:
 
+<<<<<<< Updated upstream
 /usr/include/c++/13/bits/ptr_traits.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
+
+/usr/include/c++/13/bits/ranges_uninitialized.h:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+>>>>>>> Stashed changes
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/c++/13/bits/string_view.tcc:
 
+<<<<<<< Updated upstream
+=======
+/usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h:
+
+>>>>>>> Stashed changes
 /usr/include/c++/13/bits/ostream_insert.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
 
+<<<<<<< Updated upstream
 /usr/share/cmake-3.28/Modules/CMakeParseArguments.cmake:
 
+=======
+>>>>>>> Stashed changes
 /usr/include/c++/13/bits/ranges_algobase.h:
 
 /usr/include/c++/13/tr1/beta_function.tcc:
@@ -7783,6 +8220,11 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake:
 
+<<<<<<< Updated upstream
+=======
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h:
+
+>>>>>>> Stashed changes
 /usr/include/c++/13/bits/refwrap.h:
 
 /usr/include/c++/13/bits/locale_facets.tcc:
@@ -7799,6 +8241,17 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake:
+
+/usr/include/limits.h:
+
+/usr/include/c++/13/cstdlib:
+
+/usr/include/c++/13/cstdint:
+
+>>>>>>> Stashed changes
 /usr/include/c++/13/bits/postypes.h:
 
 /usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:
@@ -7823,14 +8276,22 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/c++/13/bits/std_mutex.h:
 
+<<<<<<< Updated upstream
 /usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
 
+=======
+>>>>>>> Stashed changes
 /usr/include/c++/13/bits/stl_construct.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake:
+
+>>>>>>> Stashed changes
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake:
 
 /usr/include/c++/13/bits/functexcept.h:
@@ -7847,12 +8308,21 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
+<<<<<<< Updated upstream
 /usr/include/c++/13/compare:
 
 /usr/include/c++/13/bits/stl_numeric.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h:
+
+/usr/include/c++/13/bits/stl_numeric.h:
+
+>>>>>>> Stashed changes
 /usr/include/c++/13/bits/stl_relops.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiTargets.cmake:
@@ -7867,6 +8337,11 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/c++/13/bits/max_size_type.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsTargets.cmake:
+
+>>>>>>> Stashed changes
 /usr/include/c++/13/bits/unique_ptr.h:
 
 /usr/bin/cmake:
@@ -7879,6 +8354,11 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/c++/13/bits/uses_allocator_args.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h:
+
+>>>>>>> Stashed changes
 /usr/include/c++/13/tr1/gamma.tcc:
 
 /usr/include/c++/13/ext/atomicity.h:
@@ -7893,6 +8373,7 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/c++/13/cctype:
 
+<<<<<<< Updated upstream
 /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake:
 
 /usr/include/limits.h:
@@ -7901,17 +8382,39 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/c++/13/cstdint:
 
+=======
+>>>>>>> Stashed changes
 /usr/include/c++/13/stdexcept:
 
 /usr/include/c++/13/clocale:
 
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
 
+<<<<<<< Updated upstream
 /usr/include/c++/13/memory:
 
 /usr/include/c++/13/pstl/glue_numeric_defs.h:
 
 /usr/include/c++/13/concepts:
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake:
+
+/usr/include/c++/13/cmath:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/c++/13/bits/nested_exception.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+>>>>>>> Stashed changes
 
 /usr/include/c++/13/bits/list.tcc:
 
@@ -7923,8 +8426,11 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
+<<<<<<< Updated upstream
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake:
 
+=======
+>>>>>>> Stashed changes
 /usr/include/c++/13/tuple:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
@@ -7939,17 +8445,24 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h:
 
+<<<<<<< Updated upstream
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h:
 
 /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake:
 
+=======
+>>>>>>> Stashed changes
 /usr/include/c++/13/tr1/poly_hermite.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
+<<<<<<< Updated upstream
 /usr/include/c++/13/bits/atomic_wait.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake:
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsVersionlessTargets.cmake:
+>>>>>>> Stashed changes
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
@@ -7977,6 +8490,11 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfig.cmake:
+
+>>>>>>> Stashed changes
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake:
@@ -8011,6 +8529,11 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h:
+
+>>>>>>> Stashed changes
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
@@ -8035,6 +8558,11 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox:
+
+>>>>>>> Stashed changes
 /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydatapointer.h:
@@ -8057,18 +8585,30 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h:
 
+<<<<<<< Updated upstream
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h:
 
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools/Qt6UiToolsConfigVersion.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLTargets.cmake:
+
+>>>>>>> Stashed changes
 /usr/include/c++/13/bits/locale_classes.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompilerdetection.h:
 
+<<<<<<< Updated upstream
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h:
 
+=======
+>>>>>>> Stashed changes
 /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h:
@@ -8077,8 +8617,11 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h:
 
+<<<<<<< Updated upstream
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h:
 
+=======
+>>>>>>> Stashed changes
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h:
 
 /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake:
@@ -8089,6 +8632,7 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h:
 
+<<<<<<< Updated upstream
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
@@ -8099,6 +8643,16 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h:
 
+=======
+/usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlquery.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h:
+
+/usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedwidget.h:
+
+>>>>>>> Stashed changes
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h:
@@ -8113,6 +8667,11 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h:
 
+<<<<<<< Updated upstream
+=======
+/home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.ui:
+
+>>>>>>> Stashed changes
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake:
@@ -8145,6 +8704,13 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h:
 
+<<<<<<< Updated upstream
+=======
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfigVersion.cmake:
+
+>>>>>>> Stashed changes
 /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
@@ -8165,7 +8731,11 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtconfigmacros.h:
 
+<<<<<<< Updated upstream
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h:
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsAdditionalTargetInfo.cmake:
+>>>>>>> Stashed changes
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringliteral.h:
 
@@ -8233,11 +8803,60 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake:
 
+<<<<<<< Updated upstream
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsDependencies.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQuery:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapAtomic.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeHelpers.cmake:
+
+/usr/include/c++/13/pstl/execution_defs.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
+
+/usr/include/c++/13/bits/vector.tcc:
+
+/usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h:
+
+/usr/include/c++/13/bits/shared_ptr_base.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStackedWidget:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h:
+
+>>>>>>> Stashed changes
 /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h:
 
+<<<<<<< Updated upstream
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-none.cmake:
+=======
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfig.cmake:
+>>>>>>> Stashed changes
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h:
 
@@ -8247,7 +8866,13 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h:
 
+<<<<<<< Updated upstream
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:
+=======
+/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+>>>>>>> Stashed changes
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin/FindXKB.cmake:
 
@@ -8273,6 +8898,7 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicAppleHelpers.cmake:
 
+<<<<<<< Updated upstream
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapAtomic.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeHelpers.cmake:
@@ -8280,6 +8906,11 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/13/pstl/execution_defs.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
+=======
+/usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
+>>>>>>> Stashed changes
 
 /usr/include/c++/13/bits/predefined_ops.h:
 
@@ -8291,6 +8922,7 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicToolHelpers.cmake:
 
+<<<<<<< Updated upstream
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:
@@ -8303,6 +8935,20 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigExtras.cmake:
 
+=======
+/usr/include/c++/13/cwchar:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLTargets-none.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfig.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigExtras.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersionImpl.cmake:
+
+>>>>>>> Stashed changes
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreDependencies.cmake:
@@ -8319,8 +8965,11 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake:
 
+<<<<<<< Updated upstream
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfig.cmake:
 
+=======
+>>>>>>> Stashed changes
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
@@ -8349,6 +8998,11 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
 
+<<<<<<< Updated upstream
+=======
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfigVersionImpl.cmake:
+
+>>>>>>> Stashed changes
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
@@ -8359,8 +9013,11 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake:
 
+<<<<<<< Updated upstream
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake:
 
+=======
+>>>>>>> Stashed changes
 /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
@@ -8385,10 +9042,18 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets-none.cmake:
 
+<<<<<<< Updated upstream
+=======
+/usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets.cmake:
+
+>>>>>>> Stashed changes
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsVersionlessTargets.cmake:
 
+<<<<<<< Updated upstream
 /usr/include/ctype.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake:
@@ -8452,3 +9117,28 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake:
 
 /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:
+=======
+/usr/include/c++/13/tr1/bessel_function.tcc:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfig.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLVersionlessTargets.cmake:
+
+/usr/include/c++/13/optional:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersion.cmake:
+
+/usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlDependencies.cmake:
+>>>>>>> Stashed changes
