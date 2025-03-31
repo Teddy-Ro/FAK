@@ -49,7 +49,35 @@ else()
     qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 endif()
 
+<<<<<<< Updated upstream
 target_link_libraries(FAK PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+=======
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/libs/sqlite3)
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/classes
+    ${CMAKE_CURRENT_SOURCE_DIR}/ui
+    ${CMAKE_CURRENT_SOURCE_DIR}/libs/sqlite3
+)
+
+target_link_libraries(FAK PRIVATE
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::Core
+    Qt${QT_VERSION_MAJOR}::Gui
+    Qt${QT_VERSION_MAJOR}::UiTools
+    Qt${QT_VERSION_MAJOR}::Sql
+    libsqlite3.a
+)
+
+add_custom_command(TARGET FAK POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy
+    "${CMAKE_CURRENT_SOURCE_DIR}/libs/sqlite3/sqlite3.dll"
+    "$<TARGET_FILE_DIR:FAK>"
+)
+
+target_sources(FAK PRIVATE ${RESOURCES})
+>>>>>>> Stashed changes
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

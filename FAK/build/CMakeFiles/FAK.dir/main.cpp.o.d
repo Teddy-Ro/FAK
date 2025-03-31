@@ -1,8 +1,13 @@
 CMakeFiles/FAK.dir/main.cpp.o: /home/korsar/chest/GitHub/FAK/FAK/main.cpp \
  /usr/include/stdc-predef.h \
  /home/korsar/chest/GitHub/FAK/FAK/mainwindow.h \
+<<<<<<< Updated upstream
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
+=======
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h \
+>>>>>>> Stashed changes
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
@@ -138,13 +143,20 @@ CMakeFiles/FAK.dir/main.cpp.o: /home/korsar/chest/GitHub/FAK/FAK/main.cpp \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
+<<<<<<< Updated upstream
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+=======
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+>>>>>>> Stashed changes
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
+<<<<<<< Updated upstream
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+=======
+>>>>>>> Stashed changes
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/stl_function.h \
@@ -288,6 +300,13 @@ CMakeFiles/FAK.dir/main.cpp.o: /home/korsar/chest/GitHub/FAK/FAK/main.cpp \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
  /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
  /usr/include/c++/13/ratio /usr/include/c++/13/ctime \
+<<<<<<< Updated upstream
+=======
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+>>>>>>> Stashed changes
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
@@ -336,11 +355,17 @@ CMakeFiles/FAK.dir/main.cpp.o: /home/korsar/chest/GitHub/FAK/FAK/main.cpp \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+<<<<<<< Updated upstream
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
+=======
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStackedWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+>>>>>>> Stashed changes
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
