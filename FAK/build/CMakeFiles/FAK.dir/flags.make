@@ -6,5 +6,5 @@ CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -D
 
 CXX_INCLUDES = -I/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/include -I/home/korsar/chest/GitHub/FAK/FAK -I/home/korsar/chest/GitHub/FAK/FAK/classes -I/home/korsar/chest/GitHub/FAK/FAK/ui -I/home/korsar/chest/GitHub/FAK/FAK/libs/sqlite3 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtUiTools -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtOpenGL -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql
 
-CXX_FLAGS = -std=gnu++17 -fPIC
+CXX_FLAGS = -std=gnu++17 -fdiagnostics-color=always -fPIC
 
