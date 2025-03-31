@@ -56,7 +56,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName("scrollAreaWidgetContents");
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 770, 510));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 774, 483));
         verticalLayout_3 = new QVBoxLayout(scrollAreaWidgetContents);
         verticalLayout_3->setObjectName("verticalLayout_3");
         buttonsLayout = new QVBoxLayout();
@@ -88,7 +88,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "\320\241\320\276\320\267\320\264\320\260\320\275\320\270\320\265 \320\272\320\275\320\276\320\277\320\276\320\272", nullptr));
-        textInput->setPlaceholderText(QCoreApplication::translate("MainWindow", "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \321\202\320\265\320\272\321\201\321\202 \320\270 \320\275\320\260\320\266\320\274\320\270\321\202\320\265 Enter", nullptr));
+        textInput->setPlaceholderText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\275\320\276\320\262\321\203\321\216 \320\267\320\260\320\264\320\260\321\207\321\203 +", nullptr));
     } // retranslateUi
 
 };
