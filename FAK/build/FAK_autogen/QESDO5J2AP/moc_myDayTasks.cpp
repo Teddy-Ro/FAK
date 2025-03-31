@@ -1,5 +1,5 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'mainwindow.h'
+** Meta object code from reading C++ file 'myDayTasks.h'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.4.2)
 **
@@ -7,14 +7,10 @@
 *****************************************************************************/
 
 #include <memory>
-<<<<<<<< Updated upstream:FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp
-#include "../../../mainwindow.h"
-========
 #include "../../../classes/myDayTasks.h"
->>>>>>>> Stashed changes:FAK/build/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'mainwindow.h' doesn't include <QObject>."
+#error "The header file 'myDayTasks.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.4.2. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -29,11 +25,7 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
-<<<<<<<< Updated upstream:FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp
-struct qt_meta_stringdata_MainWindow_t {
-========
 struct qt_meta_stringdata_MyDayTasks_t {
->>>>>>>> Stashed changes:FAK/build/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp
     uint offsetsAndSizes[12];
     char stringdata0[11];
     char stringdata1[22];
@@ -43,28 +35,17 @@ struct qt_meta_stringdata_MyDayTasks_t {
     char stringdata5[8];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-<<<<<<<< Updated upstream:FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp
-    uint(sizeof(qt_meta_stringdata_MainWindow_t::offsetsAndSizes) + ofs), len 
-Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
-    {
-        QT_MOC_LITERAL(0, 10),  // "MainWindow"
-========
     uint(sizeof(qt_meta_stringdata_MyDayTasks_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_MyDayTasks_t qt_meta_stringdata_MyDayTasks = {
     {
         QT_MOC_LITERAL(0, 10),  // "MyDayTasks"
->>>>>>>> Stashed changes:FAK/build/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp
         QT_MOC_LITERAL(11, 21),  // "createButtonFromInput"
         QT_MOC_LITERAL(33, 0),  // ""
         QT_MOC_LITERAL(34, 15),  // "handleNewButton"
         QT_MOC_LITERAL(50, 20),  // "handleCheckboxToggle"
         QT_MOC_LITERAL(71, 7)   // "checked"
     },
-<<<<<<<< Updated upstream:FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp
-    "MainWindow",
-========
     "MyDayTasks",
->>>>>>>> Stashed changes:FAK/build/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp
     "createButtonFromInput",
     "",
     "handleNewButton",
@@ -74,11 +55,7 @@ Q_CONSTINIT static const qt_meta_stringdata_MyDayTasks_t qt_meta_stringdata_MyDa
 #undef QT_MOC_LITERAL
 } // unnamed namespace
 
-<<<<<<<< Updated upstream:FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp
-Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
-========
 Q_CONSTINIT static const uint qt_meta_data_MyDayTasks[] = {
->>>>>>>> Stashed changes:FAK/build/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp
 
  // content:
       10,       // revision
@@ -104,15 +81,6 @@ Q_CONSTINIT static const uint qt_meta_data_MyDayTasks[] = {
        0        // eod
 };
 
-<<<<<<<< Updated upstream:FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp
-Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
-    QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
-    qt_meta_stringdata_MainWindow.offsetsAndSizes,
-    qt_meta_data_MainWindow,
-    qt_static_metacall,
-    nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_MainWindow_t,
-========
 Q_CONSTINIT const QMetaObject MyDayTasks::staticMetaObject = { {
     QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
     qt_meta_stringdata_MyDayTasks.offsetsAndSizes,
@@ -120,9 +88,8 @@ Q_CONSTINIT const QMetaObject MyDayTasks::staticMetaObject = { {
     qt_static_metacall,
     nullptr,
     qt_incomplete_metaTypeArray<qt_meta_stringdata_MyDayTasks_t,
->>>>>>>> Stashed changes:FAK/build/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
+        QtPrivate::TypeAndForceComplete<MyDayTasks, std::true_type>,
         // method 'createButtonFromInput'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'handleNewButton'
@@ -134,14 +101,10 @@ Q_CONSTINIT const QMetaObject MyDayTasks::staticMetaObject = { {
     nullptr
 } };
 
-void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void MyDayTasks::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-<<<<<<<< Updated upstream:FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp
-        auto *_t = static_cast<MainWindow *>(_o);
-========
         auto *_t = static_cast<MyDayTasks *>(_o);
->>>>>>>> Stashed changes:FAK/build/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp
         (void)_t;
         switch (_id) {
         case 0: _t->createButtonFromInput(); break;
@@ -152,26 +115,22 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     }
 }
 
-const QMetaObject *MainWindow::metaObject() const
+const QMetaObject *MyDayTasks::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *MainWindow::qt_metacast(const char *_clname)
+void *MyDayTasks::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-<<<<<<<< Updated upstream:FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp
-    if (!strcmp(_clname, qt_meta_stringdata_MainWindow.stringdata0))
-========
     if (!strcmp(_clname, qt_meta_stringdata_MyDayTasks.stringdata0))
->>>>>>>> Stashed changes:FAK/build/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp
         return static_cast<void*>(this);
-    return QMainWindow::qt_metacast(_clname);
+    return QWidget::qt_metacast(_clname);
 }
 
-int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int MyDayTasks::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

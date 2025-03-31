@@ -43,14 +43,10 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/korsar/chest/GitHub/FAK
 set(OLD_GLOB
   "/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp"
-<<<<<<< Updated upstream
-  "/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/mocs_compilation.cpp"
-=======
   "/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/EWIEGA46WW/qrc_resources.cpp"
   "/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp"
   "/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/mocs_compilation.cpp"
   "/home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.cpp"
->>>>>>> Stashed changes
   "/home/korsar/chest/GitHub/FAK/FAK/main.cpp"
   "/home/korsar/chest/GitHub/FAK/FAK/mainwindow.cpp"
   )
@@ -72,14 +68,10 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/korsar/chest/GitHub/FAK/FAK/*.h")
 set(OLD_GLOB
   "/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/include/ui_mainwindow.h"
-<<<<<<< Updated upstream
-  "/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/moc_predefs.h"
-=======
   "/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/include/ui_myDayTasks.h"
   "/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/moc_predefs.h"
   "/home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.h"
   "/home/korsar/chest/GitHub/FAK/FAK/libs/sqlite3/sqlite3.h"
->>>>>>> Stashed changes
   "/home/korsar/chest/GitHub/FAK/FAK/mainwindow.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -162,10 +154,7 @@ endif()
 # _directory_contents at /usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:83 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/korsar/chest/GitHub/FAK/FAK/*.qrc")
 set(OLD_GLOB
-<<<<<<< Updated upstream
-=======
   "/home/korsar/chest/GitHub/FAK/FAK/resources.qrc"
->>>>>>> Stashed changes
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -184,14 +173,10 @@ endif()
 # _directory_contents at /usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:83 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/korsar/chest/GitHub/FAK/FAK/*.ui")
 set(OLD_GLOB
-<<<<<<< Updated upstream
-  "/home/korsar/chest/GitHub/FAK/FAK/mainwindow.ui"
-=======
   "/home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.ui"
   "/home/korsar/chest/GitHub/FAK/FAK/mainwindow.ui"
   "/home/korsar/chest/GitHub/FAK/FAK/ui/importantList.ui"
   "/home/korsar/chest/GitHub/FAK/FAK/ui/planned.ui"
->>>>>>> Stashed changes
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

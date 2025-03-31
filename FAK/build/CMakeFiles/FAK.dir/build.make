@@ -76,12 +76,6 @@ FAK_autogen/timestamp: CMakeFiles/FAK.dir/compiler_depend.ts
 	/usr/bin/cmake -E cmake_autogen /home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/FAK_autogen.dir/AutogenInfo.json ""
 	/usr/bin/cmake -E touch /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/timestamp
 
-<<<<<<< Updated upstream
-CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o: CMakeFiles/FAK.dir/flags.make
-CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o: FAK_autogen/mocs_compilation.cpp
-CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o: CMakeFiles/FAK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o"
-=======
 FAK_autogen/EWIEGA46WW/qrc_resources.cpp: /home/korsar/chest/GitHub/FAK/FAK/resources.qrc
 FAK_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/FAK_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
 FAK_autogen/EWIEGA46WW/qrc_resources.cpp: /home/korsar/chest/GitHub/FAK/FAK/img/icon.png
@@ -97,7 +91,6 @@ CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o: CMakeFiles/FAK.dir/flags.
 CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o: FAK_autogen/mocs_compilation.cpp
 CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o: CMakeFiles/FAK.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o"
->>>>>>> Stashed changes
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o -MF CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o -c /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/mocs_compilation.cpp
 
 CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.i: cmake_force
@@ -111,11 +104,7 @@ CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.s: cmake_force
 CMakeFiles/FAK.dir/main.cpp.o: CMakeFiles/FAK.dir/flags.make
 CMakeFiles/FAK.dir/main.cpp.o: /home/korsar/chest/GitHub/FAK/FAK/main.cpp
 CMakeFiles/FAK.dir/main.cpp.o: CMakeFiles/FAK.dir/compiler_depend.ts
-<<<<<<< Updated upstream
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FAK.dir/main.cpp.o"
-=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FAK.dir/main.cpp.o"
->>>>>>> Stashed changes
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FAK.dir/main.cpp.o -MF CMakeFiles/FAK.dir/main.cpp.o.d -o CMakeFiles/FAK.dir/main.cpp.o -c /home/korsar/chest/GitHub/FAK/FAK/main.cpp
 
 CMakeFiles/FAK.dir/main.cpp.i: cmake_force
@@ -129,11 +118,7 @@ CMakeFiles/FAK.dir/main.cpp.s: cmake_force
 CMakeFiles/FAK.dir/mainwindow.cpp.o: CMakeFiles/FAK.dir/flags.make
 CMakeFiles/FAK.dir/mainwindow.cpp.o: /home/korsar/chest/GitHub/FAK/FAK/mainwindow.cpp
 CMakeFiles/FAK.dir/mainwindow.cpp.o: CMakeFiles/FAK.dir/compiler_depend.ts
-<<<<<<< Updated upstream
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FAK.dir/mainwindow.cpp.o"
-=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FAK.dir/mainwindow.cpp.o"
->>>>>>> Stashed changes
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FAK.dir/mainwindow.cpp.o -MF CMakeFiles/FAK.dir/mainwindow.cpp.o.d -o CMakeFiles/FAK.dir/mainwindow.cpp.o -c /home/korsar/chest/GitHub/FAK/FAK/mainwindow.cpp
 
 CMakeFiles/FAK.dir/mainwindow.cpp.i: cmake_force
@@ -144,8 +129,6 @@ CMakeFiles/FAK.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FAK.dir/mainwindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/korsar/chest/GitHub/FAK/FAK/mainwindow.cpp -o CMakeFiles/FAK.dir/mainwindow.cpp.s
 
-<<<<<<< Updated upstream
-=======
 CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o: CMakeFiles/FAK.dir/flags.make
 CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o: /home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.cpp
 CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o: CMakeFiles/FAK.dir/compiler_depend.ts
@@ -174,18 +157,13 @@ CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/EWIEGA46WW/qrc_resources.cpp -o CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.s
 
->>>>>>> Stashed changes
 # Object files for target FAK
 FAK_OBJECTS = \
 "CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/FAK.dir/main.cpp.o" \
-<<<<<<< Updated upstream
-"CMakeFiles/FAK.dir/mainwindow.cpp.o"
-=======
 "CMakeFiles/FAK.dir/mainwindow.cpp.o" \
 "CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o" \
 "CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o"
->>>>>>> Stashed changes
 
 # External object files for target FAK
 FAK_EXTERNAL_OBJECTS =
@@ -193,17 +171,6 @@ FAK_EXTERNAL_OBJECTS =
 FAK: CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o
 FAK: CMakeFiles/FAK.dir/main.cpp.o
 FAK: CMakeFiles/FAK.dir/mainwindow.cpp.o
-<<<<<<< Updated upstream
-FAK: CMakeFiles/FAK.dir/build.make
-FAK: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
-FAK: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
-FAK: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
-FAK: /usr/lib/x86_64-linux-gnu/libGLX.so
-FAK: /usr/lib/x86_64-linux-gnu/libOpenGL.so
-FAK: CMakeFiles/FAK.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable FAK"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FAK.dir/link.txt --verbose=$(VERBOSE)
-=======
 FAK: CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o
 FAK: CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o
 FAK: CMakeFiles/FAK.dir/build.make
@@ -220,7 +187,6 @@ FAK: CMakeFiles/FAK.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable FAK"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FAK.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -E copy /home/korsar/chest/GitHub/FAK/FAK/libs/sqlite3/sqlite3.dll /home/korsar/chest/GitHub/FAK/FAK/build
->>>>>>> Stashed changes
 
 # Rule to build all files generated by this target.
 CMakeFiles/FAK.dir/build: FAK
@@ -230,10 +196,7 @@ CMakeFiles/FAK.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/FAK.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/FAK.dir/clean
 
-<<<<<<< Updated upstream
-=======
 CMakeFiles/FAK.dir/depend: FAK_autogen/EWIEGA46WW/qrc_resources.cpp
->>>>>>> Stashed changes
 CMakeFiles/FAK.dir/depend: FAK_autogen/timestamp
 	cd /home/korsar/chest/GitHub/FAK/FAK/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/korsar/chest/GitHub/FAK/FAK /home/korsar/chest/GitHub/FAK/FAK /home/korsar/chest/GitHub/FAK/FAK/build /home/korsar/chest/GitHub/FAK/FAK/build /home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/FAK.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/FAK.dir/depend

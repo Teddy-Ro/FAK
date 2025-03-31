@@ -10,14 +10,6 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
-<<<<<<< Updated upstream
-#include <QtWidgets/QApplication>
-#include <QtWidgets/QLineEdit>
-#include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
-#include <QtWidgets/QScrollArea>
-#include <QtWidgets/QStatusBar>
-=======
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QFrame>
@@ -26,7 +18,6 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
->>>>>>> Stashed changes
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -36,17 +27,6 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-<<<<<<< Updated upstream
-    QVBoxLayout *verticalLayout_2;
-    QVBoxLayout *verticalLayout;
-    QLineEdit *textInput;
-    QScrollArea *scrollArea;
-    QWidget *scrollAreaWidgetContents;
-    QVBoxLayout *verticalLayout_3;
-    QVBoxLayout *buttonsLayout;
-    QMenuBar *menubar;
-    QStatusBar *statusbar;
-=======
     QHBoxLayout *horizontalLayout;
     QWidget *widget;
     QVBoxLayout *verticalLayout_2;
@@ -85,54 +65,11 @@ public:
     QPushButton *pushButton;
     QWidget *widget_3;
     QVBoxLayout *verticalLayout_5;
->>>>>>> Stashed changes
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-<<<<<<< Updated upstream
-        MainWindow->resize(800, 600);
-        centralwidget = new QWidget(MainWindow);
-        centralwidget->setObjectName("centralwidget");
-        verticalLayout_2 = new QVBoxLayout(centralwidget);
-        verticalLayout_2->setObjectName("verticalLayout_2");
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setObjectName("verticalLayout");
-        textInput = new QLineEdit(centralwidget);
-        textInput->setObjectName("textInput");
-
-        verticalLayout->addWidget(textInput);
-
-        scrollArea = new QScrollArea(centralwidget);
-        scrollArea->setObjectName("scrollArea");
-        scrollArea->setWidgetResizable(true);
-        scrollAreaWidgetContents = new QWidget();
-        scrollAreaWidgetContents->setObjectName("scrollAreaWidgetContents");
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 774, 483));
-        verticalLayout_3 = new QVBoxLayout(scrollAreaWidgetContents);
-        verticalLayout_3->setObjectName("verticalLayout_3");
-        buttonsLayout = new QVBoxLayout();
-        buttonsLayout->setObjectName("buttonsLayout");
-
-        verticalLayout_3->addLayout(buttonsLayout);
-
-        scrollArea->setWidget(scrollAreaWidgetContents);
-
-        verticalLayout->addWidget(scrollArea);
-
-
-        verticalLayout_2->addLayout(verticalLayout);
-
-        MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 800, 27));
-        MainWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName("statusbar");
-        MainWindow->setStatusBar(statusbar);
-=======
         MainWindow->resize(1000, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
@@ -365,7 +302,6 @@ public:
         horizontalLayout->addWidget(widget);
 
         MainWindow->setCentralWidget(centralwidget);
->>>>>>> Stashed changes
 
         retranslateUi(MainWindow);
 
@@ -374,10 +310,6 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-<<<<<<< Updated upstream
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "\320\241\320\276\320\267\320\264\320\260\320\275\320\270\320\265 \320\272\320\275\320\276\320\277\320\276\320\272", nullptr));
-        textInput->setPlaceholderText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\275\320\276\320\262\321\203\321\216 \320\267\320\260\320\264\320\260\321\207\321\203 +", nullptr));
-=======
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\274\320\265\321\202\320\272\320\270 \320\270 \320\267\320\260\320\264\320\260\321\207\320\270", nullptr));
         myDayButton->setText(QCoreApplication::translate("MainWindow", "  \320\234\320\276\320\271 \320\264\320\265\320\275\321\214", nullptr));
         importantButton->setText(QCoreApplication::translate("MainWindow", "  \320\222\320\260\320\266\320\275\320\276", nullptr));
@@ -386,7 +318,6 @@ public:
         flaggedButton->setText(QCoreApplication::translate("MainWindow", "  \320\237\320\276\320\274\320\265\321\207\320\265\320\275\320\275\321\213\320\265 \321\201\320\276\320\276\320\261\321\211\320\265\320\275\320\270\321\217", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "\320\232\320\270\321\200\320\270\320\273\320\273 \320\275\320\270\321\207\320\265\320\263\320\276 \320\275\320\265 \321\201\320\264\320\265\320\273\320\260\320\273(", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "\320\276\320\261\320\273\320\260\321\201\321\202\321\214 \320\264\320\273\321\217 \320\275\320\260\320\267\320\262\320\275\320\270\321\217 \320\273\320\270\321\201\321\202\320\260 \320\270 \320\272\320\275\320\276\320\277\320\276\320\272 \320\267\320\260\320\272\321\200\321\213\321\202\320\270\321\217 \320\277\321\200\320\270\320\273\320\276\320\266\320\265\320\275\320\270\321\217", nullptr));
->>>>>>> Stashed changes
     } // retranslateUi
 
 };

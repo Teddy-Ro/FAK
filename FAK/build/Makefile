@@ -201,8 +201,6 @@ FAK_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FAK_autogen.dir/build.make CMakeFiles/FAK_autogen.dir/build
 .PHONY : FAK_autogen/fast
 
-<<<<<<< Updated upstream
-=======
 FAK_autogen/EWIEGA46WW/qrc_resources.o: FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o
 .PHONY : FAK_autogen/EWIEGA46WW/qrc_resources.o
 
@@ -227,7 +225,6 @@ FAK_autogen/EWIEGA46WW/qrc_resources.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FAK.dir/build.make CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.s
 .PHONY : FAK_autogen/EWIEGA46WW/qrc_resources.cpp.s
 
->>>>>>> Stashed changes
 FAK_autogen/mocs_compilation.o: FAK_autogen/mocs_compilation.cpp.o
 .PHONY : FAK_autogen/mocs_compilation.o
 
@@ -252,8 +249,6 @@ FAK_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FAK.dir/build.make CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.s
 .PHONY : FAK_autogen/mocs_compilation.cpp.s
 
-<<<<<<< Updated upstream
-=======
 classes/myDayTasks.o: classes/myDayTasks.cpp.o
 .PHONY : classes/myDayTasks.o
 
@@ -278,7 +273,6 @@ classes/myDayTasks.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FAK.dir/build.make CMakeFiles/FAK.dir/classes/myDayTasks.cpp.s
 .PHONY : classes/myDayTasks.cpp.s
 
->>>>>>> Stashed changes
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -342,11 +336,6 @@ help:
 	@echo "... FAK_autogen"
 	@echo "... FAK_autogen_timestamp_deps"
 	@echo "... FAK"
-<<<<<<< Updated upstream
-	@echo "... FAK_autogen/mocs_compilation.o"
-	@echo "... FAK_autogen/mocs_compilation.i"
-	@echo "... FAK_autogen/mocs_compilation.s"
-=======
 	@echo "... FAK_autogen/EWIEGA46WW/qrc_resources.o"
 	@echo "... FAK_autogen/EWIEGA46WW/qrc_resources.i"
 	@echo "... FAK_autogen/EWIEGA46WW/qrc_resources.s"
@@ -356,7 +345,6 @@ help:
 	@echo "... classes/myDayTasks.o"
 	@echo "... classes/myDayTasks.i"
 	@echo "... classes/myDayTasks.s"
->>>>>>> Stashed changes
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

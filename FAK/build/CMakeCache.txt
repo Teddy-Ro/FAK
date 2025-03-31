@@ -24,12 +24,6 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=
 
-<<<<<<< Updated upstream
-//Enable colored diagnostics throughout.
-CMAKE_COLOR_DIAGNOSTICS:BOOL=1
-
-=======
->>>>>>> Stashed changes
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
@@ -339,8 +333,6 @@ Qt6Gui_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui
 
 //The directory containing a CMake configuration file for Qt6LinguistTools.
 Qt6LinguistTools_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools
-<<<<<<< Updated upstream
-=======
 
 //The directory containing a CMake configuration file for Qt6OpenGLWidgets.
 Qt6OpenGLWidgets_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets
@@ -356,7 +348,6 @@ Qt6UiPlugin_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin
 
 //The directory containing a CMake configuration file for Qt6UiTools.
 Qt6UiTools_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6UiTools
->>>>>>> Stashed changes
 
 //The directory containing a CMake configuration file for Qt6WidgetsTools.
 Qt6WidgetsTools_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools
@@ -1147,6 +1138,8 @@ QT_FEATURE_splashscreen:INTERNAL=ON
 QT_FEATURE_splitter:INTERNAL=ON
 //Qt feature: sql (from target Qt6::Core)
 QT_FEATURE_sql:INTERNAL=ON
+//Qt feature: sqlmodel (from target Qt6::Sql)
+QT_FEATURE_sqlmodel:INTERNAL=ON
 //Qt feature: sse2 (from target Qt6::Core)
 QT_FEATURE_sse2:INTERNAL=ON
 //Qt feature: sse3 (from target Qt6::Core)
