@@ -1,119 +1,92 @@
 #include "mainwindow.h"
-#include "./ui_mainwindow.h"
-#include <QMessageBox>
-#include <QLineEdit>
-#include <QPushButton>
+#include <QAction>
+#include <QButtonGroup>
 #include <QCheckBox>
+#include <QFile>
+#include <QFrame>
 #include <QHBoxLayout>
+#include <QInputDialog>
+#include <QLabel>
+#include <QMenu>
+#include <QMessageBox>
+#include <QTimer>
 #include <QVBoxLayout>
-#include <QWidget>
-#include <QScrollArea>
+#include <QtUiTools/QUiLoader>
+#include "classes/myDayTasks.h"
+#include "ui_mainwindow.h"
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
-{
+
+MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
 
-    // Настройка интерфейса (устраняем дублирование кода)
-    ui->textInput->setVisible(true);
-    ui->textInput->setFocus();
+    buttonGroup = new QButtonGroup(this);
+    buttonGroup->setExclusive(true);  // Делаем группу эксклюзивной
 
-    // Создаем новый виджет для списка и скролл области
-    QWidget* scrollContents = new QWidget();
-    QVBoxLayout* taskListLayout = new QVBoxLayout(scrollContents);
-    taskListLayout->setAlignment(Qt::AlignTop); // Важно! Выравнивание по верхнему краю
-    taskListLayout->setSpacing(5);
+    // Добавляем кнопки в группу
+    buttonGroup->addButton(ui->myDayButton, 0);
+    buttonGroup->addButton(ui->importantButton, 1);
+    buttonGroup->addButton(ui->plannedButton, 2);
 
-    // Настраиваем область прокрутки
-    ui->scrollArea->setWidget(scrollContents);
-    ui->scrollArea->setWidgetResizable(true);
+    // Инициализируем QStackedWidget
+    stackedWidget = new QStackedWidget();
+    QVBoxLayout* layout = qobject_cast<QVBoxLayout*>(ui->widget_3->layout());
+    if (layout) {
+        layout->addWidget(stackedWidget);
+    }
 
-    // Заменяем указатель на layout в UI
-    ui->buttonsLayout = taskListLayout;
+    // Добавляем начальную страницу
+    stackedWidget->addWidget(new QWidget());
 
-    // Связываем сигнал нажатия Enter в поле ввода с слотом
-    QObject::connect(ui->textInput, &QLineEdit::returnPressed, this, &MainWindow::createButtonFromInput);
+    // Подключаем кнопки
+    connect(ui->myDayButton, &QPushButton::clicked, [this]() { loadTabContent(0); });
+    connect(ui->importantButton, &QPushButton::clicked, [this]() { loadTabContent(1); });
+    connect(ui->plannedButton, &QPushButton::clicked, [this]() { loadTabContent(2); });
 }
 
-MainWindow::~MainWindow()
-{
+MainWindow::~MainWindow() {
     delete ui;
 }
 
-// Слот для обработки нажатия Enter в поле ввода
-void MainWindow::createButtonFromInput()
-{
-    QString buttonText = ui->textInput->text().trimmed();
+void MainWindow::loadTabContent(int index) {
+    if (!stackedWidget)
+        return;
 
-    if (!buttonText.isEmpty()) {
-        // Создаем виджет-контейнер для задачи
-        QWidget* taskWidget = new QWidget();
-
-        // Настраиваем политику размеров для правильного растягивания
-        taskWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
-
-        // Создаем горизонтальный layout для этого виджета
-        QHBoxLayout* taskLayout = new QHBoxLayout(taskWidget);
-        taskLayout->setContentsMargins(0, 0, 0, 0);
-        taskLayout->setSpacing(5);
-
-        // Создаем чекбокс
-        QCheckBox* checkbox = new QCheckBox();
-        checkbox->setMaximumWidth(20); // Ограничиваем ширину чекбокса
-
-        // Создаем кнопку с текстом и выравниванием по левой стороне
-        QPushButton* newButton = new QPushButton(buttonText);
-        newButton->setStyleSheet("text-align: left; padding-left: 10px;");
-        newButton->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
-
-        // Сохраняем указатель на кнопку в свойстве чекбокса
-        checkbox->setProperty("associatedButton", QVariant::fromValue((void*)newButton));
-
-        // Добавляем виджеты в горизонтальный контейнер
-        taskLayout->addWidget(checkbox);
-        taskLayout->addWidget(newButton, 1);
-
-        // Добавляем контейнер в основной layout
-        ui->buttonsLayout->addWidget(taskWidget);
-
-        // Связываем сигналы
-        QObject::connect(newButton, &QPushButton::clicked, this, &MainWindow::handleNewButton);
-        QObject::connect(checkbox, &QCheckBox::toggled, this, &MainWindow::handleCheckboxToggle);
-
-        // Очищаем поле ввода для нового текста
-        ui->textInput->clear();
-        ui->textInput->setFocus();
+    // Удаляем старый контент
+    if (stackedWidget->count() > index) {
+        QWidget* oldWidget = stackedWidget->widget(index);
+        stackedWidget->removeWidget(oldWidget);
+        delete oldWidget;
     }
-}
 
-void MainWindow::handleNewButton()
-{
-    // Определяем, какая кнопка была нажата
-    QPushButton* clickedButton = qobject_cast<QPushButton*>(sender());
-    if (clickedButton) {
-        // Показываем текст нажатой кнопки
-        QMessageBox::information(this, "Нажата кнопка",
-                                "Вы нажали кнопку: " + clickedButton->text());
+    // Создаем виджет без QUiLoader для MyDayTasks
+    if (index == 0) {
+        MyDayTasks* myDayWidget = new MyDayTasks();
+        stackedWidget->insertWidget(index, myDayWidget);
+        stackedWidget->setCurrentIndex(index);
+        return;
     }
-}
 
-void MainWindow::handleCheckboxToggle(bool checked)
-{
-    // Определяем, какой чекбокс был изменен
-    QCheckBox* clickedCheckbox = qobject_cast<QCheckBox*>(sender());
-    if (clickedCheckbox) {
-        // Получаем связанную кнопку из свойства чекбокса
-        QPushButton* button = static_cast<QPushButton*>(
-            clickedCheckbox->property("associatedButton").value<void*>());
+    // Для остальных вкладок оставляем текущую логику
+    QString filePath;
+    switch (index) {
+        case 1:
+            filePath = ":/ui/ui/importantList.ui";
+            break;
+        case 2:
+            filePath = ":/ui/ui/planned.ui";
+            break;
+        default:
+            return;
+    }
 
-        if (button) {
-            // Если задача отмечена как выполненная, делаем текст кнопки зачеркнутым
-            if (checked) {
-                button->setStyleSheet("text-align: left; padding-left: 10px; text-decoration: line-through;");
-            } else {
-                button->setStyleSheet("text-align: left; padding-left: 10px;");
-            }
+    QUiLoader loader;
+    QFile file(filePath);
+    if (file.open(QFile::ReadOnly)) {
+        QWidget* tabContent = loader.load(&file);
+        file.close();
+        if (tabContent) {
+            stackedWidget->insertWidget(index, tabContent);
+            stackedWidget->setCurrentIndex(index);
         }
     }
 }

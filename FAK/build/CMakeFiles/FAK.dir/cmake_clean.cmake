@@ -2,27 +2,19 @@ file(REMOVE_RECURSE
   "CMakeFiles/FAK_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/FAK_autogen.dir/ParseCache.txt"
   "FAK_autogen"
-<<<<<<< Updated upstream
-  "CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o"
-  "CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o.d"
-=======
   "CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o"
   "CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o.d"
   "CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o"
   "CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o.d"
->>>>>>> Stashed changes
   "CMakeFiles/FAK.dir/main.cpp.o"
   "CMakeFiles/FAK.dir/main.cpp.o.d"
   "CMakeFiles/FAK.dir/mainwindow.cpp.o"
   "CMakeFiles/FAK.dir/mainwindow.cpp.o.d"
   "FAK"
   "FAK.pdb"
-<<<<<<< Updated upstream
-=======
   "FAK_autogen/EWIEGA46WW/qrc_resources.cpp"
->>>>>>> Stashed changes
   "FAK_autogen/mocs_compilation.cpp"
   "FAK_autogen/timestamp"
 )

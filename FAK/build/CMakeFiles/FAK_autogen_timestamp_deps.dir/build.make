@@ -66,19 +66,12 @@ include CMakeFiles/FAK_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/FAK_autogen_timestamp_deps.dir/progress.make
 
-<<<<<<< Updated upstream
-CMakeFiles/FAK_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
-CMakeFiles/FAK_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
-CMakeFiles/FAK_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
-CMakeFiles/FAK_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
-=======
 CMakeFiles/FAK_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
 CMakeFiles/FAK_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6UiTools.so.6.4.2
 CMakeFiles/FAK_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 CMakeFiles/FAK_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 CMakeFiles/FAK_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
 CMakeFiles/FAK_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
->>>>>>> Stashed changes
 
 FAK_autogen_timestamp_deps: CMakeFiles/FAK_autogen_timestamp_deps
 FAK_autogen_timestamp_deps: CMakeFiles/FAK_autogen_timestamp_deps.dir/build.make

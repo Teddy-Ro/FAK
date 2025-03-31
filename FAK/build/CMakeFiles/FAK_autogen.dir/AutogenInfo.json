@@ -208,9 +208,6 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsVersionlessTargets.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeParseArguments.cmake",
-<<<<<<< Updated upstream
-		"/usr/share/cmake-3.28/Modules/GNUInstallDirs.cmake"
-=======
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake",
@@ -324,7 +321,6 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake",
 		"/usr/share/cmake-3.28/Modules/GNUInstallDirs.cmake",
 		"/home/korsar/chest/GitHub/FAK/FAK/resources.qrc"
->>>>>>> Stashed changes
 	],
 	"CMAKE_SOURCE_DIR" : "/home/korsar/chest/GitHub/FAK/FAK",
 	"DEP_FILE" : "/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/deps",
@@ -332,15 +328,12 @@
 	"HEADERS" : 
 	[
 		[
-<<<<<<< Updated upstream
-=======
 			"/home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.h",
 			"MU",
 			"QESDO5J2AP/moc_myDayTasks.cpp",
 			null
 		],
 		[
->>>>>>> Stashed changes
 			"/home/korsar/chest/GitHub/FAK/FAK/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -350,9 +343,6 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/mocs_compilation.cpp",
-<<<<<<< Updated upstream
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
-=======
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -364,7 +354,6 @@
 		"QT_UITOOLS_LIB",
 		"QT_WIDGETS_LIB"
 	],
->>>>>>> Stashed changes
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -374,25 +363,19 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-<<<<<<< Updated upstream
-=======
 		"/home/korsar/chest/GitHub/FAK/FAK",
 		"/home/korsar/chest/GitHub/FAK/FAK/classes",
 		"/home/korsar/chest/GitHub/FAK/FAK/ui",
 		"/home/korsar/chest/GitHub/FAK/FAK/libs/sqlite3",
->>>>>>> Stashed changes
 		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
 		"/usr/include/x86_64-linux-gnu/qt6",
 		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
 		"/usr/include/x86_64-linux-gnu/qt6/QtWidgets",
 		"/usr/include/x86_64-linux-gnu/qt6/QtGui",
-<<<<<<< Updated upstream
-=======
 		"/usr/include/x86_64-linux-gnu/qt6/QtUiTools",
 		"/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets",
 		"/usr/include/x86_64-linux-gnu/qt6/QtOpenGL",
 		"/usr/include/x86_64-linux-gnu/qt6/QtSql",
->>>>>>> Stashed changes
 		"/usr/include",
 		"/usr/include/c++/13",
 		"/usr/include/x86_64-linux-gnu/c++/13",
@@ -433,14 +416,11 @@
 	"SETTINGS_FILE" : "/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/FAK_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-<<<<<<< Updated upstream
-=======
 		[
 			"/home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.cpp",
 			"MU",
 			null
 		],
->>>>>>> Stashed changes
 		[ "/home/korsar/chest/GitHub/FAK/FAK/main.cpp", "MU", null ],
 		[ "/home/korsar/chest/GitHub/FAK/FAK/mainwindow.cpp", "MU", null ]
 	],
