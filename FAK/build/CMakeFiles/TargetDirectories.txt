@@ -1,9 +1,0 @@
-/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/FAK.dir
-/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/edit_cache.dir
-/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/rebuild_cache.dir
-/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/list_install_components.dir
-/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/install.dir
-/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/install/local.dir
-/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/install/strip.dir
-/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/FAK_autogen_timestamp_deps.dir
-/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/FAK_autogen.dir
