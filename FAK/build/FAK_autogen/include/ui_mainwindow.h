@@ -314,9 +314,9 @@ public:
         myDayButton->setText(QCoreApplication::translate("MainWindow", "  \320\234\320\276\320\271 \320\264\320\265\320\275\321\214", nullptr));
         importantButton->setText(QCoreApplication::translate("MainWindow", "  \320\222\320\260\320\266\320\275\320\276", nullptr));
         plannedButton->setText(QCoreApplication::translate("MainWindow", "  \320\227\320\260\320\277\320\273\320\260\320\275\320\270\321\200\320\276\320\262\320\260\320\275\320\276", nullptr));
-        assignedToMeButton->setText(QCoreApplication::translate("MainWindow", "  \320\235\320\260\320\267\320\275\320\260\321\207\320\265\320\275 \320\274\320\275\320\265", nullptr));
-        flaggedButton->setText(QCoreApplication::translate("MainWindow", "  \320\237\320\276\320\274\320\265\321\207\320\265\320\275\320\275\321\213\320\265 \321\201\320\276\320\276\320\261\321\211\320\265\320\275\320\270\321\217", nullptr));
-        label->setText(QCoreApplication::translate("MainWindow", "\320\232\320\270\321\200\320\270\320\273\320\273 \320\275\320\270\321\207\320\265\320\263\320\276 \320\275\320\265 \321\201\320\264\320\265\320\273\320\260\320\273(", nullptr));
+        assignedToMeButton->setText(QCoreApplication::translate("MainWindow", "  \320\222\321\201\320\265 \320\267\320\260\320\264\320\260\321\207\320\270", nullptr));
+        flaggedButton->setText(QString());
+        label->setText(QCoreApplication::translate("MainWindow", "\320\232\320\270\321\200\320\270\320\273\320\273 \321\200\320\260\321\201\321\201\320\272\320\260\320\267\321\213\320\262\320\260\320\265\321\202)", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "\320\276\320\261\320\273\320\260\321\201\321\202\321\214 \320\264\320\273\321\217 \320\275\320\260\320\267\320\262\320\275\320\270\321\217 \320\273\320\270\321\201\321\202\320\260 \320\270 \320\272\320\275\320\276\320\277\320\276\320\272 \320\267\320\260\320\272\321\200\321\213\321\202\320\270\321\217 \320\277\321\200\320\270\320\273\320\276\320\266\320\265\320\275\320\270\321\217", nullptr));
     } // retranslateUi
 

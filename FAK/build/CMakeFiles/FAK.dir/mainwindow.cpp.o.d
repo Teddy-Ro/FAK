@@ -405,8 +405,8 @@ CMakeFiles/FAK.dir/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtUiTools/quiloader.h \
  /usr/include/x86_64-linux-gnu/qt6/QtUiTools/qtuitoolsglobal.h \
  /home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
@@ -415,6 +415,12 @@ CMakeFiles/FAK.dir/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlQuery \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlquery.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlError \
+ /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqlerror.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolButton \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtoolbutton.h \
  /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/include/ui_mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
@@ -439,5 +445,4 @@ CMakeFiles/FAK.dir/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpacerItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget
