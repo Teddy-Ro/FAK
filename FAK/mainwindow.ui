@@ -272,7 +272,7 @@
                    <item>
                     <widget class="QPushButton" name="assignedToMeButton">
                      <property name="text">
-                      <string>  Назначен мне</string>
+                      <string>  Все задачи</string>
                      </property>
                      <property name="icon">
                       <iconset>
@@ -304,7 +304,7 @@
                    <item>
                     <widget class="QPushButton" name="flaggedButton">
                      <property name="text">
-                      <string>  Помеченные сообщения</string>
+                      <string/>
                      </property>
                      <property name="icon">
                       <iconset>
@@ -363,7 +363,7 @@
                      <string notr="true">background-color: rgb(255, 0, 0)</string>
                     </property>
                     <property name="text">
-                     <string>Кирилл ничего не сделал(</string>
+                     <string>Кирилл рассказывает)</string>
                     </property>
                    </widget>
                   </item>
