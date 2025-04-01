@@ -1,11 +1,13 @@
 #ifndef MYDAYTASKS_H
 #define MYDAYTASKS_H
 
-#include <QCheckBox>
-#include <QMainWindow>
-#include <QPushButton>
+#include <QWidget>
 #include <QSqlDatabase>
 #include <QSqlQuery>
+#include <QSqlError>
+#include <QPushButton>  // Добавлен заголовок для QPushButton
+#include <QCheckBox>    // Добавлен заголовок для QCheckBox
+#include <QToolButton>  // Добавлен заголовок для QToolButton
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -13,25 +15,31 @@ class MyDayTasks;
 }
 QT_END_NAMESPACE
 
-class MyDayTasks : public QWidget {
+class MyDayTasks : public QWidget
+{
     Q_OBJECT
 
- public:
-    MyDayTasks(QWidget* parent = nullptr);
+public:
+    explicit MyDayTasks(QWidget *parent = nullptr);
     ~MyDayTasks();
 
- private slots:
-    void createButtonFromInput();             // Создать кнопку из введенного текста
-    void handleNewButton();                   // Обработать нажатие на созданную кнопку
-    void handleCheckboxToggle(bool checked);  // Обработка нажатия на чекбокс
+private slots:
+    void createButtonFromInput();
+    void handleTaskButtonClick();
+    void handleCheckboxToggle(bool checked);
+    void handleDeleteButtonClick();
 
- private:
-    Ui::MyDayTasks* ui;
-    QSqlDatabase db;    // Объект базы данных
+private:
+    Ui::MyDayTasks *ui;
+    QSqlDatabase db;
 
-    void initDatabase();  // Инициализация базы данных
-    void saveTaskToDatabase(const QString &taskText, bool completed = false);  // Сохранение задачи
-    void updateTaskStatusInDatabase(const QString &taskText, bool completed);  // Обновление статуса
-    void loadTasksFromDatabase();  // Загрузка задач
+    void initDatabase();
+    void saveTaskToDatabase(const QString &taskText, bool completed = false);
+    void updateTaskStatusInDatabase(const QString &taskText, bool completed);
+    void deleteTaskFromDatabase(const QString &taskText);
+    void loadTasksFromDatabase();
+    void moveTaskToBottom(QWidget* taskWidget);
+    void updateTaskStyle(QPushButton* button, bool completed);  // Объявление метода
 };
-#endif  // MYDAYTASKS_H
+
+#endif // MYDAYTASKS_H

@@ -4,62 +4,226 @@
 #include <QLineEdit>
 #include <QPushButton>
 #include <QCheckBox>
+#include <QToolButton>
 #include <QHBoxLayout>
 #include <QVBoxLayout>
-#include <QWidget>
 #include <QScrollArea>
+#include <QDebug>
+#include <QSqlError>
+#include <QFont>  // Добавлен для работы с шрифтами
 
 MyDayTasks::MyDayTasks(QWidget *parent)
-    : QWidget(parent)
-    , ui(new Ui::MyDayTasks)
+    : QWidget(parent), ui(new Ui::MyDayTasks)
 {
     ui->setupUi(this);
-
     initDatabase();
 
-    // Настройка интерфейса (устраняем дублирование кода)
-    ui->textInput->setVisible(true);
-    ui->textInput->setFocus();
-
-    // Создаем новый виджет для списка и скролл области
     QWidget* scrollContents = new QWidget();
     QVBoxLayout* taskListLayout = new QVBoxLayout(scrollContents);
-    taskListLayout->setAlignment(Qt::AlignTop); // Важно! Выравнивание по верхнему краю
-    taskListLayout->setSpacing(5);
-
-    // Настраиваем область прокрутки
+    taskListLayout->setAlignment(Qt::AlignTop);
     ui->scrollArea->setWidget(scrollContents);
     ui->scrollArea->setWidgetResizable(true);
-
-    // Заменяем указатель на layout в UI
     ui->buttonsLayout = taskListLayout;
 
     loadTasksFromDatabase();
-
-    // Связываем сигнал нажатия Enter в поле ввода с слотом
-    QObject::connect(ui->textInput, &QLineEdit::returnPressed, this, &MyDayTasks::createButtonFromInput);
+    connect(ui->textInput, &QLineEdit::returnPressed, this, &MyDayTasks::createButtonFromInput);
 }
 
 MyDayTasks::~MyDayTasks()
 {
+    db.close();
     delete ui;
 }
 
 void MyDayTasks::initDatabase()
 {
-    db = QSqlDatabase::addDatabase("QSQLITE");  // Указываем тип БД
-    db.setDatabaseName("tasks.db");             // Имя файла БД
-
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("tasks.db");
     if (!db.open()) {
-        qDebug() << "Error: connection with database failed";
+        qDebug() << "Database connection error:" << db.lastError().text();
     } else {
-        // Создаем таблицу при первом запуске
         QSqlQuery query;
         query.exec("CREATE TABLE IF NOT EXISTS tasks ("
-                  "id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                  "text TEXT NOT NULL UNIQUE, "
-                  "completed BOOLEAN NOT NULL)");
+                 "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                 "text TEXT NOT NULL UNIQUE, "
+                 "completed BOOLEAN NOT NULL)");
     }
+}
+
+void MyDayTasks::loadTasksFromDatabase()
+{
+    QSqlQuery query("SELECT text, completed FROM tasks ORDER BY completed");
+    while (query.next()) {
+        QString text = query.value(0).toString();
+        bool completed = query.value(1).toBool();
+
+        QWidget* taskWidget = new QWidget();
+        taskWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
+
+        QHBoxLayout* taskLayout = new QHBoxLayout(taskWidget);
+        taskLayout->setContentsMargins(0, 2, 0, 2);
+
+        QCheckBox* checkbox = new QCheckBox();
+        checkbox->setChecked(completed);
+        checkbox->setFixedSize(20, 20);
+
+        QPushButton* taskButton = new QPushButton(text);
+        updateTaskStyle(taskButton, completed);
+
+        QToolButton* deleteButton = new QToolButton();
+        deleteButton->setText("×");
+        deleteButton->setStyleSheet(
+            "QToolButton {"
+            "font-size: 18px; font-weight: bold; color: #f7f3e3;"
+            "background-color: transparent; border: none;"
+            "min-width: 20px; min-height: 20px;"
+            "}"
+            "QToolButton:hover { color: #ff6666; }"
+        );
+
+        checkbox->setProperty("taskButton", QVariant::fromValue(taskButton));
+        checkbox->setProperty("taskWidget", QVariant::fromValue(taskWidget));
+        deleteButton->setProperty("taskWidget", QVariant::fromValue(taskWidget));
+
+        taskLayout->addWidget(checkbox);
+        taskLayout->addWidget(taskButton, 1);
+        taskLayout->addWidget(deleteButton);
+
+        if (completed) {
+            ui->buttonsLayout->addWidget(taskWidget);
+        } else {
+            ui->buttonsLayout->insertWidget(0, taskWidget);
+        }
+
+        connect(checkbox, &QCheckBox::toggled, this, &MyDayTasks::handleCheckboxToggle);
+        connect(taskButton, &QPushButton::clicked, this, &MyDayTasks::handleTaskButtonClick);
+        connect(deleteButton, &QToolButton::clicked, this, &MyDayTasks::handleDeleteButtonClick);
+    }
+}
+
+void MyDayTasks::updateTaskStyle(QPushButton* button, bool completed)
+{
+    button->setStyleSheet(
+        QString("QPushButton {"
+                "text-align: left; padding-left: 10px;"
+                "background-color: %1; color: %2;"
+                "border: none;"
+                "}"
+                "QPushButton:hover { background-color: #9d7aaf; }")
+        .arg(completed ? "transparent" : "#8d6a9f")
+        .arg(completed ? "#aaaaaa" : "#f7f3e3")
+    );
+
+    QFont font = button->font();
+    font.setStrikeOut(completed);
+    button->setFont(font);
+}
+
+void MyDayTasks::moveTaskToBottom(QWidget* taskWidget)
+{
+    ui->buttonsLayout->removeWidget(taskWidget);
+    ui->buttonsLayout->addWidget(taskWidget);
+}
+
+void MyDayTasks::createButtonFromInput()
+{
+    QString text = ui->textInput->text().trimmed();
+    if (text.isEmpty()) return;
+
+    QSqlQuery checkQuery;
+    checkQuery.prepare("SELECT COUNT(*) FROM tasks WHERE text = :text");
+    checkQuery.bindValue(":text", text);
+    if (!checkQuery.exec() || (checkQuery.next() && checkQuery.value(0).toInt() > 0)) {
+        QMessageBox::warning(this, "Ошибка", "Такая задача уже существует!");
+        ui->textInput->clear();
+        return;
+    }
+
+    QWidget* taskWidget = new QWidget();
+    taskWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
+
+    QHBoxLayout* taskLayout = new QHBoxLayout(taskWidget);
+    taskLayout->setContentsMargins(0, 2, 0, 2);
+
+    QCheckBox* checkbox = new QCheckBox();
+    checkbox->setFixedSize(20, 20);
+
+    QPushButton* taskButton = new QPushButton(text);
+    updateTaskStyle(taskButton, false);
+
+    QToolButton* deleteButton = new QToolButton();
+    deleteButton->setText("×");
+    deleteButton->setStyleSheet(
+        "QToolButton {"
+        "font-size: 18px; font-weight: bold; color: #f7f3e3;"
+        "background-color: transparent; border: none;"
+        "min-width: 20px; min-height: 20px;"
+        "}"
+        "QToolButton:hover { color: #ff6666; }"
+    );
+
+    checkbox->setProperty("taskButton", QVariant::fromValue(taskButton));
+    checkbox->setProperty("taskWidget", QVariant::fromValue(taskWidget));
+    deleteButton->setProperty("taskWidget", QVariant::fromValue(taskWidget));
+
+    taskLayout->addWidget(checkbox);
+    taskLayout->addWidget(taskButton, 1);
+    taskLayout->addWidget(deleteButton);
+
+    ui->buttonsLayout->insertWidget(0, taskWidget);
+    saveTaskToDatabase(text);
+
+    connect(checkbox, &QCheckBox::toggled, this, &MyDayTasks::handleCheckboxToggle);
+    connect(taskButton, &QPushButton::clicked, this, &MyDayTasks::handleTaskButtonClick);
+    connect(deleteButton, &QToolButton::clicked, this, &MyDayTasks::handleDeleteButtonClick);
+
+    ui->textInput->clear();
+}
+
+void MyDayTasks::handleCheckboxToggle(bool checked)
+{
+    QCheckBox* checkbox = qobject_cast<QCheckBox*>(sender());
+    if (!checkbox) return;
+
+    QPushButton* taskButton = checkbox->property("taskButton").value<QPushButton*>();
+    QWidget* taskWidget = checkbox->property("taskWidget").value<QWidget*>();
+    if (!taskButton || !taskWidget) return;
+
+    updateTaskStyle(taskButton, checked);
+    updateTaskStatusInDatabase(taskButton->text(), checked);
+
+    if (checked) {
+        moveTaskToBottom(taskWidget);
+    } else {
+        ui->buttonsLayout->removeWidget(taskWidget);
+        ui->buttonsLayout->insertWidget(0, taskWidget);
+    }
+}
+
+void MyDayTasks::handleTaskButtonClick()
+{
+    QPushButton* button = qobject_cast<QPushButton*>(sender());
+    if (button) {
+        QMessageBox::information(this, "Задача", "Текст задачи: " + button->text());
+    }
+}
+
+void MyDayTasks::handleDeleteButtonClick()
+{
+    QToolButton* deleteButton = qobject_cast<QToolButton*>(sender());
+    if (!deleteButton) return;
+
+    QWidget* taskWidget = deleteButton->property("taskWidget").value<QWidget*>();
+    if (!taskWidget) return;
+
+    QPushButton* taskButton = taskWidget->findChild<QPushButton*>();
+    if (taskButton) {
+        deleteTaskFromDatabase(taskButton->text());
+    }
+
+    taskWidget->hide();
+    ui->buttonsLayout->removeWidget(taskWidget);
+    taskWidget->deleteLater();
 }
 
 void MyDayTasks::saveTaskToDatabase(const QString &taskText, bool completed)
@@ -68,7 +232,9 @@ void MyDayTasks::saveTaskToDatabase(const QString &taskText, bool completed)
     query.prepare("INSERT INTO tasks (text, completed) VALUES (:text, :completed)");
     query.bindValue(":text", taskText);
     query.bindValue(":completed", completed);
-    query.exec();
+    if (!query.exec()) {
+        qDebug() << "Error saving task:" << query.lastError().text();
+    }
 }
 
 void MyDayTasks::updateTaskStatusInDatabase(const QString &taskText, bool completed)
@@ -77,139 +243,17 @@ void MyDayTasks::updateTaskStatusInDatabase(const QString &taskText, bool comple
     query.prepare("UPDATE tasks SET completed = :completed WHERE text = :text");
     query.bindValue(":completed", completed);
     query.bindValue(":text", taskText);
-    query.exec();
-}
-
-void MyDayTasks::loadTasksFromDatabase()
-{
-    QSqlQuery query("SELECT text, completed FROM tasks");
-    while (query.next()) {
-        QString text = query.value(0).toString();
-        bool completed = query.value(1).toBool();
-
-        // Создаем виджет-контейнер для задачи
-        QWidget* taskWidget = new QWidget();
-
-        // Настраиваем политику размеров для правильного растягивания
-        taskWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
-
-        // Создаем горизонтальный layout для этого виджета
-        QHBoxLayout* taskLayout = new QHBoxLayout(taskWidget);
-        taskLayout->setContentsMargins(0, 0, 0, 0);
-        taskLayout->setSpacing(5);
-
-        // Создаем чекбокс
-        QCheckBox* checkbox = new QCheckBox();
-        checkbox->setMaximumWidth(20); // Ограничиваем ширину чекбокса
-        checkbox->setChecked(completed); // Устанавливаем состояние из БД
-
-        // Создаем кнопку с текстом и выравниванием по левой стороне
-        QPushButton* newButton = new QPushButton(text);
-
-        // Устанавливаем стиль в зависимости от состояния
-        if (completed) {
-            newButton->setStyleSheet("text-align: left; padding-left: 10px; text-decoration: line-through;");
-        } else {
-            newButton->setStyleSheet("text-align: left; padding-left: 10px;");
-        }
-
-        newButton->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
-
-        // Сохраняем указатель на кнопку в свойстве чекбокса
-        checkbox->setProperty("associatedButton", QVariant::fromValue((void*)newButton));
-
-        // Добавляем виджеты в горизонтальный контейнер
-        taskLayout->addWidget(checkbox);
-        taskLayout->addWidget(newButton, 1);
-
-        // Добавляем контейнер в основной layout
-        ui->buttonsLayout->addWidget(taskWidget);
-
-        // Связываем сигналы
-        QObject::connect(newButton, &QPushButton::clicked, this, &MyDayTasks::handleNewButton);
-        QObject::connect(checkbox, &QCheckBox::toggled, this, &MyDayTasks::handleCheckboxToggle);
+    if (!query.exec()) {
+        qDebug() << "Error updating task:" << query.lastError().text();
     }
 }
 
-// Слот для обработки нажатия Enter в поле ввода
-void MyDayTasks::createButtonFromInput()
+void MyDayTasks::deleteTaskFromDatabase(const QString &taskText)
 {
-    QString buttonText = ui->textInput->text().trimmed();
-
-    if (!buttonText.isEmpty()) {
-        // Создаем виджет-контейнер для задачи
-        QWidget* taskWidget = new QWidget();
-
-        // Настраиваем политику размеров для правильного растягивания
-        taskWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
-
-        // Создаем горизонтальный layout для этого виджета
-        QHBoxLayout* taskLayout = new QHBoxLayout(taskWidget);
-        taskLayout->setContentsMargins(0, 0, 0, 0);
-        taskLayout->setSpacing(5);
-
-        // Создаем чекбокс
-        QCheckBox* checkbox = new QCheckBox();
-        checkbox->setMaximumWidth(20); // Ограничиваем ширину чекбокса
-
-        // Создаем кнопку с текстом и выравниванием по левой стороне
-        QPushButton* newButton = new QPushButton(buttonText);
-        newButton->setStyleSheet("text-align: left; padding-left: 10px;");
-        newButton->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
-
-        // Сохраняем указатель на кнопку в свойстве чекбокса
-        checkbox->setProperty("associatedButton", QVariant::fromValue((void*)newButton));
-
-        // Добавляем виджеты в горизонтальный контейнер
-        taskLayout->addWidget(checkbox);
-        taskLayout->addWidget(newButton, 1);
-
-        // Добавляем контейнер в основной layout
-        ui->buttonsLayout->addWidget(taskWidget);
-
-        // Связываем сигналы
-        QObject::connect(newButton, &QPushButton::clicked, this, &MyDayTasks::handleNewButton);
-        QObject::connect(checkbox, &QCheckBox::toggled, this, &MyDayTasks::handleCheckboxToggle);
-
-        // Сохраняем задачу в базе данных
-        saveTaskToDatabase(buttonText);
-
-        // Очищаем поле ввода для нового текста
-        ui->textInput->clear();
-        ui->textInput->setFocus();
-    }
-}
-
-void MyDayTasks::handleNewButton()
-{
-    // Определяем, какая кнопка была нажата
-    QPushButton* clickedButton = qobject_cast<QPushButton*>(sender());
-    if (clickedButton) {
-        // Показываем текст нажатой кнопки
-        QMessageBox::information(this, "Нажата кнопка",
-                                "Вы нажали кнопку: " + clickedButton->text());
-    }
-}
-
-void MyDayTasks::handleCheckboxToggle(bool checked)
-{
-    // Определяем, какой чекбокс был изменен
-    QCheckBox* clickedCheckbox = qobject_cast<QCheckBox*>(sender());
-    if (clickedCheckbox) {
-        // Получаем связанную кнопку из свойства чекбокса
-        QPushButton* button = static_cast<QPushButton*>(
-            clickedCheckbox->property("associatedButton").value<void*>());
-
-        if (button) {
-            // Обновляем статус в базе данных
-            updateTaskStatusInDatabase(button->text(), checked);
-
-            // Если задача отмечена как выполненная, делаем текст кнопки зачеркнутым
-            if (checked) {
-                button->setStyleSheet("text-align: left; padding-left: 10px; text-decoration: line-through;");
-            } else {
-                button->setStyleSheet("text-align: left; padding-left: 10px;");
-            }
-        }
+    QSqlQuery query;
+    query.prepare("DELETE FROM tasks WHERE text = :text");
+    query.bindValue(":text", taskText);
+    if (!query.exec()) {
+        qDebug() << "Error deleting task:" << query.lastError().text();
     }
 }
