@@ -1,18 +1,25 @@
 #include "mainwindow.h"
-#include "./ui_mainwindow.h"
-#include <QMessageBox>
-
+#include "ui_mainwindow.h"
+#include "fieldgroup.h"
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    : QWidget(parent), ui(new Ui::MainWindow), group_count(0)
 {
     ui->setupUi(this);
-    // setWindowFlags(Qt::FramelessWindowHint);
 
+    // Get scroll area from UI
+    QScrollArea *scroll = ui->scrollArea;
+    scroll->setWidgetResizable(true);
 
-    // Связываем сигнал нажатия кнопки с слотом
-    QObject::connect(ui->pushButton, &QPushButton::clicked, this, &MainWindow::createNewButton);
+    // Create content widget for scroll area
+    scroll_content = new QWidget();
+    scroll_layout = new QVBoxLayout(scroll_content);
+    scroll_layout->addStretch(1);
+
+    scroll->setWidget(scroll_content);
+
+    // Connect add button
+    connect(ui->addGroupButton, &QPushButton::clicked, this, &MainWindow::add_new_field_group);
 }
 
 MainWindow::~MainWindow()
@@ -20,19 +27,12 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-// Слот для обработки нажатия кнопки
-void MainWindow::createNewButton()
+void MainWindow::add_new_field_group()
 {
-    QPushButton* newButton = new QPushButton("Новая кнопка", this);
+    group_count++;
+    FieldGroup *new_group = new FieldGroup(QString("Список %1").arg(group_count));
+    new_group->add_first_field();
 
-        // Добавляем в layout
-        ui->verticalLayoutForButtons->addWidget(newButton);
-
-        // Связываем сигнал новой кнопки
-        QObject::connect(newButton, &QPushButton::clicked, this, &MainWindow::handleNewButton);
-}
-void MainWindow::handleNewButton()
-{
-    // Обработчик для новых кнопок
-    QMessageBox::information(this, "message", "new button tapped!");
+    // Add new group before the stretch element
+    scroll_layout->insertWidget(scroll_layout->count() - 1, new_group);
 }

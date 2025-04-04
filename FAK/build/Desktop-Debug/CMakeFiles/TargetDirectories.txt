@@ -1,0 +1,9 @@
+/home/dem/main/FAK/FAK/build/Desktop-Debug/CMakeFiles/FAK.dir
+/home/dem/main/FAK/FAK/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/dem/main/FAK/FAK/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/dem/main/FAK/FAK/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/dem/main/FAK/FAK/build/Desktop-Debug/CMakeFiles/install.dir
+/home/dem/main/FAK/FAK/build/Desktop-Debug/CMakeFiles/install/local.dir
+/home/dem/main/FAK/FAK/build/Desktop-Debug/CMakeFiles/install/strip.dir
+/home/dem/main/FAK/FAK/build/Desktop-Debug/CMakeFiles/FAK_autogen_timestamp_deps.dir
+/home/dem/main/FAK/FAK/build/Desktop-Debug/CMakeFiles/FAK_autogen.dir
