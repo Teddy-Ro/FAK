@@ -16,7 +16,7 @@
 #include <QtWidgets/QScrollArea>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
-#include "MyDayTasks.h"
+#include "myDayTasks.h"
 
 QT_BEGIN_NAMESPACE
 
