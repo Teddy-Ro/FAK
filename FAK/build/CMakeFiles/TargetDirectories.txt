@@ -1,0 +1,5 @@
+/home/dem/progect_FAK/FAK/FAK/build/CMakeFiles/FieldManager.dir
+/home/dem/progect_FAK/FAK/FAK/build/CMakeFiles/edit_cache.dir
+/home/dem/progect_FAK/FAK/FAK/build/CMakeFiles/rebuild_cache.dir
+/home/dem/progect_FAK/FAK/FAK/build/CMakeFiles/FieldManager_autogen_timestamp_deps.dir
+/home/dem/progect_FAK/FAK/FAK/build/CMakeFiles/FieldManager_autogen.dir

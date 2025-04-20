@@ -8,9 +8,9 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
 qt_standard_project_setup()
 
 # Qt resource files
-set(RESOURCE_FILES
-    resources.qrc
-)
+# set(RESOURCE_FILES
+#     resources.qrc
+# )
 
 qt_add_resources(RESOURCES ${RESOURCE_FILES})
 
@@ -25,6 +25,7 @@ add_executable(FieldManager
     main.cpp
     mainwindow.cpp
     mainwindow.h
+    mainwindow.ui
     fieldgroup.cpp
     fieldgroup.h
     ${UIS}

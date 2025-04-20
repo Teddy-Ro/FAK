@@ -5,26 +5,24 @@
 #include <QVBoxLayout>
 #include <QPushButton>
 #include <QScrollArea>
-#include "fieldgroup.h"
 
-namespace Ui {
-class MainWindow;
-}
-
-class MainWindow : public QWidget {
+class MainWindow : public QWidget
+{
     Q_OBJECT
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
 
 private slots:
     void add_new_field_group();
 
 private:
-    Ui::MainWindow *ui;
-    QVBoxLayout *scroll_layout;
+    void initUI();
+
+    QPushButton *add_group_btn;
+    QScrollArea *scroll;
     QWidget *scroll_content;
+    QVBoxLayout *scroll_layout;
     int group_count;
 };
 
