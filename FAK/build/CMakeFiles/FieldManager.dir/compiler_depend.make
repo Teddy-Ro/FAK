@@ -2238,8 +2238,120 @@ CMakeFiles/FieldManager.dir/mainwindow.cpp.o: /home/dem/progect_FAK/FAK/FAK/main
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
+FieldManager: /lib/x86_64-linux-gnu/libEGL.so.1 \
+  /lib/x86_64-linux-gnu/libGLdispatch.so.0 \
+  /lib/x86_64-linux-gnu/libQt6DBus.so.6 \
+  /lib/x86_64-linux-gnu/libX11.so.6 \
+  /lib/x86_64-linux-gnu/libXau.so.6 \
+  /lib/x86_64-linux-gnu/libXdmcp.so.6 \
+  /lib/x86_64-linux-gnu/libb2.so.1 \
+  /lib/x86_64-linux-gnu/libbrotlicommon.so.1 \
+  /lib/x86_64-linux-gnu/libbrotlidec.so.1 \
+  /lib/x86_64-linux-gnu/libbsd.so.0 \
+  /lib/x86_64-linux-gnu/libbz2.so.1.0 \
+  /lib/x86_64-linux-gnu/libc.so.6 \
+  /lib/x86_64-linux-gnu/libcap.so.2 \
+  /lib/x86_64-linux-gnu/libdbus-1.so.3 \
+  /lib/x86_64-linux-gnu/libdouble-conversion.so.3 \
+  /lib/x86_64-linux-gnu/libexpat.so.1 \
+  /lib/x86_64-linux-gnu/libfontconfig.so.1 \
+  /lib/x86_64-linux-gnu/libfreetype.so.6 \
+  /lib/x86_64-linux-gnu/libgcrypt.so.20 \
+  /lib/x86_64-linux-gnu/libglib-2.0.so.0 \
+  /lib/x86_64-linux-gnu/libgomp.so.1 \
+  /lib/x86_64-linux-gnu/libgpg-error.so.0 \
+  /lib/x86_64-linux-gnu/libgraphite2.so.3 \
+  /lib/x86_64-linux-gnu/libharfbuzz.so.0 \
+  /lib/x86_64-linux-gnu/libicudata.so.74 \
+  /lib/x86_64-linux-gnu/libicui18n.so.74 \
+  /lib/x86_64-linux-gnu/libicuuc.so.74 \
+  /lib/x86_64-linux-gnu/liblz4.so.1 \
+  /lib/x86_64-linux-gnu/liblzma.so.5 \
+  /lib/x86_64-linux-gnu/libm.so.6 \
+  /lib/x86_64-linux-gnu/libmd.so.0 \
+  /lib/x86_64-linux-gnu/libmd4c.so.0 \
+  /lib/x86_64-linux-gnu/libmvec.so.1 \
+  /lib/x86_64-linux-gnu/libpcre2-16.so.0 \
+  /lib/x86_64-linux-gnu/libpcre2-8.so.0 \
+  /lib/x86_64-linux-gnu/libpng16.so.16 \
+  /lib/x86_64-linux-gnu/libsystemd.so.0 \
+  /lib/x86_64-linux-gnu/libxcb.so.1 \
+  /lib/x86_64-linux-gnu/libxkbcommon.so.0 \
+  /lib/x86_64-linux-gnu/libz.so.1 \
+  /lib/x86_64-linux-gnu/libzstd.so.1 \
+  /lib64/ld-linux-x86-64.so.2 \
+  /usr/lib/x86_64-linux-gnu/Scrt1.o \
+  /usr/lib/x86_64-linux-gnu/crti.o \
+  /usr/lib/x86_64-linux-gnu/crtn.o \
+  /usr/lib/x86_64-linux-gnu/libc.so \
+  /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 \
+  /usr/lib/x86_64-linux-gnu/libm.so \
+  /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o \
+  /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o \
+  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a \
+  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
+  /usr/lib/x86_64-linux-gnu/libGLX.so \
+  /usr/lib/x86_64-linux-gnu/libOpenGL.so \
+  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 \
+  /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2 \
+  /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 \
+  /usr/lib/x86_64-linux-gnu/libc_nonshared.a \
+  CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o \
+  CMakeFiles/FieldManager.dir/fieldgroup.cpp.o \
+  CMakeFiles/FieldManager.dir/main.cpp.o \
+  CMakeFiles/FieldManager.dir/mainwindow.cpp.o
+
+
+CMakeFiles/FieldManager.dir/fieldgroup.cpp.o:
+
+CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o:
+
+/usr/lib/x86_64-linux-gnu/crtn.o:
+
+/usr/lib/x86_64-linux-gnu/Scrt1.o:
+
+/lib/x86_64-linux-gnu/libxkbcommon.so.0:
+
+/lib/x86_64-linux-gnu/libxcb.so.1:
+
+/lib/x86_64-linux-gnu/libpcre2-8.so.0:
+
+/lib/x86_64-linux-gnu/libmvec.so.1:
+
+/lib/x86_64-linux-gnu/libmd4c.so.0:
+
+/lib/x86_64-linux-gnu/libmd.so.0:
+
+/lib/x86_64-linux-gnu/liblzma.so.5:
+
+/lib/x86_64-linux-gnu/libpng16.so.16:
+
+/lib/x86_64-linux-gnu/libicudata.so.74:
+
+/lib/x86_64-linux-gnu/libharfbuzz.so.0:
+
+/lib/x86_64-linux-gnu/libglib-2.0.so.0:
+
+/lib/x86_64-linux-gnu/libfreetype.so.6:
+
+/lib/x86_64-linux-gnu/libc.so.6:
+
+/lib/x86_64-linux-gnu/libbsd.so.0:
+
+/lib/x86_64-linux-gnu/libbrotlidec.so.1:
+
+/lib/x86_64-linux-gnu/libXau.so.6:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o:
+
+/lib/x86_64-linux-gnu/libQt6DBus.so.6:
+
+/lib/x86_64-linux-gnu/libEGL.so.1:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h:
+
+/lib64/ld-linux-x86-64.so.2:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyle:
 
@@ -2250,6 +2362,8 @@ CMakeFiles/FieldManager.dir/mainwindow.cpp.o: /home/dem/progect_FAK/FAK/FAK/main
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSizePolicy:
+
+/lib/x86_64-linux-gnu/libgcrypt.so.20:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
 
@@ -2266,6 +2380,8 @@ CMakeFiles/FieldManager.dir/mainwindow.cpp.o: /home/dem/progect_FAK/FAK/FAK/main
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/lib/x86_64-linux-gnu/libsystemd.so.0:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
@@ -2351,6 +2467,8 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfig.cmake:
 
+/lib/x86_64-linux-gnu/libX11.so.6:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
@@ -2421,6 +2539,8 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h:
 
+/lib/x86_64-linux-gnu/libpcre2-16.so.0:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h:
@@ -2445,9 +2565,15 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h:
 
+/usr/lib/x86_64-linux-gnu/crti.o:
+
+/lib/x86_64-linux-gnu/libzstd.so.1:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h:
+
+/lib/x86_64-linux-gnu/libicuuc.so.74:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiTargets.cmake:
 
@@ -2491,6 +2617,8 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h:
@@ -2520,6 +2648,8 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
+
+/lib/x86_64-linux-gnu/libgomp.so.1:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h:
 
@@ -2558,6 +2688,10 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapOpenGL.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h:
+
+/lib/x86_64-linux-gnu/libcap.so.2:
+
+/lib/x86_64-linux-gnu/libb2.so.1:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h:
 
@@ -2619,6 +2753,8 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/include/c++/13/bits/stl_tempbuf.h:
 
+/usr/lib/x86_64-linux-gnu/libc.so:
+
 /usr/include/c++/13/bits/std_function.h:
 
 /snap/cmake/1461/share/cmake-4.0/Modules/Internal/CheckFlagCommonConfig.cmake:
@@ -2647,6 +2783,8 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/include/c++/13/bits/requires_hosted.h:
 
+/lib/x86_64-linux-gnu/libz.so.1:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake:
 
 /usr/include/x86_64-linux-gnu/asm/unistd.h:
@@ -2661,6 +2799,8 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/include/c++/13/cstddef:
 
+/lib/x86_64-linux-gnu/libdbus-1.so.3:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic.h:
 
 /usr/include/c++/13/bits/postypes.h:
@@ -2672,6 +2812,10 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /usr/include/c++/13/bits/stl_function.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/lib/x86_64-linux-gnu/liblz4.so.1:
+
+/lib/x86_64-linux-gnu/libicui18n.so.74:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
@@ -2689,6 +2833,8 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/include/c++/13/bits/max_size_type.h:
 
+/usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h:
 
 /usr/include/c++/13/bits/locale_facets.tcc:
@@ -2700,6 +2846,8 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /usr/include/c++/13/bits/allocator.h:
 
 /usr/include/c++/13/functional:
+
+/usr/lib/x86_64-linux-gnu/libc_nonshared.a:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake:
 
@@ -2787,6 +2935,8 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
 
+/lib/x86_64-linux-gnu/libgpg-error.so.0:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapVulkanHeaders.cmake:
@@ -2806,6 +2956,8 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringliteral.h:
 
 /usr/include/c++/13/bits/utility.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake:
 
@@ -2850,6 +3002,8 @@ FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/lib/x86_64-linux-gnu/libXdmcp.so.6:
 
 /snap/cmake/1461/share/cmake-4.0/Modules/CheckIncludeFileCXX.cmake:
 
@@ -2909,6 +3063,8 @@ CMakeFiles/4.0.1/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/13/bits/charconv.h:
 
+/usr/lib/x86_64-linux-gnu/libOpenGL.so:
+
 /snap/cmake/1461/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake:
 
 /usr/include/c++/13/optional:
@@ -2949,6 +3105,8 @@ CMakeFiles/4.0.1/CMakeCXXCompiler.cmake:
 
 /snap/cmake/1461/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake:
 
+CMakeFiles/FieldManager.dir/mainwindow.cpp.o:
+
 /home/dem/progect_FAK/FAK/FAK/mainwindow.h:
 
 /snap/cmake/1461/share/cmake-4.0/Modules/FindVulkan.cmake:
@@ -2960,6 +3118,8 @@ CMakeFiles/4.0.1/CMakeCXXCompiler.cmake:
 /snap/cmake/1461/share/cmake-4.0/Modules/GNUInstallDirs.cmake:
 
 /usr/include/wctype.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
 
 /usr/include/c++/13/bits/memoryfwd.h:
 
@@ -3001,6 +3161,8 @@ FieldManager_autogen/moc_predefs.h:
 
 /home/dem/progect_FAK/FAK/FAK/mainwindow.cpp:
 
+CMakeFiles/FieldManager.dir/main.cpp.o:
+
 /snap/cmake/1461/share/cmake-4.0/Modules/Linker/GNU.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake:
@@ -3022,6 +3184,10 @@ FieldManager_autogen/moc_predefs.h:
 /home/dem/progect_FAK/FAK/FAK/main.cpp:
 
 /snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linux-GNU-CXX.cmake:
+
+/usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o:
 
 /usr/include/c++/13/bits/ios_base.h:
 
@@ -3095,6 +3261,10 @@ FieldManager_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
+/lib/x86_64-linux-gnu/libexpat.so.1:
+
+/lib/x86_64-linux-gnu/libGLdispatch.so.0:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusTargets-none.cmake:
 
 /usr/include/c++/13/bits/basic_ios.tcc:
@@ -3108,6 +3278,8 @@ FieldManager_autogen/moc_predefs.h:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake:
 
 /usr/include/c++/13/cwchar:
+
+/lib/x86_64-linux-gnu/libbz2.so.1.0:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
@@ -3125,9 +3297,13 @@ FieldManager_autogen/moc_predefs.h:
 
 /usr/include/c++/13/ext/atomicity.h:
 
+/lib/x86_64-linux-gnu/libgraphite2.so.3:
+
 /usr/include/c++/13/climits:
 
 /usr/include/c++/13/ext/numeric_traits.h:
+
+/usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2:
 
 /usr/include/c++/13/exception:
 
@@ -3173,6 +3349,8 @@ FieldManager_autogen/moc_predefs.h:
 
 /usr/include/c++/13/streambuf:
 
+/usr/lib/x86_64-linux-gnu/libm.so:
+
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:
 
 /usr/include/c++/13/bits/ranges_base.h:
@@ -3180,6 +3358,8 @@ FieldManager_autogen/moc_predefs.h:
 /snap/cmake/1461/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake:
 
 /usr/include/c++/13/string:
+
+/lib/x86_64-linux-gnu/libfontconfig.so.1:
 
 /usr/include/c++/13/string_view:
 
@@ -3251,6 +3431,8 @@ FieldManager_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
+/lib/x86_64-linux-gnu/libbrotlicommon.so.1:
+
 /usr/include/limits.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTestHelpers.cmake:
@@ -3304,6 +3486,8 @@ FieldManager_autogen/moc_predefs.h:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
@@ -3365,6 +3549,8 @@ FieldManager_autogen/EWIEGA46WW/moc_fieldgroup.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
+/lib/x86_64-linux-gnu/libm.so.6:
+
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
@@ -3374,6 +3560,8 @@ FieldManager_autogen/EWIEGA46WW/moc_fieldgroup.cpp:
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/lib/x86_64-linux-gnu/libdouble-conversion.so.3:
 
 /usr/include/c++/13/chrono:
 
@@ -3402,6 +3590,8 @@ FieldManager_autogen/EWIEGA46WW/moc_fieldgroup.cpp:
 /usr/include/c++/13/new:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/lib/x86_64-linux-gnu/libGLX.so:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
 

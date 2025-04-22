@@ -11,79 +11,22 @@ FieldManager_autogen/timestamp: /home/dem/progect_FAK/FAK/FAK/CMakeLists.txt \
   /home/dem/progect_FAK/FAK/FAK/mainwindow.cpp \
   /home/dem/progect_FAK/FAK/FAK/mainwindow.h \
   /snap/cmake/1461/bin/cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeCXXCompiler.cmake.in \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp \
   /snap/cmake/1461/share/cmake-4.0/Modules/CMakeCXXInformation.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeCompilerIdDetection.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeDetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeDetermineCompilerSupport.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeFindBinUtils.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/CMakeGenericSystem.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeParseLibraryArchitecture.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeSystem.cmake.in \
   /snap/cmake/1461/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeTestCompilerCommon.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/CMakeUnixFindMake.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/CheckCXXSourceCompiles.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/CheckIncludeFileCXX.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/CheckLibraryExists.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Borland-DetermineCompiler.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/GNU-FindBinUtils.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/GNU.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/TIClang-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/FeatureSummary.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/FindOpenGL.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake \
@@ -94,19 +37,15 @@ FieldManager_autogen/timestamp: /home/dem/progect_FAK/FAK/FAK/CMakeLists.txt \
   /snap/cmake/1461/share/cmake-4.0/Modules/GNUInstallDirs.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Internal/CMakeInspectCXXLinker.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Internal/CheckFlagCommonConfig.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Internal/FeatureTesting.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Linker/GNU.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/MacroAddFileDependencies.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linker/Linux-GNU-CXX.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linker/Linux-GNU.cmake \
-  /snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linux-Determine-CXX.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linux-GNU-CXX.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linux-GNU.cmake \
   /snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linux-Initialize.cmake \
@@ -646,6 +585,8 @@ FieldManager_autogen/timestamp: /home/dem/progect_FAK/FAK/FAK/CMakeLists.txt \
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets-none.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
@@ -659,6 +600,8 @@ FieldManager_autogen/timestamp: /home/dem/progect_FAK/FAK/FAK/CMakeLists.txt \
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusVersionlessTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusTargets.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusMacros.cmake:
 
@@ -712,6 +655,8 @@ FieldManager_autogen/timestamp: /home/dem/progect_FAK/FAK/FAK/CMakeLists.txt \
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Dependencies.cmake:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigExtras.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
@@ -763,6 +708,8 @@ FieldManager_autogen/timestamp: /home/dem/progect_FAK/FAK/FAK/CMakeLists.txt \
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h:
 
@@ -836,6 +783,8 @@ FieldManager_autogen/timestamp: /home/dem/progect_FAK/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h:
@@ -843,6 +792,8 @@ FieldManager_autogen/timestamp: /home/dem/progect_FAK/FAK/FAK/CMakeLists.txt \
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h:
 
@@ -888,141 +839,151 @@ FieldManager_autogen/timestamp: /home/dem/progect_FAK/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic_cxx11.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringfwd.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreTargets-none.cmake:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+/usr/include/c++/13/concepts:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+/usr/include/c++/13/cmath:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake:
+/usr/include/c++/13/bits/locale_classes.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+/usr/include/c++/13/iterator:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
+/usr/include/c++/13/bits/unique_ptr.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+/snap/cmake/1461/share/cmake-4.0/Modules/FindPkgConfig.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+/usr/include/c++/13/bits/streambuf_iterator.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+/usr/include/c++/13/bits/streambuf.tcc:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreMacros.cmake:
+/usr/include/c++/13/bits/stl_uninitialized.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+/snap/cmake/1461/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollArea:
+/usr/include/c++/13/bits/stl_numeric.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h:
+/usr/include/c++/13/bits/functexcept.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+/usr/include/c++/13/bits/stl_multimap.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h:
+
+/usr/include/c++/13/bits/stl_list.h:
+
+/usr/include/c++/13/tr1/beta_function.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+/usr/include/c++/13/bits/stl_bvector.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+/usr/include/c++/13/bits/stl_algobase.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin/FindXKB.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/timex.h:
+/usr/include/c++/13/bits/stl_tempbuf.h:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
+/usr/include/c++/13/bits/std_function.h:
 
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+/snap/cmake/1461/share/cmake-4.0/Modules/Internal/CheckFlagCommonConfig.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h:
+
+/usr/include/c++/13/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/13/bits/concept_check.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake:
+
+/usr/include/c++/13/bits/shared_ptr.h:
+
+/usr/include/c++/13/debug/assertions.h:
+
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake:
+
+/usr/include/x86_64-linux-gnu/asm/unistd.h:
+
+/usr/include/c++/13/bits/ranges_uninitialized.h:
+
+/usr/include/c++/13/bits/ranges_algobase.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
+
+/usr/include/c++/13/bits/range_access.h:
+
+/usr/include/c++/13/cstddef:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic.h:
+
+/usr/include/c++/13/bits/postypes.h:
+
+/usr/include/c++/13/cwctype:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h:
+
+/usr/include/c++/13/bits/stl_function.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h:
 
 /usr/include/c++/13/bits/new_allocator.h:
+
+/usr/include/c++/13/cstdlib:
+
+/usr/include/c++/13/stdexcept:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake:
 
 /usr/include/c++/13/bits/max_size_type.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h:
 
-/usr/include/c++/13/clocale:
-
-/usr/include/c++/13/iterator:
+/usr/include/c++/13/bits/locale_facets.tcc:
 
 /usr/include/c++/13/bits/iterator_concepts.h:
 
-/usr/include/c++/13/bits/allocator.h:
-
 /snap/cmake/1461/share/cmake-4.0/Modules/CheckLibraryExists.cmake:
 
+/usr/include/c++/13/bits/allocator.h:
+
 /usr/include/c++/13/functional:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/c++/13/bits/locale_facets.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/c++/13/bits/functional_hash.h:
+
+/usr/include/c++/13/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
 /usr/include/c++/13/bits/erase_if.h:
 
@@ -1034,9 +995,99 @@ FieldManager_autogen/timestamp: /home/dem/progect_FAK/FAK/FAK/CMakeLists.txt \
 
 /usr/include/c++/13/ostream:
 
-/usr/include/c++/13/bits/locale_classes.h:
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h:
 
-/usr/include/c++/13/bits/cxxabi_forced.h:
+/usr/include/c++/13/bits/stringfwd.h:
+
+/usr/include/c++/13/bits/ranges_cmp.h:
+
+/usr/include/features-time64.h:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/CMakeGenericSystem.cmake:
+
+/usr/include/c++/13/unordered_map:
+
+/usr/include/c++/13/bits/vector.tcc:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h:
+
+/usr/include/c++/13/cstdint:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/FindThreads.cmake:
+
+/usr/include/c++/13/bits/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h:
+
+/usr/include/c++/13/bits/locale_facets.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/c++/13/vector:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake:
+
+/usr/include/c++/13/tr1/modified_bessel_func.tcc:
+
+/usr/include/c++/13/bits/enable_special_members.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapVulkanHeaders.cmake:
+
+/usr/include/c++/13/bits/ostream_insert.h:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h:
+
+/usr/include/pthread.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringliteral.h:
+
+/usr/include/c++/13/bits/utility.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linux.cmake:
+
+/usr/include/c++/13/bits/stl_construct.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h:
+
+/home/dem/progect_FAK/FAK/FAK/fieldgroup.h:
+
+/usr/include/c++/13/cstring:
+
+/usr/include/c++/13/bits/specfun.h:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linux-Initialize.cmake:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake:
+
+/usr/include/c++/13/atomic:
+
+/usr/include/c++/13/tr1/bessel_function.tcc:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linux-GNU.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h:
 
@@ -1044,99 +1095,29 @@ FieldManager_autogen/timestamp: /home/dem/progect_FAK/FAK/FAK/CMakeLists.txt \
 
 /usr/include/c++/13/bits/parse_numbers.h:
 
-/usr/include/c++/13/bits/charconv.h:
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
 
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+/usr/include/c++/13/bits/exception_ptr.h:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake:
 
-/usr/include/c++/13/bits/mofunc_impl.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake:
 
-/usr/include/c++/13/bits/concept_check.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h:
+/snap/cmake/1461/share/cmake-4.0/Modules/CheckIncludeFileCXX.cmake:
 
-/usr/include/c++/13/bits/shared_ptr_atomic.h:
+/usr/include/c++/13/bits/refwrap.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusTargets-none.cmake:
+/usr/include/c++/13/bits/stream_iterator.h:
 
-/usr/include/c++/13/bits/basic_ios.tcc:
+/usr/include/c++/13/bits/align.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeHelpers.cmake:
 
-/usr/include/c++/13/bits/atomic_wait.h:
+/home/dem/progect_FAK/FAK/FAK/fieldgroup.cpp:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:
-
-/usr/include/c++/13/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/13/bits/localefwd.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h:
-
-/usr/include/c++/13/bits/string_view.tcc:
-
-/usr/include/c++/13/bits/alloc_traits.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/FindThreads.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic.h:
-
-/usr/include/c++/13/bits/postypes.h:
-
-/usr/include/c++/13/cwctype:
-
-/usr/include/alloca.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Platform/UnixPaths.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linker/Linux-GNU.cmake:
-
-/usr/include/c++/13/bits/functexcept.h:
-
-/usr/include/c++/13/bits/atomic_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Internal/FeatureTesting.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:
-
-/usr/include/c++/13/bits/stl_uninitialized.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Internal/CMakeInspectCXXLinker.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake:
-
-/usr/include/c++/13/bits/stl_heap.h:
-
-/usr/include/c++/13/ext/string_conversions.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake:
-
-/usr/include/c++/13/tr1/modified_bessel_func.tcc:
+/usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h:
 
@@ -1152,149 +1133,27 @@ FieldManager_autogen/timestamp: /home/dem/progect_FAK/FAK/FAK/CMakeLists.txt \
 
 /snap/cmake/1461/share/cmake-4.0/Modules/FeatureSummary.cmake:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Internal/CheckFlagCommonConfig.cmake:
-
-/usr/include/c++/13/pstl/glue_numeric_defs.h:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Watcom-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake:
-
-/usr/include/c++/13/bits/char_traits.h:
-
-/usr/include/c++/13/bits/move.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeUnixFindMake.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigExtras.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeDetermineCompilerSupport.cmake:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/include/c++/13/bits/exception_defines.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersionImpl.cmake:
-
-/usr/include/c++/13/bits/stl_tree.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeGenericSystem.cmake:
-
-/usr/include/c++/13/unordered_map:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/FindPkgConfig.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp:
-
-/usr/include/c++/13/bits/unique_ptr.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake:
-
-/usr/include/c++/13/bits/node_handle.h:
-
-/home/dem/progect_FAK/FAK/FAK/main.cpp:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linux.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Intel-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake:
-
-/usr/include/c++/13/optional:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
-
-/usr/include/c++/13/bits/algorithmfwd.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/MSVC-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/ADSP-DetermineCompiler.cmake:
-
-/usr/include/stdlib.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeCompilerIdDetection.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTargetHelpers.cmake:
-
-/usr/include/c++/13/backward/auto_ptr.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:
-
-/usr/include/c++/13/initializer_list:
-
-/usr/include/errno.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Clang-DetermineCompiler.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout:
-
-/usr/include/c++/13/backward/binders.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeParseImplicitIncludeInfo.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h:
-
-/usr/include/x86_64-linux-gnu/bits/syscall.h:
-
-/usr/include/c++/13/algorithm:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
-
-/usr/include/c++/13/debug/debug.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusTargets.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeParseLibraryArchitecture.cmake:
-
 CMakeFiles/4.0.1/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:
 
 /usr/include/c++/13/ios:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h:
+/usr/include/c++/13/bits/ranges_util.h:
 
-/home/dem/progect_FAK/FAK/FAK/fieldgroup.h:
+/usr/include/c++/13/bits/c++0x_warning.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
+/usr/include/c++/13/bits/string_view.tcc:
 
-/usr/include/c++/13/cstring:
+/usr/include/c++/13/bits/localefwd.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeHelpers.cmake:
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout:
 
-/home/dem/progect_FAK/FAK/FAK/fieldgroup.cpp:
+/usr/include/c++/13/backward/binders.h:
 
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linux-GNU.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Tasking-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake:
-
-/usr/include/c++/13/atomic:
-
-/usr/include/c++/13/tr1/bessel_function.tcc:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /snap/cmake/1461/share/cmake-4.0/Modules/CMakeCXXInformation.cmake:
 
@@ -1302,81 +1161,53 @@ CMakeFiles/4.0.1/CMakeCXXCompiler.cmake:
 
 /snap/cmake/1461/bin/cmake:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h:
+/usr/include/c++/13/bits/charconv.h:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Clang-DetermineCompilerInternal.cmake:
+/snap/cmake/1461/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets-none.cmake:
+/usr/include/c++/13/optional:
 
-/usr/include/c++/13/bits/list.tcc:
+/usr/include/c++/13/bits/stl_map.h:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linux-GNU-CXX.cmake:
+/usr/include/wchar.h:
 
-/usr/include/c++/13/bits/basic_ios.h:
+/snap/cmake/1461/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeParseImplicitLinkInfo.cmake:
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h:
+/usr/include/c++/13/bits/atomic_wait.h:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake:
+/usr/include/c++/13/bits/std_abs.h:
 
-/usr/include/stdc-predef.h:
+/usr/include/c++/13/pstl/glue_numeric_defs.h:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Borland-DetermineCompiler.cmake:
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+/snap/cmake/1461/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake:
 
-/usr/include/asm-generic/errno-base.h:
+/usr/include/c++/13/bits/stl_heap.h:
 
-/usr/include/c++/13/list:
+/usr/include/c++/13/ext/string_conversions.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h:
 
 /home/dem/progect_FAK/FAK/FAK/CMakeLists.txt:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/Linker/GNU.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/XL-CXX-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/OrangeC-DetermineCompiler.cmake:
-
-/usr/include/c++/13/bits/stl_multimap.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake:
-
-/usr/include/c++/13/tr1/special_function_util.h:
-
-/home/dem/progect_FAK/FAK/FAK/mainwindow.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeDetermineCompiler.cmake:
-
-/usr/include/c++/13/tr1/exp_integral.tcc:
-
-/usr/include/c++/13/bits/allocated_ptr.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/GHS-DetermineCompiler.cmake:
-
 /usr/include/c++/13/bits/move_only_function.h:
 
 /snap/cmake/1461/share/cmake-4.0/Modules/CheckCXXSourceCompiles.cmake:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
+/usr/include/c++/13/bits/uses_allocator_args.h:
 
-/usr/include/c++/13/bits/exception_ptr.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
 
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+/snap/cmake/1461/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:
+/home/dem/progect_FAK/FAK/FAK/mainwindow.h:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/CheckIncludeFileCXX.cmake:
+/snap/cmake/1461/share/cmake-4.0/Modules/FindVulkan.cmake:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake:
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h:
 
@@ -1384,63 +1215,11 @@ CMakeFiles/4.0.1/CMakeCXXCompiler.cmake:
 
 /usr/include/wctype.h:
 
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/ARMCC-DetermineCompiler.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/13/numeric:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/ARMClang-DetermineCompiler.cmake:
-
-/usr/include/c++/13/tr1/poly_laguerre.tcc:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h:
-
-/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Embarcadero-DetermineCompiler.cmake:
-
-/usr/include/c++/13/bits/enable_special_members.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/FindVulkan.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Cray-DetermineCompiler.cmake:
-
-/usr/include/c++/13/bits/stl_numeric.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/TIClang-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/CrayClang-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/GNU-FindBinUtils.cmake:
-
-/usr/include/c++/13/tr1/legendre_function.tcc:
-
 /usr/include/c++/13/bits/memoryfwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/GNU.cmake:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
 
@@ -1448,187 +1227,111 @@ CMakeFiles/4.0.1/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/13/variant:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/GNU.cmake:
+/usr/include/c++/13/bits/stl_relops.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
+/usr/include/c++/13/bits/atomic_base.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicAppleHelpers.cmake:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6VersionlessTargets.cmake:
+/snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h:
+/usr/include/stdc-predef.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+/usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/c++/13/bits/invoke.h:
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/c++/13/utility:
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h:
+/snap/cmake/1461/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake:
 
-/usr/include/c++/13/bits/locale_facets.tcc:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/IAR-DetermineCompiler.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/NVHPC-DetermineCompiler.cmake:
-
-/usr/include/c++/13/ext/alloc_traits.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/NVIDIA-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/Fujitsu-DetermineCompiler.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/PGI-DetermineCompiler.cmake:
-
-/usr/include/c++/13/memory:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringliteral.h:
-
-/usr/include/c++/13/bits/utility.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/HP-CXX-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeTestCompilerCommon.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-CMakeFiles/4.0.1/CMakeSystem.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtcore-config.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/usr/include/c++/13/bits/stl_algo.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin/FindXKB.cmake:
-
-/usr/include/c++/13/bits/stl_tempbuf.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/PathScale-DetermineCompiler.cmake:
-
-/usr/include/c++/13/bits/ios_base.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/FindPackageMessage.cmake:
-
-/usr/include/sched.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
-
-/usr/include/c++/13/bits/std_function.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/SCO-DetermineCompiler.cmake:
-
-/usr/include/syscall.h:
-
-/usr/include/asm-generic/errno.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/TI-DetermineCompiler.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/c++/13/bits/ostream.tcc:
+/usr/include/c++/13/bits/std_mutex.h:
 
 FieldManager_autogen/moc_predefs.h:
 
 /home/dem/progect_FAK/FAK/FAK/mainwindow.cpp:
 
-/usr/include/c++/13/bits/std_mutex.h:
+/snap/cmake/1461/share/cmake-4.0/Modules/Linker/GNU.cmake:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake:
 
-/usr/include/c++/13/bits/stl_function.h:
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets-none.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapVulkanHeaders.cmake:
+/usr/include/c++/13/bits/list.tcc:
 
-/usr/include/c++/13/bits/ostream_insert.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:
 
-/usr/include/c++/13/bits/ptr_traits.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreTargets-none.cmake:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
 
-/usr/include/pthread.h:
+/usr/include/c++/13/bits/node_handle.h:
 
-/usr/include/c++/13/bits/range_access.h:
+/home/dem/progect_FAK/FAK/FAK/main.cpp:
 
-/usr/include/c++/13/cstddef:
+/snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linux-GNU-CXX.cmake:
 
-/usr/include/c++/13/bits/ranges_algobase.h:
+/usr/include/c++/13/bits/ios_base.h:
 
-/usr/include/features-time64.h:
-
-/usr/include/c++/13/bits/ranges_uninitialized.h:
-
-/usr/include/c++/13/stdexcept:
-
-/usr/include/c++/13/cstdlib:
-
-/usr/include/c++/13/bits/c++0x_warning.h:
-
-/usr/include/c++/13/bits/ranges_util.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake:
-
-/usr/include/x86_64-linux-gnu/asm/unistd.h:
-
-/usr/include/c++/13/bits/requires_hosted.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeCXXCompiler.cmake.in:
-
-/usr/include/c++/13/bits/shared_ptr.h:
-
-/usr/include/c++/13/debug/assertions.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/c++/13/bits/ranges_algo.h:
 
 /usr/include/c++/13/bits/shared_ptr_base.h:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linux-Initialize.cmake:
+/snap/cmake/1461/share/cmake-4.0/Modules/Platform/UnixPaths.cmake:
 
-/usr/include/c++/13/bits/specfun.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersionImpl.cmake:
 
-/usr/include/c++/13/bits/stl_algobase.h:
+/usr/include/c++/13/bits/stl_tree.h:
 
-/usr/include/c++/13/bits/stl_bvector.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
-/usr/include/c++/13/bits/stl_construct.h:
+/usr/include/alloca.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h:
+/usr/include/c++/13/bits/atomic_lockfree_defines.h:
 
-/usr/include/c++/13/bits/stl_iterator_base_types.h:
+/usr/include/c++/13/cctype:
 
-/usr/include/c++/13/bits/stl_iterator.h:
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h:
+/usr/include/asm-generic/errno-base.h:
 
-/usr/include/c++/13/bits/stl_list.h:
+/usr/include/c++/13/list:
 
-/usr/include/c++/13/tr1/beta_function.tcc:
+/usr/include/c++/13/bits/uses_allocator.h:
 
-/usr/include/wchar.h:
+/usr/include/c++/13/bits/basic_string.h:
 
-/usr/include/c++/13/bits/stl_map.h:
+/usr/include/asm-generic/errno.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
 
-/usr/include/c++/13/bits/stl_pair.h:
+/usr/include/c++/13/debug/debug.h:
+
+/usr/include/c++/13/bits/locale_classes.h:
+
+/usr/include/c++/13/bits/cxxabi_forced.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTargetHelpers.cmake:
+
+/usr/include/c++/13/backward/auto_ptr.h:
+
+/usr/include/c++/13/bits/basic_ios.h:
+
+/usr/include/c++/13/cerrno:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h:
+
+/usr/include/c++/13/tr1/hypergeometric.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/c++/13/tr1/exp_integral.tcc:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
@@ -1640,83 +1343,31 @@ FieldManager_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
-/usr/include/c++/13/bits/stl_relops.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusTargets-none.cmake:
 
-/usr/include/c++/13/bits/refwrap.h:
+/usr/include/c++/13/bits/basic_ios.tcc:
 
-/usr/include/c++/13/bits/align.h:
+/usr/include/c++/13/bits/mofunc_impl.h:
 
-/usr/include/c++/13/bits/stream_iterator.h:
+/usr/include/c++/13/bits/move.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/c++/13/vector:
-
-/usr/include/c++/13/bits/streambuf.tcc:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h:
-
-/usr/include/c++/13/bits/ranges_cmp.h:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
-/usr/include/c++/13/bits/basic_string.h:
-
-/usr/include/c++/13/bits/uses_allocator.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeFindBinUtils.cmake:
-
-/usr/include/c++/13/bits/uses_allocator_args.h:
-
-/usr/include/c++/13/bits/vector.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/c++/13/bits/basic_string.tcc:
-
-/usr/include/c++/13/chrono:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h:
-
-/usr/include/c++/13/cstdint:
-
-/usr/include/c++/13/cctype:
-
-/usr/include/c++/13/cerrno:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h:
-
-/usr/include/c++/13/tr1/hypergeometric.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake:
-
-/usr/include/c++/13/bits/locale_classes.tcc:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linux-Determine-CXX.cmake:
-
-/usr/include/c++/13/cmath:
-
-/usr/include/c++/13/concepts:
+/usr/include/c++/13/bits/char_traits.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake:
 
 /usr/include/c++/13/cwchar:
 
-/usr/include/unistd.h:
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
-/usr/include/c++/13/ext/aligned_buffer.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtcore-config.h:
+
+/usr/include/c++/13/bits/stl_algo.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/c++/13/ext/alloc_traits.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h:
 
@@ -1730,6 +1381,10 @@ FieldManager_autogen/moc_predefs.h:
 
 /usr/include/c++/13/ext/type_traits.h:
 
+/usr/include/c++/13/initializer_list:
+
+/usr/include/errno.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetacontainer.h:
@@ -1738,49 +1393,51 @@ FieldManager_autogen/moc_predefs.h:
 
 /usr/include/c++/13/limits:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake:
-
 /usr/include/c++/13/map:
 
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
-/usr/include/c++/13/new:
+/usr/include/c++/13/memory:
 
 /usr/include/c++/13/bits/memory_resource.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h:
 
-/usr/include/c++/13/numbers:
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/13/numeric:
 
 /usr/include/c++/13/pstl/execution_defs.h:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeSystem.cmake.in:
-
 /usr/include/c++/13/pstl/glue_memory_defs.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/c++/13/streambuf:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:
 
-/snap/cmake/1461/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake:
-
 /usr/include/c++/13/bits/ranges_base.h:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake:
 
 /usr/include/c++/13/string:
 
 /usr/include/c++/13/string_view:
 
+/usr/include/c++/13/clocale:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
 /usr/include/c++/13/tr1/ell_integral.tcc:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h:
-
-/snap/cmake/1461/share/cmake-4.0/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake:
 
 /usr/include/c++/13/tr1/gamma.tcc:
 
@@ -1788,11 +1445,29 @@ FieldManager_autogen/moc_predefs.h:
 
 /usr/include/c++/13/tuple:
 
+/usr/include/c++/13/tr1/legendre_function.tcc:
+
 /usr/include/c++/13/bits/uniform_int_dist.h:
 
 /usr/include/c++/13/tr1/poly_hermite.tcc:
 
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h:
+
+/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
+
 /usr/include/c++/13/tr1/riemann_zeta.tcc:
+
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
+
+/usr/include/c++/13/bits/ostream.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h:
 
@@ -1820,6 +1495,8 @@ FieldManager_autogen/moc_predefs.h:
 
 /usr/include/features.h:
 
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
 /usr/include/limits.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTestHelpers.cmake:
@@ -1827,6 +1504,12 @@ FieldManager_autogen/moc_predefs.h:
 /usr/include/linux/limits.h:
 
 /usr/include/locale.h:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/FindPackageMessage.cmake:
+
+/usr/include/sched.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake:
 
@@ -1836,13 +1519,21 @@ FieldManager_autogen/moc_predefs.h:
 
 /usr/include/stdint.h:
 
+/usr/include/stdlib.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiTargets-none.cmake:
 
 /usr/include/strings.h:
 
+/usr/include/syscall.h:
+
 /usr/include/c++/13/bit:
 
 /usr/include/time.h:
+
+/usr/include/c++/13/ext/aligned_buffer.h:
+
+/usr/include/unistd.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
@@ -1860,6 +1551,10 @@ FieldManager_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
@@ -1872,14 +1567,136 @@ FieldManager_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h:
+
+/usr/include/c++/13/numbers:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/usr/include/string.h:
+CMakeFiles/4.0.1/CMakeSystem.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/c++/13/bits/stl_vector.h:
 
+/usr/include/string.h:
+
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/c++/13/compare:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h:
+
+/usr/include/c++/13/algorithm:
+
+/usr/include/x86_64-linux-gnu/bits/syscall.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/c++/13/chrono:
+
+/usr/include/c++/13/bits/basic_string.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/Platform/Linker/Linux-GNU.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollArea:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/c++/13/bits/stl_pair.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/c++/13/new:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicAppleHelpers.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6VersionlessTargets.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h:
+
+/usr/include/c++/13/bits/invoke.h:
+
+/usr/include/c++/13/utility:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreMacros.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/include/c++/13/bits/algorithmfwd.h:
+
+/snap/cmake/1461/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringfwd.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h:
