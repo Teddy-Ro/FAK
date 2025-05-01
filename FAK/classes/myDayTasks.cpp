@@ -15,6 +15,8 @@
 #include <QContextMenuEvent>
 #include <QMenu>
 #include <QTimer>
+#include <QStandardPaths>
+#include <QDir>
 
 MyDayTasks::MyDayTasks(QWidget *parent)
     : QWidget(parent), ui(new Ui::MyDayTasks)
@@ -47,7 +49,14 @@ MyDayTasks::~MyDayTasks()
 void MyDayTasks::initDatabase()
 {
     db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("tasks.db");
+
+    // Получаем путь к постоянной директории данных
+    QString dbPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    QDir().mkpath(dbPath); // Создаём директорию, если её нет
+
+    // Устанавливаем полный путь к файлу БД
+    db.setDatabaseName(dbPath + "/tasks.db");
+
     if (!db.open()) {
         qDebug() << "Database connection error:" << db.lastError().text();
     } else {
