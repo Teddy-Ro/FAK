@@ -10,7 +10,11 @@
 #include <QScrollArea>
 #include <QDebug>
 #include <QSqlError>
-#include <QFont>  // Добавлен для работы с шрифтами
+#include <QFont>
+#include <QDateTimeEdit>
+#include <QContextMenuEvent>
+#include <QMenu>
+#include <QTimer>
 
 MyDayTasks::MyDayTasks(QWidget *parent)
     : QWidget(parent), ui(new Ui::MyDayTasks)
@@ -24,6 +28,11 @@ MyDayTasks::MyDayTasks(QWidget *parent)
     ui->scrollArea->setWidget(scrollContents);
     ui->scrollArea->setWidgetResizable(true);
     ui->buttonsLayout = taskListLayout;
+
+    // Проверка просроченных задач каждую минуту
+    QTimer *timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, this, &MyDayTasks::checkForOverdueTasks);
+    timer->start(60000); // 60 секунд
 
     loadTasksFromDatabase();
     connect(ui->textInput, &QLineEdit::returnPressed, this, &MyDayTasks::createButtonFromInput);
@@ -46,16 +55,23 @@ void MyDayTasks::initDatabase()
         query.exec("CREATE TABLE IF NOT EXISTS tasks ("
                  "id INTEGER PRIMARY KEY AUTOINCREMENT, "
                  "text TEXT NOT NULL UNIQUE, "
-                 "completed BOOLEAN NOT NULL)");
+                 "completed BOOLEAN NOT NULL, "
+                 "deadline DATETIME)");
     }
 }
 
 void MyDayTasks::loadTasksFromDatabase()
 {
-    QSqlQuery query("SELECT text, completed FROM tasks ORDER BY completed");
+    QSqlQuery query("SELECT text, completed, deadline FROM tasks ORDER BY completed");
     while (query.next()) {
         QString text = query.value(0).toString();
         bool completed = query.value(1).toBool();
+        QDateTime deadline = query.value(2).toDateTime();
+
+        // Добавляем дедлайн к тексту, если он есть
+        if (deadline.isValid()) {
+            text += " (До: " + deadline.toString("dd.MM.yyyy HH:mm") + ")";
+        }
 
         QWidget* taskWidget = new QWidget();
         taskWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
@@ -83,6 +99,7 @@ void MyDayTasks::loadTasksFromDatabase()
 
         checkbox->setProperty("taskButton", QVariant::fromValue(taskButton));
         checkbox->setProperty("taskWidget", QVariant::fromValue(taskWidget));
+        checkbox->setProperty("associatedButton", QVariant::fromValue(taskButton));
         deleteButton->setProperty("taskWidget", QVariant::fromValue(taskWidget));
 
         taskLayout->addWidget(checkbox);
@@ -99,20 +116,29 @@ void MyDayTasks::loadTasksFromDatabase()
         connect(taskButton, &QPushButton::clicked, this, &MyDayTasks::handleTaskButtonClick);
         connect(deleteButton, &QToolButton::clicked, this, &MyDayTasks::handleDeleteButtonClick);
     }
+    checkForOverdueTasks();
 }
 
 void MyDayTasks::updateTaskStyle(QPushButton* button, bool completed)
 {
-    button->setStyleSheet(
-        QString("QPushButton {"
-                "text-align: left; padding-left: 10px;"
-                "background-color: %1; color: %2;"
-                "border: none;"
-                "}"
-                "QPushButton:hover { background-color: #9d7aaf; }")
+    QString style = QString("QPushButton {"
+            "text-align: left; padding-left: 10px;"
+            "background-color: %1; color: %2;"
+            "border: none;"
+            "text-decoration: %3;"
+            "}"
+            "QPushButton:hover { background-color: #9d7aaf; }")
         .arg(completed ? "transparent" : "#8d6a9f")
         .arg(completed ? "#aaaaaa" : "#f7f3e3")
-    );
+        .arg(completed ? "line-through" : "none");
+
+    // Проверка на просроченность
+    QDateTime deadline = extractDeadlineFromText(button->text());
+    if (deadline.isValid() && deadline < QDateTime::currentDateTime()) {
+        style += " color: red;";
+    }
+
+    button->setStyleSheet(style);
 
     QFont font = button->font();
     font.setStrikeOut(completed);
@@ -164,6 +190,7 @@ void MyDayTasks::createButtonFromInput()
 
     checkbox->setProperty("taskButton", QVariant::fromValue(taskButton));
     checkbox->setProperty("taskWidget", QVariant::fromValue(taskWidget));
+    checkbox->setProperty("associatedButton", QVariant::fromValue(taskButton));
     deleteButton->setProperty("taskWidget", QVariant::fromValue(taskWidget));
 
     taskLayout->addWidget(checkbox);
@@ -190,7 +217,7 @@ void MyDayTasks::handleCheckboxToggle(bool checked)
     if (!taskButton || !taskWidget) return;
 
     updateTaskStyle(taskButton, checked);
-    updateTaskStatusInDatabase(taskButton->text(), checked);
+    updateTaskStatusInDatabase(extractBaseTaskText(taskButton->text()), checked);
 
     if (checked) {
         moveTaskToBottom(taskWidget);
@@ -218,7 +245,7 @@ void MyDayTasks::handleDeleteButtonClick()
 
     QPushButton* taskButton = taskWidget->findChild<QPushButton*>();
     if (taskButton) {
-        deleteTaskFromDatabase(taskButton->text());
+        deleteTaskFromDatabase(extractBaseTaskText(taskButton->text()));
     }
 
     taskWidget->hide();
@@ -226,12 +253,13 @@ void MyDayTasks::handleDeleteButtonClick()
     taskWidget->deleteLater();
 }
 
-void MyDayTasks::saveTaskToDatabase(const QString &taskText, bool completed)
+void MyDayTasks::saveTaskToDatabase(const QString &taskText, bool completed, const QDateTime &deadline)
 {
     QSqlQuery query;
-    query.prepare("INSERT INTO tasks (text, completed) VALUES (:text, :completed)");
+    query.prepare("INSERT INTO tasks (text, completed, deadline) VALUES (:text, :completed, :deadline)");
     query.bindValue(":text", taskText);
     query.bindValue(":completed", completed);
+    query.bindValue(":deadline", deadline.isValid() ? deadline.toString(Qt::ISODate) : QVariant());
     if (!query.exec()) {
         qDebug() << "Error saving task:" << query.lastError().text();
     }
@@ -248,6 +276,17 @@ void MyDayTasks::updateTaskStatusInDatabase(const QString &taskText, bool comple
     }
 }
 
+void MyDayTasks::updateTaskDeadlineInDatabase(const QString &taskText, const QDateTime &deadline)
+{
+    QSqlQuery query;
+    query.prepare("UPDATE tasks SET deadline = :deadline WHERE text = :text");
+    query.bindValue(":deadline", deadline.isValid() ? deadline.toString(Qt::ISODate) : QVariant());
+    query.bindValue(":text", taskText);
+    if (!query.exec()) {
+        qDebug() << "Error updating deadline:" << query.lastError().text();
+    }
+}
+
 void MyDayTasks::deleteTaskFromDatabase(const QString &taskText)
 {
     QSqlQuery query;
@@ -256,4 +295,119 @@ void MyDayTasks::deleteTaskFromDatabase(const QString &taskText)
     if (!query.exec()) {
         qDebug() << "Error deleting task:" << query.lastError().text();
     }
+}
+
+void MyDayTasks::contextMenuEvent(QContextMenuEvent *event)
+{
+    contextMenuButton = getButtonAtPos(event->pos());
+    if (!contextMenuButton) return;
+
+    QMenu menu(this);
+    QAction *propertiesAction = menu.addAction("Свойства задачи");
+    QAction *deadlineAction = menu.addAction("Установить дедлайн");
+
+    connect(propertiesAction, &QAction::triggered, this, &MyDayTasks::showTaskProperties);
+    connect(deadlineAction, &QAction::triggered, this, &MyDayTasks::setTaskDeadline);
+
+    menu.exec(event->globalPos());
+}
+
+QPushButton* MyDayTasks::getButtonAtPos(const QPoint &pos)
+{
+    QWidget *child = childAt(pos);
+    while (child) {
+        if (auto button = qobject_cast<QPushButton*>(child)) {
+            return button;
+        }
+        child = child->parentWidget();
+    }
+    return nullptr;
+}
+
+void MyDayTasks::showTaskProperties()
+{
+    if (!contextMenuButton) return;
+
+    QString message = "Задача: " + contextMenuButton->text();
+    QMessageBox::information(this, "Свойства задачи", message);
+}
+
+void MyDayTasks::setTaskDeadline()
+{
+    if (!contextMenuButton) return;
+
+    QString currentText = contextMenuButton->text();
+    QDateTime currentDeadline = extractDeadlineFromText(currentText);
+
+    QDialog dialog(this);
+    dialog.setWindowTitle("Установить дедлайн");
+
+    QDateTimeEdit *dateTimeEdit = new QDateTimeEdit(currentDeadline.isValid() ? currentDeadline : QDateTime::currentDateTime());
+    dateTimeEdit->setDisplayFormat("dd.MM.yyyy HH:mm");
+    dateTimeEdit->setCalendarPopup(true);
+
+    QVBoxLayout *layout = new QVBoxLayout(&dialog);
+    layout->addWidget(dateTimeEdit);
+
+    QPushButton *okButton = new QPushButton("OK");
+    connect(okButton, &QPushButton::clicked, &dialog, &QDialog::accept);
+
+    QPushButton *cancelButton = new QPushButton("Отмена");
+    connect(cancelButton, &QPushButton::clicked, &dialog, &QDialog::reject);
+
+    QHBoxLayout *buttonLayout = new QHBoxLayout();
+    buttonLayout->addWidget(okButton);
+    buttonLayout->addWidget(cancelButton);
+
+    layout->addLayout(buttonLayout);
+
+    if (dialog.exec() == QDialog::Accepted) {
+        QDateTime deadline = dateTimeEdit->dateTime();
+        QString baseText = extractBaseTaskText(currentText);
+        QString newText = baseText + " (До: " + deadline.toString("dd.MM.yyyy HH:mm") + ")";
+
+        contextMenuButton->setText(newText);
+        updateTaskDeadlineInDatabase(baseText, deadline);
+        updateTaskStyle(contextMenuButton, contextMenuButton->font().strikeOut());
+    }
+
+    contextMenuButton = nullptr;
+}
+
+void MyDayTasks::checkForOverdueTasks()
+{
+    QDateTime now = QDateTime::currentDateTime();
+    QLayout *layout = ui->buttonsLayout;
+
+    for (int i = 0; i < layout->count(); ++i) {
+        QWidget *widget = layout->itemAt(i)->widget();
+        if (!widget) continue;
+
+        QPushButton *button = widget->findChild<QPushButton*>();
+        if (button) {
+            QDateTime deadline = extractDeadlineFromText(button->text());
+            if (deadline.isValid() && deadline < now) {
+                updateTaskStyle(button, button->font().strikeOut());
+            }
+        }
+    }
+}
+
+QString MyDayTasks::extractBaseTaskText(const QString &fullText)
+{
+    if (fullText.contains("(До:")) {
+        return fullText.left(fullText.indexOf("(До:")).trimmed();
+    }
+    return fullText;
+}
+
+QDateTime MyDayTasks::extractDeadlineFromText(const QString &fullText)
+{
+    if (fullText.contains("(До:")) {
+        int start = fullText.indexOf("(До:") + 5;
+        int end = fullText.indexOf(")", start);
+        QString dateStr = fullText.mid(start, end - start).trimmed();
+        return QDateTime::fromString(dateStr, "dd.MM.yyyy HH:mm");
+    }
+    return QDateTime();
 }
