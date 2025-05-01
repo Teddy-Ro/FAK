@@ -3,6 +3,8 @@ FAK_autogen/timestamp: \
 	/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
 	/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
 	/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/moc_predefs.h \
+	/home/korsar/chest/GitHub/FAK/FAK/classes/deadlinepanel.cpp \
+	/home/korsar/chest/GitHub/FAK/FAK/classes/deadlinepanel.h \
 	/home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.cpp \
 	/home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.h \
 	/home/korsar/chest/GitHub/FAK/FAK/main.cpp \
@@ -431,7 +433,6 @@ FAK_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
-	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QButtonGroup \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenu \
@@ -440,7 +441,6 @@ FAK_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolButton \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
-	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qbuttongroup.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \

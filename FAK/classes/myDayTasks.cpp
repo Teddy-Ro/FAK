@@ -69,15 +69,13 @@ void MyDayTasks::initDatabase()
     }
 }
 
-void MyDayTasks::loadTasksFromDatabase()
-{
+void MyDayTasks::loadTasksFromDatabase() {
     QSqlQuery query("SELECT text, completed, deadline FROM tasks ORDER BY completed");
     while (query.next()) {
         QString text = query.value(0).toString();
         bool completed = query.value(1).toBool();
         QDateTime deadline = query.value(2).toDateTime();
 
-        // Добавляем дедлайн к тексту, если он есть
         if (deadline.isValid()) {
             text += " (До: " + deadline.toString("dd.MM.yyyy HH:mm") + ")";
         }
@@ -95,6 +93,17 @@ void MyDayTasks::loadTasksFromDatabase()
         QPushButton* taskButton = new QPushButton(text);
         updateTaskStyle(taskButton, completed);
 
+        QToolButton* optionsButton = new QToolButton();
+        optionsButton->setText("⋮");
+        optionsButton->setStyleSheet(
+            "QToolButton {"
+            "font-size: 18px; font-weight: bold; color: #f7f3e3;"
+            "background-color: transparent; border: none;"
+            "min-width: 20px; min-height: 20px;"
+            "}"
+            "QToolButton:hover { color: #9d7aaf; }"
+        );
+
         QToolButton* deleteButton = new QToolButton();
         deleteButton->setText("×");
         deleteButton->setStyleSheet(
@@ -108,11 +117,12 @@ void MyDayTasks::loadTasksFromDatabase()
 
         checkbox->setProperty("taskButton", QVariant::fromValue(taskButton));
         checkbox->setProperty("taskWidget", QVariant::fromValue(taskWidget));
-        checkbox->setProperty("associatedButton", QVariant::fromValue(taskButton));
         deleteButton->setProperty("taskWidget", QVariant::fromValue(taskWidget));
+        optionsButton->setProperty("taskWidget", QVariant::fromValue(taskWidget));
 
         taskLayout->addWidget(checkbox);
         taskLayout->addWidget(taskButton, 1);
+        taskLayout->addWidget(optionsButton);
         taskLayout->addWidget(deleteButton);
 
         if (completed) {
@@ -124,8 +134,20 @@ void MyDayTasks::loadTasksFromDatabase()
         connect(checkbox, &QCheckBox::toggled, this, &MyDayTasks::handleCheckboxToggle);
         connect(taskButton, &QPushButton::clicked, this, &MyDayTasks::handleTaskButtonClick);
         connect(deleteButton, &QToolButton::clicked, this, &MyDayTasks::handleDeleteButtonClick);
+        connect(optionsButton, &QToolButton::clicked, this, &MyDayTasks::showDeadlineOptions);
     }
     checkForOverdueTasks();
+}
+
+void MyDayTasks::showDeadlineOptions()
+{
+    QToolButton* optionsButton = qobject_cast<QToolButton*>(sender());
+    if (!optionsButton) return;
+
+    QWidget* taskWidget = optionsButton->parentWidget();
+    if (taskWidget) {
+        emit showDeadlinePanelRequested(taskWidget);
+    }
 }
 
 void MyDayTasks::updateTaskStyle(QPushButton* button, bool completed)
@@ -186,6 +208,18 @@ void MyDayTasks::createButtonFromInput()
     QPushButton* taskButton = new QPushButton(text);
     updateTaskStyle(taskButton, false);
 
+    // Добавляем кнопку опций (три точки)
+    QToolButton* optionsButton = new QToolButton();
+    optionsButton->setText("⋮");
+    optionsButton->setStyleSheet(
+        "QToolButton {"
+        "font-size: 18px; font-weight: bold; color: #f7f3e3;"
+        "background-color: transparent; border: none;"
+        "min-width: 20px; min-height: 20px;"
+        "}"
+        "QToolButton:hover { color: #9d7aaf; }"
+    );
+
     QToolButton* deleteButton = new QToolButton();
     deleteButton->setText("×");
     deleteButton->setStyleSheet(
@@ -199,11 +233,12 @@ void MyDayTasks::createButtonFromInput()
 
     checkbox->setProperty("taskButton", QVariant::fromValue(taskButton));
     checkbox->setProperty("taskWidget", QVariant::fromValue(taskWidget));
-    checkbox->setProperty("associatedButton", QVariant::fromValue(taskButton));
     deleteButton->setProperty("taskWidget", QVariant::fromValue(taskWidget));
+    optionsButton->setProperty("taskWidget", QVariant::fromValue(taskWidget));
 
     taskLayout->addWidget(checkbox);
     taskLayout->addWidget(taskButton, 1);
+    taskLayout->addWidget(optionsButton);  // Добавляем кнопку опций
     taskLayout->addWidget(deleteButton);
 
     ui->buttonsLayout->insertWidget(0, taskWidget);
@@ -212,6 +247,7 @@ void MyDayTasks::createButtonFromInput()
     connect(checkbox, &QCheckBox::toggled, this, &MyDayTasks::handleCheckboxToggle);
     connect(taskButton, &QPushButton::clicked, this, &MyDayTasks::handleTaskButtonClick);
     connect(deleteButton, &QToolButton::clicked, this, &MyDayTasks::handleDeleteButtonClick);
+    connect(optionsButton, &QToolButton::clicked, this, &MyDayTasks::showDeadlineOptions);  // Подключаем обработчик
 
     ui->textInput->clear();
 }
@@ -402,16 +438,14 @@ void MyDayTasks::checkForOverdueTasks()
     }
 }
 
-QString MyDayTasks::extractBaseTaskText(const QString &fullText)
-{
+QString MyDayTasks::extractBaseTaskText(const QString &fullText) {
     if (fullText.contains("(До:")) {
         return fullText.left(fullText.indexOf("(До:")).trimmed();
     }
     return fullText;
 }
 
-QDateTime MyDayTasks::extractDeadlineFromText(const QString &fullText)
-{
+QDateTime MyDayTasks::extractDeadlineFromText(const QString &fullText) {
     if (fullText.contains("(До:")) {
         int start = fullText.indexOf("(До:") + 5;
         int end = fullText.indexOf(")", start);

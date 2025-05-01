@@ -1,82 +1,118 @@
 #include "mainwindow.h"
-#include <QAction>
+#include "ui_mainwindow.h"
 #include <QButtonGroup>
-#include <QCheckBox>
-#include <QFile>
-#include <QFrame>
-#include <QHBoxLayout>
-#include <QInputDialog>
-#include <QLabel>
-#include <QMenu>
-#include <QMessageBox>
-#include <QTimer>
+#include <QStackedWidget>
 #include <QVBoxLayout>
+#include <QFile>
 #include <QtUiTools/QUiLoader>
 #include "classes/myDayTasks.h"
-#include "ui_mainwindow.h"
 
-
-MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
+{
     ui->setupUi(this);
 
-    buttonGroup = new QButtonGroup(this);
-    buttonGroup->setExclusive(true);  // Делаем группу эксклюзивной
+    deadlinePanel = new DeadlinePanel();
+    ui->horizontalLayout->addWidget(deadlinePanel);
+    deadlinePanel->hide();
 
-    // Добавляем кнопки в группу
+    connect(deadlinePanel, &DeadlinePanel::deadlineApplied,
+            this, &MainWindow::handleDeadlineApplied);
+    connect(deadlinePanel, &DeadlinePanel::cancelled,
+            this, &MainWindow::hideDeadlinePanel);
+
+    buttonGroup = new QButtonGroup(this);
+    buttonGroup->setExclusive(true);
+
     buttonGroup->addButton(ui->myDayButton, 0);
     buttonGroup->addButton(ui->importantButton, 1);
     buttonGroup->addButton(ui->plannedButton, 2);
 
-    // Инициализируем QStackedWidget
     stackedWidget = new QStackedWidget();
     QVBoxLayout* layout = qobject_cast<QVBoxLayout*>(ui->widget_3->layout());
     if (layout) {
         layout->addWidget(stackedWidget);
     }
 
-    // Добавляем начальную страницу
     stackedWidget->addWidget(new QWidget());
 
-    // Подключаем кнопки
     connect(ui->myDayButton, &QPushButton::clicked, [this]() { loadTabContent(0); });
     connect(ui->importantButton, &QPushButton::clicked, [this]() { loadTabContent(1); });
     connect(ui->plannedButton, &QPushButton::clicked, [this]() { loadTabContent(2); });
 }
 
-MainWindow::~MainWindow() {
+
+MainWindow::~MainWindow()
+{
     delete ui;
 }
 
-void MainWindow::loadTabContent(int index) {
-    if (!stackedWidget)
-        return;
+void MainWindow::showDeadlinePanel(QWidget* taskWidget)
+{
+    currentTaskWidget = taskWidget;
+    deadlinePanel->show();
+    deadlinePanel->setFixedWidth(300);
 
-    // Удаляем старый контент
+    if (auto taskButton = taskWidget->findChild<QPushButton*>()) {
+        QDateTime deadline = MyDayTasks::extractDeadlineFromText(taskButton->text());
+        deadlinePanel->setDeadline(deadline.isValid() ? deadline : QDateTime::currentDateTime());
+    }
+
+    // Получаем центральный виджет и настраиваем его размер
+    if (auto central = centralWidget()) {
+        central->setMinimumWidth(width() - 550);
+    }
+}
+
+void MainWindow::hideDeadlinePanel()
+{
+    deadlinePanel->hide();
+    currentTaskWidget = nullptr;
+}
+
+void MainWindow::handleDeadlineApplied(const QDateTime &deadline)
+{
+    if (currentTaskWidget) {
+        if (auto taskButton = currentTaskWidget->findChild<QPushButton*>()) {
+            QString baseText = MyDayTasks::extractBaseTaskText(taskButton->text());
+            QString newText = baseText + " (До: " + deadline.toString("dd.MM.yyyy HH:mm") + ")";
+            taskButton->setText(newText);
+
+            // Обновляем стиль задачи
+            if (auto myDayTasks = qobject_cast<MyDayTasks*>(stackedWidget->currentWidget())) {
+                myDayTasks->updateTaskStyle(taskButton, taskButton->font().strikeOut());
+                myDayTasks->updateTaskDeadlineInDatabase(baseText, deadline);
+            }
+        }
+        hideDeadlinePanel();
+    }
+}
+
+void MainWindow::loadTabContent(int index)
+{
+    if (!stackedWidget) return;
+
     if (stackedWidget->count() > index) {
         QWidget* oldWidget = stackedWidget->widget(index);
         stackedWidget->removeWidget(oldWidget);
         delete oldWidget;
     }
 
-    // Создаем виджет без QUiLoader для MyDayTasks
     if (index == 0) {
         MyDayTasks* myDayWidget = new MyDayTasks();
+        connect(myDayWidget, &MyDayTasks::showDeadlinePanelRequested,
+                this, &MainWindow::showDeadlinePanel);
         stackedWidget->insertWidget(index, myDayWidget);
         stackedWidget->setCurrentIndex(index);
         return;
     }
 
-    // Для остальных вкладок оставляем текущую логику
     QString filePath;
     switch (index) {
-        case 1:
-            filePath = ":/ui/ui/importantList.ui";
-            break;
-        case 2:
-            filePath = ":/ui/ui/planned.ui";
-            break;
-        default:
-            return;
+        case 1: filePath = ":/ui/ui/importantList.ui"; break;
+        case 2: filePath = ":/ui/ui/planned.ui"; break;
+        default: return;
     }
 
     QUiLoader loader;

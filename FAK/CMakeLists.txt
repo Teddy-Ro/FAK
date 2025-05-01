@@ -14,6 +14,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets UiTools)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools Sql)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools Sql)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets UiTools)
 
 set(TS_FILES FAK_ru_RU.ts)
 
@@ -23,6 +24,14 @@ set(PROJECT_SOURCES
         mainwindow.h
         mainwindow.ui
         ${TS_FILES}
+        classes/deadlinepanel.cpp
+        classes/deadlinepanel.h
+        classes/myDayTasks.h
+        classes/myDayTasks.cpp
+        classes/myDayTasks.ui
+        ui/importantList.ui
+        ui/planned.ui
+        resources.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
