@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o.d"
   "CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o"
+  "CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o.d"
   "CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o"
   "CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o.d"
   "CMakeFiles/FAK.dir/main.cpp.o"

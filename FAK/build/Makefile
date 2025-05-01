@@ -249,6 +249,30 @@ FAK_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FAK.dir/build.make CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.s
 .PHONY : FAK_autogen/mocs_compilation.cpp.s
 
+classes/deadlinepanel.o: classes/deadlinepanel.cpp.o
+.PHONY : classes/deadlinepanel.o
+
+# target to build an object file
+classes/deadlinepanel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FAK.dir/build.make CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o
+.PHONY : classes/deadlinepanel.cpp.o
+
+classes/deadlinepanel.i: classes/deadlinepanel.cpp.i
+.PHONY : classes/deadlinepanel.i
+
+# target to preprocess a source file
+classes/deadlinepanel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FAK.dir/build.make CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.i
+.PHONY : classes/deadlinepanel.cpp.i
+
+classes/deadlinepanel.s: classes/deadlinepanel.cpp.s
+.PHONY : classes/deadlinepanel.s
+
+# target to generate assembly for a file
+classes/deadlinepanel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FAK.dir/build.make CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.s
+.PHONY : classes/deadlinepanel.cpp.s
+
 classes/myDayTasks.o: classes/myDayTasks.cpp.o
 .PHONY : classes/myDayTasks.o
 
@@ -342,6 +366,9 @@ help:
 	@echo "... FAK_autogen/mocs_compilation.o"
 	@echo "... FAK_autogen/mocs_compilation.i"
 	@echo "... FAK_autogen/mocs_compilation.s"
+	@echo "... classes/deadlinepanel.o"
+	@echo "... classes/deadlinepanel.i"
+	@echo "... classes/deadlinepanel.s"
 	@echo "... classes/myDayTasks.o"
 	@echo "... classes/myDayTasks.i"
 	@echo "... classes/myDayTasks.s"

@@ -26,6 +26,16 @@ public:
     explicit MyDayTasks(QWidget *parent = nullptr);
     ~MyDayTasks();
 
+    static QString extractBaseTaskText(const QString &fullText);
+    static QDateTime extractDeadlineFromText(const QString &fullText);
+
+    // Перенесенные из private в public методы
+    void updateTaskStyle(QPushButton* button, bool completed);
+    void updateTaskDeadlineInDatabase(const QString &taskText, const QDateTime &deadline);
+
+signals:
+    void showDeadlinePanelRequested(QWidget* taskWidget);
+
 protected:
     void contextMenuEvent(QContextMenuEvent *event) override;
 
@@ -36,6 +46,7 @@ private slots:
     void handleDeleteButtonClick();
     void showTaskProperties();
     void setTaskDeadline();
+    void showDeadlineOptions();
 
 private:
     Ui::MyDayTasks *ui;
@@ -45,15 +56,11 @@ private:
     void initDatabase();
     void saveTaskToDatabase(const QString &taskText, bool completed = false, const QDateTime &deadline = QDateTime());
     void updateTaskStatusInDatabase(const QString &taskText, bool completed);
-    void updateTaskDeadlineInDatabase(const QString &taskText, const QDateTime &deadline);
     void deleteTaskFromDatabase(const QString &taskText);
     void loadTasksFromDatabase();
     void moveTaskToBottom(QWidget* taskWidget);
-    void updateTaskStyle(QPushButton* button, bool completed);
     void checkForOverdueTasks();
     QPushButton* getButtonAtPos(const QPoint &pos);
-    QString extractBaseTaskText(const QString &fullText);
-    QDateTime extractDeadlineFromText(const QString &fullText);
 };
 
 #endif // MYDAYTASKS_H

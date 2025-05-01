@@ -129,10 +129,24 @@ CMakeFiles/FAK.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FAK.dir/mainwindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/korsar/chest/GitHub/FAK/FAK/mainwindow.cpp -o CMakeFiles/FAK.dir/mainwindow.cpp.s
 
+CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o: CMakeFiles/FAK.dir/flags.make
+CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o: /home/korsar/chest/GitHub/FAK/FAK/classes/deadlinepanel.cpp
+CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o: CMakeFiles/FAK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o -MF CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o.d -o CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o -c /home/korsar/chest/GitHub/FAK/FAK/classes/deadlinepanel.cpp
+
+CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/korsar/chest/GitHub/FAK/FAK/classes/deadlinepanel.cpp > CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.i
+
+CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/korsar/chest/GitHub/FAK/FAK/classes/deadlinepanel.cpp -o CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.s
+
 CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o: CMakeFiles/FAK.dir/flags.make
 CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o: /home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.cpp
 CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o: CMakeFiles/FAK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o -MF CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o.d -o CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o -c /home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.cpp
 
 CMakeFiles/FAK.dir/classes/myDayTasks.cpp.i: cmake_force
@@ -146,7 +160,7 @@ CMakeFiles/FAK.dir/classes/myDayTasks.cpp.s: cmake_force
 CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/FAK.dir/flags.make
 CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o: FAK_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/FAK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o -MF CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o.d -o CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/EWIEGA46WW/qrc_resources.cpp
 
 CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
@@ -162,6 +176,7 @@ FAK_OBJECTS = \
 "CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/FAK.dir/main.cpp.o" \
 "CMakeFiles/FAK.dir/mainwindow.cpp.o" \
+"CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o" \
 "CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o" \
 "CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 
@@ -171,6 +186,7 @@ FAK_EXTERNAL_OBJECTS =
 FAK: CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o
 FAK: CMakeFiles/FAK.dir/main.cpp.o
 FAK: CMakeFiles/FAK.dir/mainwindow.cpp.o
+FAK: CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o
 FAK: CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o
 FAK: CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o
 FAK: CMakeFiles/FAK.dir/build.make
@@ -184,7 +200,7 @@ FAK: /usr/lib/x86_64-linux-gnu/libGLX.so
 FAK: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 FAK: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 FAK: CMakeFiles/FAK.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable FAK"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable FAK"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FAK.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -E copy /home/korsar/chest/GitHub/FAK/FAK/libs/sqlite3/sqlite3.dll /home/korsar/chest/GitHub/FAK/FAK/build
 
