@@ -1,0 +1,38 @@
+[
+{
+  "directory": "C:/Users/Teddy/Documents/proga/FAK/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 @CMakeFiles/FAK.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FAK.dir\\FAK_autogen\\mocs_compilation.cpp.obj -c C:\\Users\\Teddy\\Documents\\proga\\FAK\\build\\FAK_autogen\\mocs_compilation.cpp",
+  "file": "C:/Users/Teddy/Documents/proga/FAK/build/FAK_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Users/Teddy/Documents/proga/FAK/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 @CMakeFiles/FAK.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FAK.dir\\main.cpp.obj -c C:\\Users\\Teddy\\Documents\\proga\\FAK\\FAK\\main.cpp",
+  "file": "C:/Users/Teddy/Documents/proga/FAK/FAK/main.cpp",
+  "output": "CMakeFiles/FAK.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Teddy/Documents/proga/FAK/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 @CMakeFiles/FAK.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FAK.dir\\mainwindow.cpp.obj -c C:\\Users\\Teddy\\Documents\\proga\\FAK\\FAK\\mainwindow.cpp",
+  "file": "C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.cpp",
+  "output": "CMakeFiles/FAK.dir/mainwindow.cpp.obj"
+},
+{
+  "directory": "C:/Users/Teddy/Documents/proga/FAK/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 @CMakeFiles/FAK.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FAK.dir\\classes\\deadlinepanel.cpp.obj -c C:\\Users\\Teddy\\Documents\\proga\\FAK\\FAK\\classes\\deadlinepanel.cpp",
+  "file": "C:/Users/Teddy/Documents/proga/FAK/FAK/classes/deadlinepanel.cpp",
+  "output": "CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.obj"
+},
+{
+  "directory": "C:/Users/Teddy/Documents/proga/FAK/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 @CMakeFiles/FAK.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FAK.dir\\classes\\myDayTasks.cpp.obj -c C:\\Users\\Teddy\\Documents\\proga\\FAK\\FAK\\classes\\myDayTasks.cpp",
+  "file": "C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.cpp",
+  "output": "CMakeFiles/FAK.dir/classes/myDayTasks.cpp.obj"
+},
+{
+  "directory": "C:/Users/Teddy/Documents/proga/FAK/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_UITOOLS_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 @CMakeFiles/FAK.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FAK.dir\\FAK_autogen\\EWIEGA46WW\\qrc_resources.cpp.obj -c C:\\Users\\Teddy\\Documents\\proga\\FAK\\build\\FAK_autogen\\EWIEGA46WW\\qrc_resources.cpp",
+  "file": "C:/Users/Teddy/Documents/proga/FAK/build/FAK_autogen/EWIEGA46WW/qrc_resources.cpp",
+  "output": "CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
+}
+]

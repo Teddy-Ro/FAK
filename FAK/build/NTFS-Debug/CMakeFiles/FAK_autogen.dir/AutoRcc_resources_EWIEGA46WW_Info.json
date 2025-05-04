@@ -1,0 +1,29 @@
+{
+	"BUILD_DIR" : "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Teddy/Documents/proga/FAK/FAK",
+	"CMAKE_SOURCE_DIR" : "C:/Users/Teddy/Documents/proga/FAK/FAK",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/Teddy/Documents/proga/FAK/FAK/img/icon.png",
+		"C:/Users/Teddy/Documents/proga/FAK/FAK/ui/importantList.ui",
+		"C:/Users/Teddy/Documents/proga/FAK/FAK/ui/planned.ui",
+		"C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.ui",
+		"C:/Users/Teddy/Documents/proga/FAK/FAK/libs/sqlite3/sqlite3.dll"
+	],
+	"LOCK_FILE" : "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/CMakeFiles/FAK_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "C:/msys64/mingw64/share/qt6/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/CMakeFiles/FAK_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/Teddy/Documents/proga/FAK/FAK/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}
