@@ -97,7 +97,7 @@ void MyDayTasks::loadTasksFromDatabase() {
         optionsButton->setText("⋮");
         optionsButton->setStyleSheet(
             "QToolButton {"
-            "font-size: 18px; font-weight: bold; color: #f7f3e3;"
+            "font-size: 18px; font-weight: bold; color: #F4E3B2;"  // ← Изменено
             "background-color: transparent; border: none;"
             "min-width: 20px; min-height: 20px;"
             "}"
@@ -108,11 +108,11 @@ void MyDayTasks::loadTasksFromDatabase() {
         deleteButton->setText("×");
         deleteButton->setStyleSheet(
             "QToolButton {"
-            "font-size: 18px; font-weight: bold; color: #f7f3e3;"
+            "font-size: 18px; font-weight: bold; color: #F4E3B2;"  // ← Изменено
             "background-color: transparent; border: none;"
             "min-width: 20px; min-height: 20px;"
             "}"
-            "QToolButton:hover { color: #ff6666; }"
+            "QToolButton:hover { color: #74070E; }"
         );
 
         checkbox->setProperty("taskButton", QVariant::fromValue(taskButton));
@@ -158,15 +158,16 @@ void MyDayTasks::updateTaskStyle(QPushButton* button, bool completed)
             "border: none;"
             "text-decoration: %3;"
             "}"
-            "QPushButton:hover { background-color: #9d7aaf; }")
-        .arg(completed ? "transparent" : "#8d6a9f")
-        .arg(completed ? "#aaaaaa" : "#f7f3e3")
-        .arg(completed ? "line-through" : "none");
+            "QPushButton:hover { background-color: %4; }")
+        .arg(completed ? "transparent" : "#45462A")  // Drab dark brown для невыполненных
+        .arg(completed ? "#aaaaaa" : "#F4E3B2")      // Vanilla для текста невыполненных
+        .arg(completed ? "line-through" : "none")
+        .arg(completed ? "transparent" : "#555555"); // Цвет ховера для невыполненных
 
     // Проверка на просроченность
     QDateTime deadline = extractDeadlineFromText(button->text());
     if (deadline.isValid() && deadline < QDateTime::currentDateTime()) {
-        style += " color: red;";
+        style += " color: #74070E;"; // Blood red для просроченных
     }
 
     button->setStyleSheet(style);
