@@ -15,7 +15,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(12, 22, 24);</string>
+    <string notr="true">background-color: #310E10; /* Black bean */</string>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <property name="spacing">
@@ -55,19 +55,19 @@
         <widget class="QWidget" name="contentWidget" native="true">
          <layout class="QHBoxLayout" name="horizontalLayout_3">
           <property name="spacing">
-           <number>0</number>
+           <number>15</number>
           </property>
           <property name="leftMargin">
-           <number>0</number>
+           <number>15</number>
           </property>
           <property name="topMargin">
-           <number>0</number>
+           <number>15</number>
           </property>
           <property name="rightMargin">
-           <number>0</number>
+           <number>15</number>
           </property>
           <property name="bottomMargin">
-           <number>0</number>
+           <number>15</number>
           </property>
           <item>
            <widget class="QWidget" name="sidebarWidget" native="true">
@@ -83,12 +83,12 @@
               <height>16777215</height>
              </size>
             </property>
-            <property name="autoFillBackground">
-             <bool>false</bool>
-            </property>
             <property name="styleSheet">
-             <string notr="true">background-color: rgb(19, 17, 24);
-</string>
+             <string notr="true">
+                background-color: #947268; /* Cinerious */
+                border-radius: 12px;
+                margin: 5px;
+             </string>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0">
              <item>
@@ -100,44 +100,28 @@
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">QFrame {
-                background-color: #1e1e1e;
-                color: white;
-				 border-radius: 10px;
+                <string notr="true">
+                QFrame {
+                    background-color: transparent;
                 }
-
-                QLabel {
-                color: #888888;
-                font-size: 14px;
-                border-radius: 5px;
-
-                }
-
                 QPushButton {
-                border: none;
-                text-align: left;
-                padding: 10px;
-                color: white;
-                font-size: 16px;
-                background-color: transparent;
+                    color: #74070E; /* Blood red */
+                    background-color: #F4E3B2; /* Vanilla */
+                    border-radius: 8px;
+                    padding: 10px;
+                    margin: 4px;
+                    font-size: 16px;
+                    text-align: left;
+                    border: none;
                 }
-
                 QPushButton:hover {
-                background-color: #333333;
-                border-radius: 5px;
-
+                    background-color: rgba(244, 227, 178, 0.8);
                 }
-
-				 QPushButton:checked {
-      			 background-color: #333333;
-        		 border-left: 3px solid #3b7be0;
-    			 }
-
-                QPushButton#tasksButton {
-                background-color: #333333;
-                border-left: 3px solid #3b7be0;
+                QPushButton:checked {
+                    background-color: rgba(244, 227, 178, 0.9);
+                    border-left: 3px solid #74070E;
                 }
-</string>
+                </string>
                </property>
                <property name="frameShape">
                 <enum>QFrame::NoFrame</enum>
@@ -360,7 +344,7 @@
                   <item>
                    <widget class="QLabel" name="label">
                     <property name="styleSheet">
-                     <string notr="true">background-color: rgb(255, 0, 0)</string>
+                     <string notr="true">background-color: #310E10; color: #F4E3B2;</string>
                     </property>
                     <property name="text">
                      <string>Кирилл рассказывает)</string>
@@ -378,24 +362,15 @@
           <item>
            <widget class="QWidget" name="tasksWidget" native="true">
             <property name="styleSheet">
-             <string notr="true">background-color: rgb(12, 22, 24)</string>
+             <string notr="true">
+                background-color: #947268; /* Cinerious */
+                border-radius: 12px;
+                margin: 5px;
+             </string>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_3">
              <item>
-              <widget class="QWidget" name="titleBar" native="true">
-               <layout class="QHBoxLayout" name="horizontalLayout_7">
-                <item>
-                 <widget class="QPushButton" name="pushButton">
-                  <property name="text">
-                   <string>область для назвния листа и кнопок закрытия приложения</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QWidget" name="widget_3" native="true">
+              <widget class="QWidget" name="tasks_widget" native="true">
                <layout class="QVBoxLayout" name="verticalLayout_5"/>
               </widget>
              </item>

@@ -30,7 +30,7 @@ MainWindow::MainWindow(QWidget *parent)
     buttonGroup->addButton(ui->plannedButton, 2);
 
     stackedWidget = new QStackedWidget();
-    QVBoxLayout* layout = qobject_cast<QVBoxLayout*>(ui->widget_3->layout());
+    QVBoxLayout* layout = qobject_cast<QVBoxLayout*>(ui->tasks_widget->layout());
     if (layout) {
         layout->addWidget(stackedWidget);
     }

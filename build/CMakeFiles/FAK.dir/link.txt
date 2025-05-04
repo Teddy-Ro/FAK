@@ -1,0 +1,3 @@
+C:\msys64\mingw64\bin\cmake.exe -E rm -f CMakeFiles\FAK.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\FAK.dir/objects.a @CMakeFiles\FAK.dir\objects1.rsp
+C:\msys64\mingw64\bin\g++.exe -g -mwindows -Wl,--whole-archive CMakeFiles\FAK.dir/objects.a -Wl,--no-whole-archive -o FAK.exe -Wl,--out-implib,libFAK.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\FAK.dir\linkLibs.rsp
