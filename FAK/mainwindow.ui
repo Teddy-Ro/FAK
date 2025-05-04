@@ -15,7 +15,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">background-color: #310E10; /* Black bean */</string>
+    <string notr="true">background-color: #310E10;</string>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <property name="spacing">
@@ -85,7 +85,7 @@
             </property>
             <property name="styleSheet">
              <string notr="true">
-                background-color: #947268; /* Cinerious */
+                background-color: #947268;
                 border-radius: 12px;
                 margin: 5px;
              </string>
@@ -105,8 +105,8 @@
                     background-color: transparent;
                 }
                 QPushButton {
-                    color: #74070E; /* Blood red */
-                    background-color: #F4E3B2; /* Vanilla */
+                    color: #74070E;
+                    background-color: #F4E3B2;
                     border-radius: 8px;
                     padding: 10px;
                     margin: 4px;
@@ -363,7 +363,7 @@
            <widget class="QWidget" name="tasksWidget" native="true">
             <property name="styleSheet">
              <string notr="true">
-                background-color: #947268; /* Cinerious */
+                background-color: rgba(148, 114, 104, 0.22); /* 70% прозрачности */
                 border-radius: 12px;
                 margin: 5px;
              </string>
@@ -371,6 +371,12 @@
             <layout class="QVBoxLayout" name="verticalLayout_3">
              <item>
               <widget class="QWidget" name="tasks_widget" native="true">
+              <property name="styleSheet">
+                <string notr="true">
+                  background-color: rgba(148, 114, 104, 0.22); /* 70% прозрачности */
+                  border-radius: 12px;
+                </string>
+              </property>
                <layout class="QVBoxLayout" name="verticalLayout_5"/>
               </widget>
              </item>

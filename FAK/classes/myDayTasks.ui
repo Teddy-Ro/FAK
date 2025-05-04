@@ -15,21 +15,21 @@
   </property>
   <property name="styleSheet">
    <string notr="true">MyDayTasks {
-    background-color: #0c1618;
-    color: #f7f3e3;
+    background-color: #310E10; /* Black bean */
+    color: #F4E3B2; /* Vanilla */
 }
 
 QLineEdit {
-    background-color: #131118;
-    color: #f7f3e3;
-    border: 1px solid #8d6a9f;
+    background-color: #947268; /* Cinerious */
+    color: #74070E; /* Blood red */
+    border: 1px solid #74070E;
     border-radius: 4px;
     padding: 5px 10px;
     font-size: 14px;
 }
 
 QLineEdit:focus {
-    border: 2px solid #8d6a9f;
+    border: 2px solid #74070E;
 }
 
 QScrollArea {
@@ -38,24 +38,25 @@ QScrollArea {
 }
 
 QScrollBar:vertical {
-    background: #131118;
+    background: #947268; /* Cinerious */
     width: 10px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
 }
 
 QScrollBar::handle:vertical {
-    background: #8d6a9f;
+    background: #74070E; /* Blood red */
     min-height: 20px;
     border-radius: 5px;
 }
 
-QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
     background: none;
 }
 
 QPushButton {
-    background-color: #8d6a9f;
-    color: #f7f3e3;
+    background-color: #F4E3B2; /* Vanilla */
+    color: #74070E; /* Blood red */
     border: none;
     border-radius: 4px;
     padding: 8px 15px;
@@ -64,15 +65,15 @@ QPushButton {
 }
 
 QPushButton:hover {
-    background-color: #9d7aaf;
+    background-color: rgba(244, 227, 178, 0.8); /* Vanilla 80% */
 }
 
 QPushButton:pressed {
-    background-color: #7d5a8f;
+    background-color: rgba(244, 227, 178, 0.6); /* Vanilla 60% */
 }
 
 QCheckBox {
-    color: #f7f3e3;
+    color: #F4E3B2; /* Vanilla */
     spacing: 5px;
 }
 
@@ -82,13 +83,13 @@ QCheckBox::indicator {
 }
 
 QCheckBox::indicator:checked {
-    background-color: #8d6a9f;
-    border: 1px solid #8d6a9f;
+    background-color: #74070E; /* Blood red */
+    border: 1px solid #74070E;
 }
 
 QCheckBox::indicator:unchecked {
-    background-color: #131118;
-    border: 1px solid #8d6a9f;
+    background-color: #947268; /* Cinerious */
+    border: 1px solid #74070E;
 }</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
@@ -102,9 +103,9 @@ QCheckBox::indicator:unchecked {
           <string>Введите текст и нажмите Enter</string>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: #131118;
-color: #f7f3e3;
-border: 1px solid #8d6a9f;
+          <string notr="true">background-color: #947268;
+color: #74070E;
+border: 1px solid #74070E;
 border-radius: 4px;
 padding: 8px 12px;
 font-size: 14px;</string>
@@ -130,7 +131,7 @@ border: none;</string>
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: #0c1618;</string>
+           <string notr="true">background-color: #310E10;</string>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_3">
            <item>
