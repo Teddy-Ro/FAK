@@ -272,29 +272,29 @@ classes/deadlinepanel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FAK.dir\build.make CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.s
 .PHONY : classes/deadlinepanel.cpp.s
 
-classes/myDayTasks.obj: classes/myDayTasks.cpp.obj
-.PHONY : classes/myDayTasks.obj
+classes/tasksList.obj: classes/tasksList.cpp.obj
+.PHONY : classes/tasksList.obj
 
 # target to build an object file
-classes/myDayTasks.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FAK.dir\build.make CMakeFiles/FAK.dir/classes/myDayTasks.cpp.obj
-.PHONY : classes/myDayTasks.cpp.obj
+classes/tasksList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FAK.dir\build.make CMakeFiles/FAK.dir/classes/tasksList.cpp.obj
+.PHONY : classes/tasksList.cpp.obj
 
-classes/myDayTasks.i: classes/myDayTasks.cpp.i
-.PHONY : classes/myDayTasks.i
+classes/tasksList.i: classes/tasksList.cpp.i
+.PHONY : classes/tasksList.i
 
 # target to preprocess a source file
-classes/myDayTasks.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FAK.dir\build.make CMakeFiles/FAK.dir/classes/myDayTasks.cpp.i
-.PHONY : classes/myDayTasks.cpp.i
+classes/tasksList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FAK.dir\build.make CMakeFiles/FAK.dir/classes/tasksList.cpp.i
+.PHONY : classes/tasksList.cpp.i
 
-classes/myDayTasks.s: classes/myDayTasks.cpp.s
-.PHONY : classes/myDayTasks.s
+classes/tasksList.s: classes/tasksList.cpp.s
+.PHONY : classes/tasksList.s
 
 # target to generate assembly for a file
-classes/myDayTasks.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FAK.dir\build.make CMakeFiles/FAK.dir/classes/myDayTasks.cpp.s
-.PHONY : classes/myDayTasks.cpp.s
+classes/tasksList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FAK.dir\build.make CMakeFiles/FAK.dir/classes/tasksList.cpp.s
+.PHONY : classes/tasksList.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -368,9 +368,9 @@ help:
 	@echo ... classes/deadlinepanel.obj
 	@echo ... classes/deadlinepanel.i
 	@echo ... classes/deadlinepanel.s
-	@echo ... classes/myDayTasks.obj
-	@echo ... classes/myDayTasks.i
-	@echo ... classes/myDayTasks.s
+	@echo ... classes/tasksList.obj
+	@echo ... classes/tasksList.i
+	@echo ... classes/tasksList.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

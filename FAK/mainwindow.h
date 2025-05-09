@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <QStackedWidget>
 #include "deadlinepanel.h"
-#include "classes/myDayTasks.h"
+#include "classes/tasksList.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

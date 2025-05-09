@@ -530,9 +530,9 @@
 			null
 		],
 		[
-			"C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.h",
+			"C:/Users/Teddy/Documents/proga/FAK/FAK/classes/tasksList.h",
 			"MU",
-			"QESDO5J2AP/moc_myDayTasks.cpp",
+			"QESDO5J2AP/moc_tasksList.cpp",
 			null
 		],
 		[
@@ -633,7 +633,7 @@
 			null
 		],
 		[
-			"C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.cpp",
+			"C:/Users/Teddy/Documents/proga/FAK/FAK/classes/tasksList.cpp",
 			"MU",
 			null
 		],

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/FAK_autogen"
-  "FAK_autogen/include/classes/ui_myDayTasks.h"
+  "FAK_autogen/include/classes/ui_tasksList.h"
   "FAK_autogen/include/ui/ui_importantList.h"
   "FAK_autogen/include/ui/ui_planned.h"
   "FAK_autogen/include/ui_mainwindow.h"

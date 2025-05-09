@@ -380,7 +380,7 @@ CMakeFiles/FAK.dir/mainwindow.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtCore/qdatetime.h \
  C:/msys64/mingw64/include/qt6/QtCore/qcalendar.h \
  C:/msys64/mingw64/include/qt6/QtCore/qlocale.h \
- C:\Users\Teddy\Documents\proga\FAK\FAK\classes/myDayTasks.h \
+ C:\Users\Teddy\Documents\proga\FAK\FAK\classes/tasksList.h \
  C:/msys64/mingw64/include/qt6/QtSql/QSqlDatabase \
  C:/msys64/mingw64/include/qt6/QtSql/qsqldatabase.h \
  C:/msys64/mingw64/include/qt6/QtSql/qtsqlglobal.h \
@@ -433,34 +433,8 @@ CMakeFiles/FAK.dir/mainwindow.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtCore/qcoreapplication_platform.h \
  C:/msys64/mingw64/include/qt6/QtGui/qinputmethod.h \
  C:/msys64/mingw64/include/qt6/QtGui/qguiapplication_platform.h \
- C:/Users/Teddy/Documents/proga/FAK/build/FAK_autogen/include/ui_mainwindow.h \
- C:/msys64/mingw64/include/qt6/QtCore/QVariant \
- C:/msys64/mingw64/include/qt6/QtCore/qvariant.h \
- C:/msys64/mingw64/include/qt6/QtGui/QIcon \
- C:/msys64/mingw64/include/qt6/QtGui/qicon.h \
- C:/msys64/mingw64/include/qt6/QtWidgets/QApplication \
- C:/msys64/mingw64/include/qt6/QtWidgets/qapplication.h \
- C:/msys64/mingw64/include/qt6/QtWidgets/QFrame \
- C:/msys64/mingw64/include/qt6/QtWidgets/qframe.h \
- C:/msys64/mingw64/include/qt6/QtWidgets/QHBoxLayout \
- C:/msys64/mingw64/include/qt6/QtWidgets/qboxlayout.h \
- C:/msys64/mingw64/include/qt6/QtWidgets/qlayout.h \
- C:/msys64/mingw64/include/qt6/QtWidgets/qlayoutitem.h \
- C:/msys64/mingw64/include/qt6/QtWidgets/qboxlayout.h \
- C:/msys64/mingw64/include/qt6/QtWidgets/qgridlayout.h \
- C:/msys64/mingw64/include/qt6/QtWidgets/QLabel \
- C:/msys64/mingw64/include/qt6/QtWidgets/qlabel.h \
- C:/msys64/mingw64/include/qt6/QtGui/qpicture.h \
- C:/msys64/mingw64/include/qt6/QtGui/qtextdocument.h \
- C:/msys64/mingw64/include/qt6/QtWidgets/QMainWindow \
- C:/msys64/mingw64/include/qt6/QtWidgets/QPushButton \
- C:/msys64/mingw64/include/qt6/QtWidgets/QSpacerItem \
- C:/msys64/mingw64/include/qt6/QtWidgets/qlayoutitem.h \
- C:/msys64/mingw64/include/qt6/QtWidgets/QVBoxLayout \
- C:/msys64/mingw64/include/qt6/QtWidgets/QWidget \
  C:/msys64/mingw64/include/qt6/QtWidgets/QButtonGroup \
  C:/msys64/mingw64/include/qt6/QtWidgets/qbuttongroup.h \
- C:/msys64/mingw64/include/qt6/QtWidgets/QVBoxLayout \
  C:/msys64/mingw64/include/qt6/QtCore/QFile \
  C:/msys64/mingw64/include/qt6/QtCore/qfile.h \
  C:/msys64/mingw64/include/qt6/QtCore/qfiledevice.h \
@@ -494,6 +468,32 @@ CMakeFiles/FAK.dir/mainwindow.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/codecvt \
  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_dir.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QVBoxLayout \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qboxlayout.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qlayout.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qlayoutitem.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qboxlayout.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qgridlayout.h \
  C:/msys64/mingw64/include/qt6/QtUiTools/QUiLoader \
  C:/msys64/mingw64/include/qt6/QtUiTools/quiloader.h \
- C:/msys64/mingw64/include/qt6/QtUiTools/qtuitoolsglobal.h
+ C:/msys64/mingw64/include/qt6/QtUiTools/qtuitoolsglobal.h \
+ C:/Users/Teddy/Documents/proga/FAK/build/FAK_autogen/include/ui_mainwindow.h \
+ C:/msys64/mingw64/include/qt6/QtCore/QVariant \
+ C:/msys64/mingw64/include/qt6/QtCore/qvariant.h \
+ C:/msys64/mingw64/include/qt6/QtGui/QIcon \
+ C:/msys64/mingw64/include/qt6/QtGui/qicon.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QApplication \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qapplication.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QFrame \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qframe.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QHBoxLayout \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QLabel \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qlabel.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qpicture.h \
+ C:/msys64/mingw64/include/qt6/QtGui/qtextdocument.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QMainWindow \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QPushButton \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QSpacerItem \
+ C:/msys64/mingw64/include/qt6/QtWidgets/qlayoutitem.h \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QVBoxLayout \
+ C:/msys64/mingw64/include/qt6/QtWidgets/QWidget

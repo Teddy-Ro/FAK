@@ -47,10 +47,9 @@ public:
     QPushButton *plannedButton;
     QWidget *assignedWidget;
     QHBoxLayout *horizontalLayout_4;
-    QPushButton *assignedToMeButton;
+    QPushButton *allTasksButton;
     QWidget *flaggedWidget;
     QHBoxLayout *horizontalLayout_5;
-    QPushButton *flaggedButton;
     QWidget *tasksWidget;
     QHBoxLayout *horizontalLayout_6;
     QSpacerItem *verticalSpacer;
@@ -184,14 +183,14 @@ public:
         horizontalLayout_4 = new QHBoxLayout(assignedWidget);
         horizontalLayout_4->setObjectName("horizontalLayout_4");
         horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
-        assignedToMeButton = new QPushButton(assignedWidget);
-        assignedToMeButton->setObjectName("assignedToMeButton");
+        allTasksButton = new QPushButton(assignedWidget);
+        allTasksButton->setObjectName("allTasksButton");
         QIcon icon3;
         icon3.addFile(QString::fromUtf8("icons/user.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
-        assignedToMeButton->setIcon(icon3);
-        assignedToMeButton->setCheckable(true);
+        allTasksButton->setIcon(icon3);
+        allTasksButton->setCheckable(true);
 
-        horizontalLayout_4->addWidget(assignedToMeButton);
+        horizontalLayout_4->addWidget(allTasksButton);
 
 
         verticalLayout_21->addWidget(assignedWidget);
@@ -201,15 +200,6 @@ public:
         horizontalLayout_5 = new QHBoxLayout(flaggedWidget);
         horizontalLayout_5->setObjectName("horizontalLayout_5");
         horizontalLayout_5->setContentsMargins(0, 0, 0, 0);
-        flaggedButton = new QPushButton(flaggedWidget);
-        flaggedButton->setObjectName("flaggedButton");
-        QIcon icon4;
-        icon4.addFile(QString::fromUtf8("icons/flag.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
-        flaggedButton->setIcon(icon4);
-        flaggedButton->setCheckable(true);
-
-        horizontalLayout_5->addWidget(flaggedButton);
-
 
         verticalLayout_21->addWidget(flaggedWidget);
 
@@ -289,8 +279,7 @@ public:
         myDayButton->setText(QCoreApplication::translate("MainWindow", "  \320\234\320\276\320\271 \320\264\320\265\320\275\321\214", nullptr));
         importantButton->setText(QCoreApplication::translate("MainWindow", "  \320\222\320\260\320\266\320\275\320\276", nullptr));
         plannedButton->setText(QCoreApplication::translate("MainWindow", "  \320\227\320\260\320\277\320\273\320\260\320\275\320\270\321\200\320\276\320\262\320\260\320\275\320\276", nullptr));
-        assignedToMeButton->setText(QCoreApplication::translate("MainWindow", "  \320\222\321\201\320\265 \320\267\320\260\320\264\320\260\321\207\320\270", nullptr));
-        flaggedButton->setText(QString());
+        allTasksButton->setText(QCoreApplication::translate("MainWindow", "  \320\222\321\201\320\265 \320\267\320\260\320\264\320\260\321\207\320\270", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "\320\232\320\270\321\200\320\270\320\273\320\273 \321\200\320\260\321\201\321\201\320\272\320\260\320\267\321\213\320\262\320\260\320\265\321\202)", nullptr));
     } // retranslateUi
 

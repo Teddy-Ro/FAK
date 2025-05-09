@@ -2,8 +2,8 @@ FAK_autogen/timestamp: \
 	C:/Users/Teddy/Documents/proga/FAK/FAK/CMakeLists.txt \
 	C:/Users/Teddy/Documents/proga/FAK/FAK/classes/deadlinepanel.cpp \
 	C:/Users/Teddy/Documents/proga/FAK/FAK/classes/deadlinepanel.h \
-	C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.cpp \
-	C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.h \
+	C:/Users/Teddy/Documents/proga/FAK/FAK/classes/tasksList.cpp \
+	C:/Users/Teddy/Documents/proga/FAK/FAK/classes/tasksList.h \
 	C:/Users/Teddy/Documents/proga/FAK/FAK/main.cpp \
 	C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.cpp \
 	C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.h \
@@ -671,6 +671,6 @@ FAK_autogen/timestamp: \
 	C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake \
 	C:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake \
 	C:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake \
-	C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.ui \
+	C:/Users/Teddy/Documents/proga/FAK/FAK/classes/tasksList.ui \
 	C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.ui \
 	C:/msys64/mingw64/bin/cmake.exe

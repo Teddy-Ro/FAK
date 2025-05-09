@@ -380,7 +380,7 @@ CMakeFiles/FAK.dir/main.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtCore/qdatetime.h \
  C:/msys64/mingw64/include/qt6/QtCore/qcalendar.h \
  C:/msys64/mingw64/include/qt6/QtCore/qlocale.h \
- C:\Users\Teddy\Documents\proga\FAK\FAK\classes/myDayTasks.h \
+ C:\Users\Teddy\Documents\proga\FAK\FAK\classes/tasksList.h \
  C:/msys64/mingw64/include/qt6/QtSql/QSqlDatabase \
  C:/msys64/mingw64/include/qt6/QtSql/qsqldatabase.h \
  C:/msys64/mingw64/include/qt6/QtSql/qtsqlglobal.h \
