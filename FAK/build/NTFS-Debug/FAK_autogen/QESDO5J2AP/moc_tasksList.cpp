@@ -31,13 +31,13 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
-struct qt_meta_tag_ZN9TasksListE_t {};
+struct qt_meta_tag_ZN9tasksListE_t {};
 } // unnamed namespace
 
 
 #ifdef QT_MOC_HAS_STRINGDATA
-static constexpr auto qt_meta_stringdata_ZN9TasksListE = QtMocHelpers::stringData(
-    "TasksList",
+static constexpr auto qt_meta_stringdata_ZN9tasksListE = QtMocHelpers::stringData(
+    "tasksList",
     "showDeadlinePanelRequested",
     "",
     "QWidget*",
@@ -55,7 +55,7 @@ static constexpr auto qt_meta_stringdata_ZN9TasksListE = QtMocHelpers::stringDat
 #error "qtmochelpers.h not found or too old."
 #endif // !QT_MOC_HAS_STRINGDATA
 
-Q_CONSTINIT static const uint qt_meta_data_ZN9TasksListE[] = {
+Q_CONSTINIT static const uint qt_meta_data_ZN9tasksListE[] = {
 
  // content:
       12,       // revision
@@ -95,15 +95,15 @@ Q_CONSTINIT static const uint qt_meta_data_ZN9TasksListE[] = {
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject TasksList::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject tasksList::staticMetaObject = { {
     QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
-    qt_meta_stringdata_ZN9TasksListE.offsetsAndSizes,
-    qt_meta_data_ZN9TasksListE,
+    qt_meta_stringdata_ZN9tasksListE.offsetsAndSizes,
+    qt_meta_data_ZN9tasksListE,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_tag_ZN9TasksListE_t,
+    qt_incomplete_metaTypeArray<qt_meta_tag_ZN9tasksListE_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<TasksList, std::true_type>,
+        QtPrivate::TypeAndForceComplete<tasksList, std::true_type>,
         // method 'showDeadlinePanelRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QWidget *, std::false_type>,
@@ -126,9 +126,9 @@ Q_CONSTINIT const QMetaObject TasksList::staticMetaObject = { {
     nullptr
 } };
 
-void TasksList::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void tasksList::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    auto *_t = static_cast<TasksList *>(_o);
+    auto *_t = static_cast<tasksList *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->showDeadlinePanelRequested((*reinterpret_cast< std::add_pointer_t<QWidget*>>(_a[1]))); break;
@@ -157,8 +157,8 @@ void TasksList::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _q_method_type = void (TasksList::*)(QWidget * );
-            if (_q_method_type _q_method = &TasksList::showDeadlinePanelRequested; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
+            using _q_method_type = void (tasksList::*)(QWidget * );
+            if (_q_method_type _q_method = &tasksList::showDeadlinePanelRequested; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
@@ -166,20 +166,20 @@ void TasksList::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     }
 }
 
-const QMetaObject *TasksList::metaObject() const
+const QMetaObject *tasksList::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *TasksList::qt_metacast(const char *_clname)
+void *tasksList::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_ZN9TasksListE.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_ZN9tasksListE.stringdata0))
         return static_cast<void*>(this);
     return QWidget::qt_metacast(_clname);
 }
 
-int TasksList::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int tasksList::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
@@ -198,7 +198,7 @@ int TasksList::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void TasksList::showDeadlinePanelRequested(QWidget * _t1)
+void tasksList::showDeadlinePanelRequested(QWidget * _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

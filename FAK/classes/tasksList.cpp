@@ -76,6 +76,44 @@ tasksList::tasksList(const QString &dbName, QWidget *parent)
     connect(ui->textInput, &QLineEdit::returnPressed, this, &tasksList::createButtonFromInput);
 }
 
+tasksList::tasksList(const QStringList &dbNames, QWidget *parent)
+    : QWidget(parent), ui(new Ui::tasksList)
+{
+    ui->setupUi(this);
+
+    // Initialize with the first database as default
+    if (!dbNames.isEmpty()) {
+        db = QSqlDatabase::addDatabase("QSQLITE");
+        db.setDatabaseName(dbNames.first());
+
+        if (!db.open()) {
+            qDebug() << "Database connection error:" << db.lastError().text();
+        } else {
+            QSqlQuery query;
+            query.exec("CREATE TABLE IF NOT EXISTS tasks ("
+                     "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                     "text TEXT NOT NULL UNIQUE, "
+                     "completed BOOLEAN NOT NULL, "
+                     "deadline DATETIME)");
+        }
+    }
+
+    QWidget* scrollContents = new QWidget();
+    QVBoxLayout* taskListLayout = new QVBoxLayout(scrollContents);
+    taskListLayout->setAlignment(Qt::AlignTop);
+    ui->scrollArea->setWidget(scrollContents);
+    ui->scrollArea->setWidgetResizable(true);
+    ui->buttonsLayout = taskListLayout;
+
+    // Проверка просроченных задач каждую минуту
+    QTimer *timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, this, &tasksList::checkForOverdueTasks);
+    timer->start(60000); // 60 секунд
+
+    loadTasksFromMultipleDatabases(dbNames);
+    connect(ui->textInput, &QLineEdit::returnPressed, this, &tasksList::createButtonFromInput);
+}
+
 tasksList::~tasksList()
 {
     db.close();
@@ -523,4 +561,25 @@ QDateTime tasksList::extractDeadlineFromText(const QString &fullText) {
 void tasksList::loadTasksFromDefaultDatabase()
 {
     loadTasksFromDatabase(db.databaseName());
+}
+
+void tasksList::loadTasksFromMultipleDatabases(const QStringList &dbNames)
+{
+    // Clear existing tasks
+    QLayout *layout = ui->buttonsLayout;
+    if (layout) {
+        while (QLayoutItem* item = layout->takeAt(0)) {
+            if (QWidget* widget = item->widget()) {
+                delete widget;
+            }
+            delete item;
+        }
+    }
+
+    // Load tasks from each database
+    for (const QString &dbName : dbNames) {
+        loadTasksFromDatabase(dbName);
+    }
+
+    checkForOverdueTasks();
 }

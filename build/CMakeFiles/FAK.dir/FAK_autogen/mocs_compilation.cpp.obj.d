@@ -429,6 +429,8 @@ CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtCore/qcoreapplication_platform.h \
  C:/msys64/mingw64/include/qt6/QtGui/qinputmethod.h \
  C:/msys64/mingw64/include/qt6/QtGui/qguiapplication_platform.h \
+ C:/msys64/mingw64/include/qt6/QtCore/QStringList \
+ C:/msys64/mingw64/include/qt6/QtCore/qstringlist.h \
  C:\Users\Teddy\Documents\proga\FAK\build\FAK_autogen\EWIEGA46WW/moc_mainwindow.cpp \
  C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/QMainWindow \

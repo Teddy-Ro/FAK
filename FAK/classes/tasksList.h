@@ -11,6 +11,7 @@
 #include <QDateTime>
 #include <QMenu>
 #include <QContextMenuEvent>
+#include <QStringList>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -25,6 +26,7 @@ class tasksList : public QWidget
 public:
     explicit tasksList(QWidget *parent = nullptr);
     explicit tasksList(const QString &dbName, QWidget *parent = nullptr);
+    explicit tasksList(const QStringList &dbNames, QWidget *parent = nullptr);
     ~tasksList();
 
     static QString extractBaseTaskText(const QString &fullText);
@@ -35,6 +37,7 @@ public:
     void updateTaskDeadlineInDatabase(const QString &taskText, const QDateTime &deadline);
     void loadTasksFromDatabase(const QString &dbName);
     void loadTasksFromDefaultDatabase();
+    void loadTasksFromMultipleDatabases(const QStringList &dbNames);
 
 signals:
     void showDeadlinePanelRequested(QWidget* taskWidget);

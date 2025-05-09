@@ -433,6 +433,8 @@ CMakeFiles/FAK.dir/mainwindow.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtCore/qcoreapplication_platform.h \
  C:/msys64/mingw64/include/qt6/QtGui/qinputmethod.h \
  C:/msys64/mingw64/include/qt6/QtGui/qguiapplication_platform.h \
+ C:/msys64/mingw64/include/qt6/QtCore/QStringList \
+ C:/msys64/mingw64/include/qt6/QtCore/qstringlist.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/QButtonGroup \
  C:/msys64/mingw64/include/qt6/QtWidgets/qbuttongroup.h \
  C:/msys64/mingw64/include/qt6/QtCore/QFile \

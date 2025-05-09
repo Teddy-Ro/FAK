@@ -194,6 +194,7 @@ C:/Users/Teddy/Documents/proga/FAK/FAK/build/NTFS-Debug/FAK_autogen/QESDO5J2AP/m
   C:/msys64/mingw64/include/qt6/QtCore/QRect \
   C:/msys64/mingw64/include/qt6/QtCore/QSize \
   C:/msys64/mingw64/include/qt6/QtCore/QSizeF \
+  C:/msys64/mingw64/include/qt6/QtCore/QStringList \
   C:/msys64/mingw64/include/qt6/QtCore/q20functional.h \
   C:/msys64/mingw64/include/qt6/QtCore/q20iterator.h \
   C:/msys64/mingw64/include/qt6/QtCore/q20memory.h \

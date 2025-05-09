@@ -20,7 +20,7 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_TasksList
+class Ui_tasksList
 {
 public:
     QHBoxLayout *horizontalLayout;
@@ -32,12 +32,12 @@ public:
     QVBoxLayout *verticalLayout_3;
     QVBoxLayout *buttonsLayout;
 
-    void setupUi(TasksList *TasksList)
+    void setupUi(tasksList *tasksList)
     {
-        if (TasksList->objectName().isEmpty())
-            TasksList->setObjectName("TasksList");
-        TasksList->resize(800, 600);
-        TasksList->setStyleSheet(QString::fromUtf8("TasksList {\n"
+        if (tasksList->objectName().isEmpty())
+            tasksList->setObjectName("tasksList");
+        tasksList->resize(800, 600);
+        tasksList->setStyleSheet(QString::fromUtf8("tasksList {\n"
 "    background-color: #310E10; /* Black bean */\n"
 "    color: #F4E3B2; /* Vanilla */\n"
 "}\n"
@@ -115,13 +115,13 @@ public:
 "    background-color: #947268; /* Cinerious */\n"
 "    border: 1px solid #74070E;\n"
 "}"));
-        horizontalLayout = new QHBoxLayout(TasksList);
+        horizontalLayout = new QHBoxLayout(tasksList);
         horizontalLayout->setObjectName("horizontalLayout");
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        textInput = new QLineEdit(TasksList);
+        textInput = new QLineEdit(tasksList);
         textInput->setObjectName("textInput");
         textInput->setStyleSheet(QString::fromUtf8("background-color: #947268;\n"
 "color: #74070E;\n"
@@ -132,7 +132,7 @@ public:
 
         verticalLayout->addWidget(textInput);
 
-        scrollArea = new QScrollArea(TasksList);
+        scrollArea = new QScrollArea(tasksList);
         scrollArea->setObjectName("scrollArea");
         scrollArea->setWidgetResizable(true);
         scrollArea->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
@@ -159,21 +159,21 @@ public:
         horizontalLayout->addLayout(verticalLayout_2);
 
 
-        retranslateUi(TasksList);
+        retranslateUi(tasksList);
 
-        QMetaObject::connectSlotsByName(TasksList);
+        QMetaObject::connectSlotsByName(tasksList);
     } // setupUi
 
-    void retranslateUi(TasksList *TasksList)
+    void retranslateUi(tasksList *tasksList)
     {
-        TasksList->setWindowTitle(QCoreApplication::translate("TasksList", "\320\234\320\276\320\271 \320\264\320\265\320\275\321\214", nullptr));
-        textInput->setPlaceholderText(QCoreApplication::translate("TasksList", "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \321\202\320\265\320\272\321\201\321\202 \320\270 \320\275\320\260\320\266\320\274\320\270\321\202\320\265 Enter", nullptr));
+        tasksList->setWindowTitle(QCoreApplication::translate("tasksList", "\320\234\320\276\320\271 \320\264\320\265\320\275\321\214", nullptr));
+        textInput->setPlaceholderText(QCoreApplication::translate("tasksList", "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \321\202\320\265\320\272\321\201\321\202 \320\270 \320\275\320\260\320\266\320\274\320\270\321\202\320\265 Enter", nullptr));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class TasksList: public Ui_TasksList {};
+    class tasksList: public Ui_tasksList {};
 } // namespace Ui
 
 QT_END_NAMESPACE

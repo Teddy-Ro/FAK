@@ -124,22 +124,16 @@ void MainWindow::loadTabContent(int index) {
             break;
         }
         case 3: {
-            // Create a special tasksList for "All Tasks" that will show tasks from all databases
-            tasksList* tasksWidget = new tasksList();
-            connect(tasksWidget, &tasksList::showDeadlinePanelRequested, this, &MainWindow::showDeadlinePanel);
-
-            // Load tasks from all databases
+            // Create a list of all database names
             QStringList dbNames = {
                 dbPath + "/myday_tasks.db",
                 dbPath + "/important_tasks.db",
                 dbPath + "/planned_tasks.db"
             };
 
-            // Load tasks from each database
-            for (const QString& dbName : dbNames) {
-                tasksWidget->loadTasksFromDatabase(dbName);
-            }
-
+            // Create tasksList with all databases
+            tasksList* tasksWidget = new tasksList(dbNames);
+            connect(tasksWidget, &tasksList::showDeadlinePanelRequested, this, &MainWindow::showDeadlinePanel);
             stackedWidget->insertWidget(index, tasksWidget);
             stackedWidget->setCurrentIndex(index);
             break;

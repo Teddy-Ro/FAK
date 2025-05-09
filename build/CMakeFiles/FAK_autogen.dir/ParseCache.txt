@@ -204,6 +204,7 @@ C:/Users/Teddy/Documents/proga/FAK/FAK/classes/tasksList.h
  mdp:C:/msys64/mingw64/include/qt6/QtCore/QRect
  mdp:C:/msys64/mingw64/include/qt6/QtCore/QSize
  mdp:C:/msys64/mingw64/include/qt6/QtCore/QSizeF
+ mdp:C:/msys64/mingw64/include/qt6/QtCore/QStringList
  mdp:C:/msys64/mingw64/include/qt6/QtCore/q20functional.h
  mdp:C:/msys64/mingw64/include/qt6/QtCore/q20iterator.h
  mdp:C:/msys64/mingw64/include/qt6/QtCore/q20memory.h
@@ -623,6 +624,7 @@ C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.h
  mdp:C:/msys64/mingw64/include/qt6/QtCore/QRect
  mdp:C:/msys64/mingw64/include/qt6/QtCore/QSize
  mdp:C:/msys64/mingw64/include/qt6/QtCore/QSizeF
+ mdp:C:/msys64/mingw64/include/qt6/QtCore/QStringList
  mdp:C:/msys64/mingw64/include/qt6/QtCore/q20functional.h
  mdp:C:/msys64/mingw64/include/qt6/QtCore/q20iterator.h
  mdp:C:/msys64/mingw64/include/qt6/QtCore/q20memory.h
