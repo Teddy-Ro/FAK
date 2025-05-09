@@ -6,6 +6,8 @@
 #include <QtUiTools/QUiLoader>
 #include "classes/tasksList.h"
 #include "ui_mainwindow.h"
+#include <QStandardPaths>
+#include <QDir>
 
 MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
@@ -92,31 +94,52 @@ void MainWindow::loadTabContent(int index) {
         delete oldWidget;
     }
 
+    // Get the application data location for storing databases
+    QString dbPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    QDir().mkpath(dbPath); // Create directory if it doesn't exist
+
     switch (index) {
         case 0: {
-            tasksList* tasksWidget = new tasksList();
+            QString dbName = dbPath + "/myday_tasks.db";
+            tasksList* tasksWidget = new tasksList(dbName);
             connect(tasksWidget, &tasksList::showDeadlinePanelRequested, this, &MainWindow::showDeadlinePanel);
             stackedWidget->insertWidget(index, tasksWidget);
             stackedWidget->setCurrentIndex(index);
             break;
         }
         case 1: {
-            tasksList* tasksWidget = new tasksList();
+            QString dbName = dbPath + "/important_tasks.db";
+            tasksList* tasksWidget = new tasksList(dbName);
             connect(tasksWidget, &tasksList::showDeadlinePanelRequested, this, &MainWindow::showDeadlinePanel);
             stackedWidget->insertWidget(index, tasksWidget);
             stackedWidget->setCurrentIndex(index);
             break;
         }
         case 2: {
-            tasksList* tasksWidget = new tasksList();
+            QString dbName = dbPath + "/planned_tasks.db";
+            tasksList* tasksWidget = new tasksList(dbName);
             connect(tasksWidget, &tasksList::showDeadlinePanelRequested, this, &MainWindow::showDeadlinePanel);
             stackedWidget->insertWidget(index, tasksWidget);
             stackedWidget->setCurrentIndex(index);
             break;
         }
         case 3: {
+            // Create a special tasksList for "All Tasks" that will show tasks from all databases
             tasksList* tasksWidget = new tasksList();
             connect(tasksWidget, &tasksList::showDeadlinePanelRequested, this, &MainWindow::showDeadlinePanel);
+
+            // Load tasks from all databases
+            QStringList dbNames = {
+                dbPath + "/myday_tasks.db",
+                dbPath + "/important_tasks.db",
+                dbPath + "/planned_tasks.db"
+            };
+
+            // Load tasks from each database
+            for (const QString& dbName : dbNames) {
+                tasksWidget->loadTasksFromDatabase(dbName);
+            }
+
             stackedWidget->insertWidget(index, tasksWidget);
             stackedWidget->setCurrentIndex(index);
             break;

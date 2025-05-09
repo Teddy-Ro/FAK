@@ -496,4 +496,13 @@ CMakeFiles/FAK.dir/mainwindow.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtWidgets/QSpacerItem \
  C:/msys64/mingw64/include/qt6/QtWidgets/qlayoutitem.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/QVBoxLayout \
- C:/msys64/mingw64/include/qt6/QtWidgets/QWidget
+ C:/msys64/mingw64/include/qt6/QtWidgets/QWidget \
+ C:/msys64/mingw64/include/qt6/QtCore/QStandardPaths \
+ C:/msys64/mingw64/include/qt6/QtCore/qstandardpaths.h \
+ C:/msys64/mingw64/include/qt6/QtCore/QDir \
+ C:/msys64/mingw64/include/qt6/QtCore/qdir.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qdirlisting.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qdatetime.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qfile.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qfileinfo.h \
+ C:/msys64/mingw64/include/qt6/QtCore/qtimezone.h

@@ -24,6 +24,7 @@ class tasksList : public QWidget
 
 public:
     explicit tasksList(QWidget *parent = nullptr);
+    explicit tasksList(const QString &dbName, QWidget *parent = nullptr);
     ~tasksList();
 
     static QString extractBaseTaskText(const QString &fullText);
@@ -32,6 +33,8 @@ public:
     // Перенесенные из private в public методы
     void updateTaskStyle(QPushButton* button, bool completed);
     void updateTaskDeadlineInDatabase(const QString &taskText, const QDateTime &deadline);
+    void loadTasksFromDatabase(const QString &dbName);
+    void loadTasksFromDefaultDatabase();
 
 signals:
     void showDeadlinePanelRequested(QWidget* taskWidget);

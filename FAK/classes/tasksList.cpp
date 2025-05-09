@@ -36,7 +36,43 @@ tasksList::tasksList(QWidget *parent)
     connect(timer, &QTimer::timeout, this, &tasksList::checkForOverdueTasks);
     timer->start(60000); // 60 секунд
 
-    loadTasksFromDatabase();
+    loadTasksFromDefaultDatabase();
+    connect(ui->textInput, &QLineEdit::returnPressed, this, &tasksList::createButtonFromInput);
+}
+
+tasksList::tasksList(const QString &dbName, QWidget *parent)
+    : QWidget(parent), ui(new Ui::tasksList)
+{
+    ui->setupUi(this);
+
+    // Инициализация базы данных с указанным именем
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName(dbName);
+
+    if (!db.open()) {
+        qDebug() << "Database connection error:" << db.lastError().text();
+    } else {
+        QSqlQuery query;
+        query.exec("CREATE TABLE IF NOT EXISTS tasks ("
+                 "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                 "text TEXT NOT NULL UNIQUE, "
+                 "completed BOOLEAN NOT NULL, "
+                 "deadline DATETIME)");
+    }
+
+    QWidget* scrollContents = new QWidget();
+    QVBoxLayout* taskListLayout = new QVBoxLayout(scrollContents);
+    taskListLayout->setAlignment(Qt::AlignTop);
+    ui->scrollArea->setWidget(scrollContents);
+    ui->scrollArea->setWidgetResizable(true);
+    ui->buttonsLayout = taskListLayout;
+
+    // Проверка просроченных задач каждую минуту
+    QTimer *timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, this, &tasksList::checkForOverdueTasks);
+    timer->start(60000); // 60 секунд
+
+    loadTasksFromDatabase(dbName);
     connect(ui->textInput, &QLineEdit::returnPressed, this, &tasksList::createButtonFromInput);
 }
 
@@ -69,8 +105,33 @@ void tasksList::initDatabase()
     }
 }
 
-void tasksList::loadTasksFromDatabase() {
-    QSqlQuery query("SELECT text, completed, deadline FROM tasks ORDER BY completed");
+void tasksList::loadTasksFromDatabase(const QString &dbName) {
+    // Clear existing tasks
+    QLayout *layout = ui->buttonsLayout;
+    if (layout) {
+        while (QLayoutItem* item = layout->takeAt(0)) {
+            if (QWidget* widget = item->widget()) {
+                delete widget;
+            }
+            delete item;
+        }
+    }
+
+    // If no specific database name is provided, use the default one
+    QString targetDbName = dbName.isEmpty() ? db.databaseName() : dbName;
+
+    // Create a temporary connection to the target database
+    QSqlDatabase tempDb = QSqlDatabase::addDatabase("QSQLITE", "temp_" + targetDbName);
+    tempDb.setDatabaseName(targetDbName);
+
+    if (!tempDb.open()) {
+        qDebug() << "Error opening database:" << tempDb.lastError().text();
+        return;
+    }
+
+    QSqlQuery query(tempDb);
+    query.exec("SELECT text, completed, deadline FROM tasks ORDER BY completed");
+
     while (query.next()) {
         QString text = query.value(0).toString();
         bool completed = query.value(1).toBool();
@@ -97,7 +158,7 @@ void tasksList::loadTasksFromDatabase() {
         optionsButton->setText("⋮");
         optionsButton->setStyleSheet(
             "QToolButton {"
-            "font-size: 18px; font-weight: bold; color: #F4E3B2;"  // ← Изменено
+            "font-size: 18px; font-weight: bold; color: #F4E3B2;"
             "background-color: transparent; border: none;"
             "min-width: 20px; min-height: 20px;"
             "}"
@@ -108,7 +169,7 @@ void tasksList::loadTasksFromDatabase() {
         deleteButton->setText("×");
         deleteButton->setStyleSheet(
             "QToolButton {"
-            "font-size: 18px; font-weight: bold; color: #F4E3B2;"  // ← Изменено
+            "font-size: 18px; font-weight: bold; color: #F4E3B2;"
             "background-color: transparent; border: none;"
             "min-width: 20px; min-height: 20px;"
             "}"
@@ -136,6 +197,9 @@ void tasksList::loadTasksFromDatabase() {
         connect(deleteButton, &QToolButton::clicked, this, &tasksList::handleDeleteButtonClick);
         connect(optionsButton, &QToolButton::clicked, this, &tasksList::showDeadlineOptions);
     }
+
+    tempDb.close();
+    QSqlDatabase::removeDatabase("temp_" + targetDbName);
     checkForOverdueTasks();
 }
 
@@ -454,4 +518,9 @@ QDateTime tasksList::extractDeadlineFromText(const QString &fullText) {
         return QDateTime::fromString(dateStr, "dd.MM.yyyy HH:mm");
     }
     return QDateTime();
+}
+
+void tasksList::loadTasksFromDefaultDatabase()
+{
+    loadTasksFromDatabase(db.databaseName());
 }
