@@ -70,7 +70,7 @@ public:
         MainWindow->resize(1000, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        centralwidget->setStyleSheet(QString::fromUtf8("background-color: #310E10;"));
+        centralwidget->setStyleSheet(QString::fromUtf8("background-color: #1b1716;"));
         horizontalLayout = new QHBoxLayout(centralwidget);
         horizontalLayout->setSpacing(0);
         horizontalLayout->setObjectName("horizontalLayout");
@@ -92,7 +92,7 @@ public:
         sidebarWidget->setMinimumSize(QSize(250, 0));
         sidebarWidget->setMaximumSize(QSize(250, 16777215));
         sidebarWidget->setStyleSheet(QString::fromUtf8("\n"
-"                background-color: #947268;\n"
+"                background-color: rgb(76, 57, 24);\n"
 "                border-radius: 12px;\n"
 "                margin: 5px;\n"
 "             "));
@@ -106,8 +106,8 @@ public:
 "                    background-color: transparent;\n"
 "                }\n"
 "                QPushButton {\n"
-"                    color: #74070E;\n"
-"                    background-color: #F4E3B2;\n"
+"                    color: rgb(27, 23, 22);\n"
+"                    background-color: rgb(237, 235, 222);\n"
 "                    border-radius: 8px;\n"
 "                    padding: 10px;\n"
 "                    margin: 4px;\n"
@@ -253,18 +253,15 @@ public:
         tasksWidget1 = new QWidget(contentWidget);
         tasksWidget1->setObjectName("tasksWidget1");
         tasksWidget1->setStyleSheet(QString::fromUtf8("\n"
-"                background-color: rgba(148, 114, 104, 0.22); /* 70% \320\277\321\200\320\276\320\267\321\200\320\260\321\207\320\275\320\276\321\201\321\202\320\270 */\n"
+"                background-color: rgba(49, 14, 16, 117); /* 70% \320\277\321\200\320\276\320\267\321\200\320\260\321\207\320\275\320\276\321\201\321\202\320\270 */\n"
 "                border-radius: 12px;\n"
-"                margin: 5px;\n"
+"                /*margin: 5px;\n"
 "             "));
         verticalLayout_3 = new QVBoxLayout(tasksWidget1);
         verticalLayout_3->setObjectName("verticalLayout_3");
         tasks_widget = new QWidget(tasksWidget1);
         tasks_widget->setObjectName("tasks_widget");
-        tasks_widget->setStyleSheet(QString::fromUtf8("\n"
-"                  background-color: rgba(148, 114, 104, 0.22); /* 70% \320\277\321\200\320\276\320\267\321\200\320\260\321\207\320\275\320\276\321\201\321\202\320\270 */\n"
-"                  border-radius: 12px;\n"
-"                "));
+        tasks_widget->setStyleSheet(QString::fromUtf8(" background-color: rgba(59, 0, 255, 32)"));
         verticalLayout_5 = new QVBoxLayout(tasks_widget);
         verticalLayout_5->setObjectName("verticalLayout_5");
 
