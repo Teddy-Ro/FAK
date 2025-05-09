@@ -93,13 +93,21 @@ void MainWindow::loadTabContent(int index)
 {
     if (!stackedWidget) return;
 
-    if (stackedWidget->count() > index) {
-        QWidget* oldWidget = stackedWidget->widget(index);
-        stackedWidget->removeWidget(oldWidget);
-        delete oldWidget;
-    }
+    // if (stackedWidget->count() > index) {
+    //     QWidget* oldWidget = stackedWidget->widget(index);
+    //     stackedWidget->removeWidget(oldWidget);
+    //     delete oldWidget;
+    // }
 
     if (index == 0) {
+        MyDayTasks* myDayWidget = new MyDayTasks();
+        // connect(myDayWidget, &MyDayTasks::showDeadlinePanelRequested, this, &MainWindow::showDeadlinePanel);
+        stackedWidget->insertWidget(index, myDayWidget);
+        stackedWidget->setCurrentIndex(index);
+        return;
+    }
+
+    if (index == 1) {
         MyDayTasks* myDayWidget = new MyDayTasks();
         connect(myDayWidget, &MyDayTasks::showDeadlinePanelRequested,
                 this, &MainWindow::showDeadlinePanel);
@@ -108,21 +116,21 @@ void MainWindow::loadTabContent(int index)
         return;
     }
 
-    QString filePath;
-    switch (index) {
-        case 1: filePath = ":/ui/ui/importantList.ui"; break;
-        case 2: filePath = ":/ui/ui/planned.ui"; break;
-        default: return;
-    }
+    // QString filePath;
+    // switch (index) {
+    //     case 1: filePath = ":/ui/ui/importantList.ui"; break;
+    //     case 2: filePath = ":/ui/ui/planned.ui"; break;
+    //     default: return;
+    // }
 
-    QUiLoader loader;
-    QFile file(filePath);
-    if (file.open(QFile::ReadOnly)) {
-        QWidget* tabContent = loader.load(&file);
-        file.close();
-        if (tabContent) {
-            stackedWidget->insertWidget(index, tabContent);
-            stackedWidget->setCurrentIndex(index);
-        }
-    }
+    // QUiLoader loader;
+    // QFile file(filePath);
+    // if (file.open(QFile::ReadOnly)) {
+    //     QWidget* tabContent = loader.load(&file);
+    //     file.close();
+    //     if (tabContent) {
+    //         stackedWidget->insertWidget(index, tabContent);
+    //         stackedWidget->setCurrentIndex(index);
+    //     }
+    // }
 }
