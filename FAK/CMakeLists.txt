@@ -26,9 +26,9 @@ set(PROJECT_SOURCES
         ${TS_FILES}
         classes/deadlinepanel.cpp
         classes/deadlinepanel.h
-        classes/myDayTasks.h
-        classes/myDayTasks.cpp
-        classes/myDayTasks.ui
+        classes/tasksList.h
+        classes/tasksList.cpp
+        classes/tasksList.ui
         ui/importantList.ui
         ui/planned.ui
         resources.qrc
@@ -39,9 +39,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
 
-        classes/myDayTasks.h
-        classes/myDayTasks.cpp
-        classes/myDayTasks.ui
+        classes/tasksList.h
+        classes/tasksList.cpp
+        classes/tasksList.ui
         ui/importantList.ui
         ui/planned.ui
         resources.qrc

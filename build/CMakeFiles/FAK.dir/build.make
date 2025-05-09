@@ -80,7 +80,7 @@ FAK_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/FAK_autogen.dir/AutoRcc_res
 FAK_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/Teddy/Documents/proga/FAK/FAK/img/icon.png
 FAK_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/Teddy/Documents/proga/FAK/FAK/ui/importantList.ui
 FAK_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/Teddy/Documents/proga/FAK/FAK/ui/planned.ui
-FAK_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.ui
+FAK_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/Teddy/Documents/proga/FAK/FAK/classes/tasksList.ui
 FAK_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/Teddy/Documents/proga/FAK/FAK/libs/sqlite3/sqlite3.dll
 FAK_autogen/EWIEGA46WW/qrc_resources.cpp: C:/msys64/mingw64/share/qt6/bin/rcc.exe
 FAK_autogen/EWIEGA46WW/qrc_resources.cpp: C:/msys64/mingw64/share/qt6/bin/rcc.exe
@@ -150,20 +150,20 @@ CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Teddy\Documents\proga\FAK\FAK\classes\deadlinepanel.cpp -o CMakeFiles\FAK.dir\classes\deadlinepanel.cpp.s
 
-CMakeFiles/FAK.dir/classes/myDayTasks.cpp.obj: CMakeFiles/FAK.dir/flags.make
-CMakeFiles/FAK.dir/classes/myDayTasks.cpp.obj: CMakeFiles/FAK.dir/includes_CXX.rsp
-CMakeFiles/FAK.dir/classes/myDayTasks.cpp.obj: C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.cpp
-CMakeFiles/FAK.dir/classes/myDayTasks.cpp.obj: CMakeFiles/FAK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Teddy\Documents\proga\FAK\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FAK.dir/classes/myDayTasks.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FAK.dir/classes/myDayTasks.cpp.obj -MF CMakeFiles\FAK.dir\classes\myDayTasks.cpp.obj.d -o CMakeFiles\FAK.dir\classes\myDayTasks.cpp.obj -c C:\Users\Teddy\Documents\proga\FAK\FAK\classes\myDayTasks.cpp
+CMakeFiles/FAK.dir/classes/tasksList.cpp.obj: CMakeFiles/FAK.dir/flags.make
+CMakeFiles/FAK.dir/classes/tasksList.cpp.obj: CMakeFiles/FAK.dir/includes_CXX.rsp
+CMakeFiles/FAK.dir/classes/tasksList.cpp.obj: C:/Users/Teddy/Documents/proga/FAK/FAK/classes/tasksList.cpp
+CMakeFiles/FAK.dir/classes/tasksList.cpp.obj: CMakeFiles/FAK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Teddy\Documents\proga\FAK\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FAK.dir/classes/tasksList.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FAK.dir/classes/tasksList.cpp.obj -MF CMakeFiles\FAK.dir\classes\tasksList.cpp.obj.d -o CMakeFiles\FAK.dir\classes\tasksList.cpp.obj -c C:\Users\Teddy\Documents\proga\FAK\FAK\classes\tasksList.cpp
 
-CMakeFiles/FAK.dir/classes/myDayTasks.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FAK.dir/classes/myDayTasks.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Teddy\Documents\proga\FAK\FAK\classes\myDayTasks.cpp > CMakeFiles\FAK.dir\classes\myDayTasks.cpp.i
+CMakeFiles/FAK.dir/classes/tasksList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FAK.dir/classes/tasksList.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Teddy\Documents\proga\FAK\FAK\classes\tasksList.cpp > CMakeFiles\FAK.dir\classes\tasksList.cpp.i
 
-CMakeFiles/FAK.dir/classes/myDayTasks.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FAK.dir/classes/myDayTasks.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Teddy\Documents\proga\FAK\FAK\classes\myDayTasks.cpp -o CMakeFiles\FAK.dir\classes\myDayTasks.cpp.s
+CMakeFiles/FAK.dir/classes/tasksList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FAK.dir/classes/tasksList.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Teddy\Documents\proga\FAK\FAK\classes\tasksList.cpp -o CMakeFiles\FAK.dir\classes\tasksList.cpp.s
 
 CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/FAK.dir/flags.make
 CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/FAK.dir/includes_CXX.rsp
@@ -186,7 +186,7 @@ FAK_OBJECTS = \
 "CMakeFiles/FAK.dir/main.cpp.obj" \
 "CMakeFiles/FAK.dir/mainwindow.cpp.obj" \
 "CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.obj" \
-"CMakeFiles/FAK.dir/classes/myDayTasks.cpp.obj" \
+"CMakeFiles/FAK.dir/classes/tasksList.cpp.obj" \
 "CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 
 # External object files for target FAK
@@ -196,7 +196,7 @@ FAK.exe: CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.obj
 FAK.exe: CMakeFiles/FAK.dir/main.cpp.obj
 FAK.exe: CMakeFiles/FAK.dir/mainwindow.cpp.obj
 FAK.exe: CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.obj
-FAK.exe: CMakeFiles/FAK.dir/classes/myDayTasks.cpp.obj
+FAK.exe: CMakeFiles/FAK.dir/classes/tasksList.cpp.obj
 FAK.exe: CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.obj
 FAK.exe: CMakeFiles/FAK.dir/build.make
 FAK.exe: C:/msys64/mingw64/lib/libQt6UiTools.dll.a

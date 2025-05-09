@@ -374,8 +374,8 @@ CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtCore/qcalendar.h \
  C:/msys64/mingw64/include/qt6/QtCore/qlocale.h \
  C:/msys64/mingw64/include/qt6/QtCore/qtmochelpers.h \
- C:\Users\Teddy\Documents\proga\FAK\build\FAK_autogen\QESDO5J2AP/moc_myDayTasks.cpp \
- C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.h \
+ C:\Users\Teddy\Documents\proga\FAK\build\FAK_autogen\QESDO5J2AP/moc_tasksList.cpp \
+ C:/Users/Teddy/Documents/proga/FAK/FAK/classes/tasksList.h \
  C:/msys64/mingw64/include/qt6/QtSql/QSqlDatabase \
  C:/msys64/mingw64/include/qt6/QtSql/qsqldatabase.h \
  C:/msys64/mingw64/include/qt6/QtSql/qtsqlglobal.h \
@@ -438,4 +438,4 @@ CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.obj: \
  C:/msys64/mingw64/include/qt6/QtWidgets/qstackedwidget.h \
  C:/msys64/mingw64/include/qt6/QtWidgets/qframe.h \
  C:/Users/Teddy/Documents/proga/FAK/FAK/classes/deadlinepanel.h \
- C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.h
+ C:/Users/Teddy/Documents/proga/FAK/FAK/classes/tasksList.h

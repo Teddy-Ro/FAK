@@ -1,7 +1,7 @@
 C:/Users/Teddy/Documents/proga/FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/Teddy/Documents/proga/FAK/FAK/mainwindow.h \
   C:/Users/Teddy/Documents/proga/FAK/build/FAK_autogen/moc_predefs.h \
   C:/Users/Teddy/Documents/proga/FAK/FAK/classes/deadlinepanel.h \
-  C:/Users/Teddy/Documents/proga/FAK/FAK/classes/myDayTasks.h \
+  C:/Users/Teddy/Documents/proga/FAK/FAK/classes/tasksList.h \
   C:/msys64/mingw64/include/_mingw.h \
   C:/msys64/mingw64/include/_mingw_mac.h \
   C:/msys64/mingw64/include/_mingw_off_t.h \

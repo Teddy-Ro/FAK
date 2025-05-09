@@ -254,7 +254,7 @@
                     <number>0</number>
                    </property>
                    <item>
-                    <widget class="QPushButton" name="assignedToMeButton">
+                    <widget class="QPushButton" name="allTasksButton">
                      <property name="text">
                       <string>  Все задачи</string>
                      </property>
@@ -285,20 +285,6 @@
                    <property name="bottomMargin">
                     <number>0</number>
                    </property>
-                   <item>
-                    <widget class="QPushButton" name="flaggedButton">
-                     <property name="text">
-                      <string/>
-                     </property>
-                     <property name="icon">
-                      <iconset>
-                       <normaloff>icons/flag.png</normaloff>icons/flag.png</iconset>
-                     </property>
-                     <property name="checkable">
-                      <bool>true</bool>
-                     </property>
-                    </widget>
-                   </item>
                   </layout>
                  </widget>
                 </item>
