@@ -1,29 +1,42 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QWidget>
-#include <QVBoxLayout>
-#include <QPushButton>
-#include <QScrollArea>
+#include <QMainWindow>
+#include <QStackedWidget>
+#include <QMap>
+#include "deadlinepanel.h"
+#include "classes/myDayTasks.h"
+#include "fieldgroup.h"
 
-class MainWindow : public QWidget
+QT_BEGIN_NAMESPACE
+namespace Ui { class MainWindow; }
+QT_END_NAMESPACE
+
+class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+    MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
 
 private slots:
-    void add_new_field_group();
+    void showDeadlinePanel(QWidget* taskWidget);
+    void hideDeadlinePanel();
+    void handleDeadlineApplied(const QDateTime &deadline);
+    void loadTabContent(int index);
+    void onTaskClicked(const QString &taskData);
+    void createNewTaskGroup();
 
 private:
-    void initUI();
-
-    QPushButton *add_group_btn;
-    QScrollArea *scroll;
-    QWidget *scroll_content;
-    QVBoxLayout *scroll_layout;
-    int group_count;
+    Ui::MainWindow *ui;
+    DeadlinePanel *deadlinePanel;
+    QButtonGroup *buttonGroup;
+    QStackedWidget *stackedWidget;
+    QWidget *currentTaskWidget;
+    QMap<QString, MyDayTasks*> taskDatabases;
+    FieldGroup *taskManagerWidget;
+    int groupCounter = 1;
 };
 
 #endif // MAINWINDOW_H

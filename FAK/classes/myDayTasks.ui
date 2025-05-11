@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyDayTasks</class>
+ <widget class="MyDayTasks" name="MyDayTasks">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Мой день</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">MyDayTasks {
+    background-color: #0c1618;
+    color: #f7f3e3;
+}
+
+QLineEdit {
+    background-color: #131118;
+    color: #f7f3e3;
+    border: 1px solid #8d6a9f;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #8d6a9f;
+}
+
+QScrollArea {
+    background-color: transparent;
+    border: none;
+}
+
+QScrollBar:vertical {
+    background: #131118;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #8d6a9f;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none;
+}
+
+QPushButton {
+    background-color: #8d6a9f;
+    color: #f7f3e3;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    font-size: 14px;
+    text-align: left;
+}
+
+QPushButton:hover {
+    background-color: #9d7aaf;
+}
+
+QPushButton:pressed {
+    background-color: #7d5a8f;
+}
+
+QCheckBox {
+    color: #f7f3e3;
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #8d6a9f;
+    border: 1px solid #8d6a9f;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: #131118;
+    border: 1px solid #8d6a9f;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLineEdit" name="textInput">
+         <property name="placeholderText">
+          <string>Введите текст и нажмите Enter</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #131118;
+color: #f7f3e3;
+border: 1px solid #8d6a9f;
+border-radius: 4px;
+padding: 8px 12px;
+font-size: 14px;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QScrollArea" name="scrollArea">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;
+border: none;</string>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>776</width>
+            <height>546</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #0c1618;</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QVBoxLayout" name="buttonsLayout"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyDayTasks</class>
+   <extends>QWidget</extends>
+   <header>myDayTasks.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
