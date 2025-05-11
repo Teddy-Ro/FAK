@@ -1,6 +1,7 @@
 #include "fieldgroup.h"
 #include <QSpacerItem>
 #include <QSizePolicy>
+#include <QMouseEvent>
 
 FieldGroup::FieldGroup(const QString &name, QWidget *parent)
     : QWidget(parent),
@@ -23,12 +24,18 @@ void FieldGroup::initUI()
     connect(name_field, &QLineEdit::textChanged, this, &FieldGroup::update_name);
     header_layout->addWidget(name_field, 1);
 
+    // Кнопка добавления новой задачи в список
+    QPushButton *add_task_btn = new QPushButton("＋");
+    add_task_btn->setFixedSize(20, 20);
+    connect(add_task_btn, &QPushButton::clicked, this, &FieldGroup::create_input_field);
+    header_layout->addWidget(add_task_btn);
+
     collapse_btn = new QPushButton("▲");
     collapse_btn->setFixedSize(20, 20);
     connect(collapse_btn, &QPushButton::clicked, this, &FieldGroup::toggle_fields);
     header_layout->addWidget(collapse_btn);
 
-    delete_group_btn = new QPushButton("×");
+    delete_group_btn = new QPushButton("+");
     delete_group_btn->setFixedSize(20, 20);
     connect(delete_group_btn, &QPushButton::clicked, this, &FieldGroup::delete_group);
     header_layout->addWidget(delete_group_btn);
@@ -57,25 +64,42 @@ void FieldGroup::add_first_field()
     }
 }
 
+void FieldGroup::show_field_settings(QPushButton* fieldBtn)
+{
+    bool ok;
+    QString text = QInputDialog::getText(this, tr("Изменить задачу"),
+                                        tr("Название задачи:"), QLineEdit::Normal,
+                                        fieldBtn->text(), &ok);
+    if (ok && !text.isEmpty()) {
+        fieldBtn->setText(text);
+    }
+}
+
 void FieldGroup::create_input_field()
 {
     QHBoxLayout *container = new QHBoxLayout();
     container->setContentsMargins(0, 5, 0, 5);
 
-    QLineEdit *field = new QLineEdit();
-    field->setPlaceholderText("Введите текст и нажмите Enter");
+    QPushButton *fieldBtn = new QPushButton(QString("Задача %1").arg(fields.size() + 1));
+    fieldBtn->setStyleSheet("text-align: left; padding: 5px;");
+    fieldBtn->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
 
-    // Используем лямбду для соединения сигнала returnPressed с текущим полем
-    connect(field, &QLineEdit::returnPressed, [this, field]() {
-        if (!field->text().trimmed().isEmpty()) {
-            create_input_field();
-        }
+    // Обработчик только правой кнопки мыши
+    fieldBtn->setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(fieldBtn, &QPushButton::customContextMenuRequested, [this, fieldBtn]() {
+        show_field_settings(fieldBtn);
+    });
+
+    QPushButton *settingsBtn = new QPushButton("⋮");
+    settingsBtn->setFixedSize(25, 25);
+    settingsBtn->setStyleSheet("padding-bottom: 7px;");
+    connect(settingsBtn, &QPushButton::clicked, [this, fieldBtn]() {
+        show_field_settings(fieldBtn);
     });
 
     QPushButton *delete_btn = new QPushButton("×");
     delete_btn->setFixedSize(25, 25);
 
-    // Используем лямбду для соединения сигнала clicked с удалением контейнера
     connect(delete_btn, &QPushButton::clicked, [this, container]() {
         while (container->count()) {
             QLayoutItem *item = container->takeAt(0);
@@ -88,14 +112,23 @@ void FieldGroup::create_input_field()
         fields.removeOne(container);
         fields_layout->removeItem(container);
         delete container;
+
+        for (int i = 0; i < fields.size(); ++i) {
+            QHBoxLayout *layout = fields[i];
+            if (layout->count() > 0) {
+                if (QPushButton *btn = qobject_cast<QPushButton*>(layout->itemAt(0)->widget())) {
+                    btn->setText(QString("Задача %1").arg(i + 1));
+                }
+            }
+        }
     });
 
-    container->addWidget(field, 1);
+    container->addWidget(fieldBtn, 1);
+    container->addWidget(settingsBtn);
     container->addWidget(delete_btn);
 
     fields_layout->addLayout(container);
     fields.append(container);
-    field->setFocus();
 }
 
 void FieldGroup::delete_group()

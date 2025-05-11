@@ -6,6 +6,8 @@
 #include <QHBoxLayout>
 #include <QPushButton>
 #include <QLineEdit>
+#include <QDialog>
+#include <QInputDialog>
 
 class FieldGroup : public QWidget
 {
@@ -20,6 +22,7 @@ private slots:
     void create_input_field();
     void delete_group();
     void update_name();
+    void show_field_settings(QPushButton* fieldBtn);
 
 private:
     void initUI();
@@ -31,6 +34,7 @@ private:
     QLineEdit *name_field;
     QPushButton *collapse_btn;
     QPushButton *delete_group_btn;
+    QPushButton *add_task_btn;
     QWidget *fields_container;
     QVBoxLayout *fields_layout;
 };
