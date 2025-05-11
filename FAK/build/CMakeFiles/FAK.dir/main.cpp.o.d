@@ -1,6 +1,5 @@
-CMakeFiles/FAK.dir/main.cpp.o: /home/korsar/chest/GitHub/FAK/FAK/main.cpp \
- /usr/include/stdc-predef.h \
- /home/korsar/chest/GitHub/FAK/FAK/mainwindow.h \
+CMakeFiles/FAK.dir/main.cpp.o: /home/dem/final_main/FAK/FAK/main.cpp \
+ /usr/include/stdc-predef.h /home/dem/final_main/FAK/FAK/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -339,14 +338,14 @@ CMakeFiles/FAK.dir/main.cpp.o: /home/korsar/chest/GitHub/FAK/FAK/main.cpp \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStackedWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
- /home/korsar/chest/GitHub/FAK/FAK/classes/deadlinepanel.h \
+ /home/dem/final_main/FAK/FAK/classes/deadlinepanel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
- /home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.h \
+ /home/dem/final_main/FAK/FAK/classes/myDayTasks.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \

@@ -1,5 +1,5 @@
-/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/QESDO5J2AP/moc_deadlinepanel.cpp: /home/korsar/chest/GitHub/FAK/FAK/classes/deadlinepanel.h \
-  /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/moc_predefs.h \
+/home/dem/final_main/FAK/FAK/build/FAK_autogen/QESDO5J2AP/moc_deadlinepanel.cpp: /home/dem/final_main/FAK/FAK/classes/deadlinepanel.h \
+  /home/dem/final_main/FAK/FAK/build/FAK_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

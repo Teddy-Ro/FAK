@@ -1,27 +1,29 @@
 {
-	"BUILD_DIR" : "/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen",
-	"CMAKE_BINARY_DIR" : "/home/korsar/chest/GitHub/FAK/FAK/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/korsar/chest/GitHub/FAK/FAK/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/korsar/chest/GitHub/FAK/FAK",
-	"CMAKE_SOURCE_DIR" : "/home/korsar/chest/GitHub/FAK/FAK",
+	"BUILD_DIR" : "/home/dem/final_main/FAK/FAK/build/FAK_autogen",
+	"CMAKE_BINARY_DIR" : "/home/dem/final_main/FAK/FAK/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/dem/final_main/FAK/FAK/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/dem/final_main/FAK/FAK",
+	"CMAKE_SOURCE_DIR" : "/home/dem/final_main/FAK/FAK",
+	"CROSS_CONFIG" : false,
 	"GENERATOR" : "Unix Makefiles",
-	"INCLUDE_DIR" : "/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/include",
+	"INCLUDE_DIR" : "/home/dem/final_main/FAK/FAK/build/FAK_autogen/include",
 	"INPUTS" : 
 	[
-		"/home/korsar/chest/GitHub/FAK/FAK/img/icon.png",
-		"/home/korsar/chest/GitHub/FAK/FAK/ui/importantList.ui",
-		"/home/korsar/chest/GitHub/FAK/FAK/ui/planned.ui",
-		"/home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.ui",
-		"/home/korsar/chest/GitHub/FAK/FAK/libs/sqlite3/sqlite3.dll"
+		"/home/dem/final_main/FAK/FAK/img/icon.png",
+		"/home/dem/final_main/FAK/FAK/ui/importantList.ui",
+		"/home/dem/final_main/FAK/FAK/ui/planned.ui",
+		"/home/dem/final_main/FAK/FAK/classes/myDayTasks.ui",
+		"/home/dem/final_main/FAK/FAK/libs/sqlite3/sqlite3.dll"
 	],
-	"LOCK_FILE" : "/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/FAK_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"LOCK_FILE" : "/home/dem/final_main/FAK/FAK/build/CMakeFiles/FAK_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,
 	"OPTIONS" : [ "-name", "resources" ],
 	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
 	"OUTPUT_NAME" : "qrc_resources.cpp",
 	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
 	"RCC_LIST_OPTIONS" : [ "--list" ],
-	"SETTINGS_FILE" : "/home/korsar/chest/GitHub/FAK/FAK/build/CMakeFiles/FAK_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
-	"SOURCE" : "/home/korsar/chest/GitHub/FAK/FAK/resources.qrc",
+	"SETTINGS_FILE" : "/home/dem/final_main/FAK/FAK/build/CMakeFiles/FAK_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/dem/final_main/FAK/FAK/resources.qrc",
+	"USE_BETTER_GRAPH" : false,
 	"VERBOSITY" : 0
 }

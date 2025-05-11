@@ -1,7 +1,7 @@
 CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o: \
- /home/korsar/chest/GitHub/FAK/FAK/classes/deadlinepanel.cpp \
+ /home/dem/final_main/FAK/FAK/classes/deadlinepanel.cpp \
  /usr/include/stdc-predef.h \
- /home/korsar/chest/GitHub/FAK/FAK/classes/deadlinepanel.h \
+ /home/dem/final_main/FAK/FAK/classes/deadlinepanel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

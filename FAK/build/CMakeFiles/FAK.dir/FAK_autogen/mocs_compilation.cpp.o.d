@@ -1,7 +1,7 @@
 CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o: \
- /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/mocs_compilation.cpp \
+ /home/dem/final_main/FAK/FAK/build/FAK_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/QESDO5J2AP/moc_deadlinepanel.cpp \
+ /home/dem/final_main/FAK/FAK/build/FAK_autogen/QESDO5J2AP/moc_deadlinepanel.cpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -116,7 +116,7 @@ CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/QESDO5J2AP/../../../classes/deadlinepanel.h \
+ /home/dem/final_main/FAK/FAK/build/FAK_autogen/QESDO5J2AP/../../../classes/deadlinepanel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -344,8 +344,8 @@ CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
- /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp \
- /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/QESDO5J2AP/../../../classes/myDayTasks.h \
+ /home/dem/final_main/FAK/FAK/build/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp \
+ /home/dem/final_main/FAK/FAK/build/FAK_autogen/QESDO5J2AP/../../../classes/myDayTasks.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
@@ -390,13 +390,13 @@ CMakeFiles/FAK.dir/FAK_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
- /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp \
- /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/EWIEGA46WW/../../../mainwindow.h \
+ /home/dem/final_main/FAK/FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp \
+ /home/dem/final_main/FAK/FAK/build/FAK_autogen/EWIEGA46WW/../../../mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStackedWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
- /home/korsar/chest/GitHub/FAK/FAK/classes/deadlinepanel.h \
- /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/EWIEGA46WW/../../../classes/myDayTasks.h
+ /home/dem/final_main/FAK/FAK/classes/deadlinepanel.h \
+ /home/dem/final_main/FAK/FAK/build/FAK_autogen/EWIEGA46WW/../../../classes/myDayTasks.h

@@ -1,7 +1,7 @@
-/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/korsar/chest/GitHub/FAK/FAK/mainwindow.h \
-  /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/moc_predefs.h \
-  /home/korsar/chest/GitHub/FAK/FAK/classes/deadlinepanel.h \
-  /home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.h \
+/home/dem/final_main/FAK/FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/dem/final_main/FAK/FAK/mainwindow.h \
+  /home/dem/final_main/FAK/FAK/build/FAK_autogen/moc_predefs.h \
+  /home/dem/final_main/FAK/FAK/classes/deadlinepanel.h \
+  /home/dem/final_main/FAK/FAK/classes/myDayTasks.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

@@ -1,7 +1,7 @@
 CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o: \
- /home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.cpp \
+ /home/dem/final_main/FAK/FAK/classes/myDayTasks.cpp \
  /usr/include/stdc-predef.h \
- /home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.h \
+ /home/dem/final_main/FAK/FAK/classes/myDayTasks.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -383,7 +383,7 @@ CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
- /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/include/./ui_myDayTasks.h \
+ /home/dem/final_main/FAK/FAK/build/FAK_autogen/include/./ui_myDayTasks.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
@@ -413,7 +413,7 @@ CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.h \
+ /home/dem/final_main/FAK/FAK/classes/myDayTasks.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \

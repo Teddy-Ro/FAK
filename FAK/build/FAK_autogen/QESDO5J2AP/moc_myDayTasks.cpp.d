@@ -1,5 +1,5 @@
-/home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp: /home/korsar/chest/GitHub/FAK/FAK/classes/myDayTasks.h \
-  /home/korsar/chest/GitHub/FAK/FAK/build/FAK_autogen/moc_predefs.h \
+/home/dem/final_main/FAK/FAK/build/FAK_autogen/QESDO5J2AP/moc_myDayTasks.cpp: /home/dem/final_main/FAK/FAK/classes/myDayTasks.h \
+  /home/dem/final_main/FAK/FAK/build/FAK_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
