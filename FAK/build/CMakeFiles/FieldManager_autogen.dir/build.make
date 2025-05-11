@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1461/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1463/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1461/bin/cmake -E rm -f
+RM = /snap/cmake/1463/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dem/progect_FAK/FAK/FAK
+CMAKE_SOURCE_DIR = /home/dem/final_main/FAK/FAK
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dem/progect_FAK/FAK/FAK/build
+CMAKE_BINARY_DIR = /home/dem/final_main/FAK/FAK/build
 
 # Utility rule file for FieldManager_autogen.
 
@@ -71,9 +71,9 @@ CMakeFiles/FieldManager_autogen: FieldManager_autogen/timestamp
 FieldManager_autogen/timestamp: /usr/lib/qt6/libexec/moc
 FieldManager_autogen/timestamp: /usr/lib/qt6/libexec/uic
 FieldManager_autogen/timestamp: CMakeFiles/FieldManager_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dem/progect_FAK/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target FieldManager"
-	/snap/cmake/1461/bin/cmake -E cmake_autogen /home/dem/progect_FAK/FAK/FAK/build/CMakeFiles/FieldManager_autogen.dir/AutogenInfo.json ""
-	/snap/cmake/1461/bin/cmake -E touch /home/dem/progect_FAK/FAK/FAK/build/FieldManager_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dem/final_main/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target FieldManager"
+	/snap/cmake/1463/bin/cmake -E cmake_autogen /home/dem/final_main/FAK/FAK/build/CMakeFiles/FieldManager_autogen.dir/AutogenInfo.json ""
+	/snap/cmake/1463/bin/cmake -E touch /home/dem/final_main/FAK/FAK/build/FieldManager_autogen/timestamp
 
 CMakeFiles/FieldManager_autogen.dir/codegen:
 .PHONY : CMakeFiles/FieldManager_autogen.dir/codegen
@@ -92,6 +92,6 @@ CMakeFiles/FieldManager_autogen.dir/clean:
 .PHONY : CMakeFiles/FieldManager_autogen.dir/clean
 
 CMakeFiles/FieldManager_autogen.dir/depend:
-	cd /home/dem/progect_FAK/FAK/FAK/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dem/progect_FAK/FAK/FAK /home/dem/progect_FAK/FAK/FAK /home/dem/progect_FAK/FAK/FAK/build /home/dem/progect_FAK/FAK/FAK/build /home/dem/progect_FAK/FAK/FAK/build/CMakeFiles/FieldManager_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/dem/final_main/FAK/FAK/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dem/final_main/FAK/FAK /home/dem/final_main/FAK/FAK /home/dem/final_main/FAK/FAK/build /home/dem/final_main/FAK/FAK/build /home/dem/final_main/FAK/FAK/build/CMakeFiles/FieldManager_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/FieldManager_autogen.dir/depend
 

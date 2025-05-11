@@ -1,6 +1,6 @@
 CMakeFiles/FieldManager.dir/main.cpp.o: \
- /home/dem/progect_FAK/FAK/FAK/main.cpp /usr/include/stdc-predef.h \
- /home/dem/progect_FAK/FAK/FAK/mainwindow.h \
+ /home/dem/final_main/FAK/FAK/main.cpp /usr/include/stdc-predef.h \
+ /home/dem/final_main/FAK/FAK/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

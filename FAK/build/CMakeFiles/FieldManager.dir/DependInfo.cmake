@@ -9,10 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "FieldManager_autogen/timestamp" "custom" "FieldManager_autogen/deps"
-  "/home/dem/progect_FAK/FAK/FAK/build/FieldManager_autogen/mocs_compilation.cpp" "CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o.d"
-  "/home/dem/progect_FAK/FAK/FAK/fieldgroup.cpp" "CMakeFiles/FieldManager.dir/fieldgroup.cpp.o" "gcc" "CMakeFiles/FieldManager.dir/fieldgroup.cpp.o.d"
-  "/home/dem/progect_FAK/FAK/FAK/main.cpp" "CMakeFiles/FieldManager.dir/main.cpp.o" "gcc" "CMakeFiles/FieldManager.dir/main.cpp.o.d"
-  "/home/dem/progect_FAK/FAK/FAK/mainwindow.cpp" "CMakeFiles/FieldManager.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/FieldManager.dir/mainwindow.cpp.o.d"
+  "/home/dem/final_main/FAK/FAK/build/FieldManager_autogen/mocs_compilation.cpp" "CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o.d"
+  "/home/dem/final_main/FAK/FAK/fieldgroup.cpp" "CMakeFiles/FieldManager.dir/fieldgroup.cpp.o" "gcc" "CMakeFiles/FieldManager.dir/fieldgroup.cpp.o.d"
+  "/home/dem/final_main/FAK/FAK/main.cpp" "CMakeFiles/FieldManager.dir/main.cpp.o" "gcc" "CMakeFiles/FieldManager.dir/main.cpp.o.d"
+  "/home/dem/final_main/FAK/FAK/mainwindow.cpp" "CMakeFiles/FieldManager.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/FieldManager.dir/mainwindow.cpp.o.d"
   "" "FieldManager" "gcc" "CMakeFiles/FieldManager.dir/link.d"
   )
 

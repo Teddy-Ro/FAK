@@ -1,6 +1,6 @@
 CMakeFiles/FieldManager.dir/mainwindow.cpp.o: \
- /home/dem/progect_FAK/FAK/FAK/mainwindow.cpp /usr/include/stdc-predef.h \
- /home/dem/progect_FAK/FAK/FAK/mainwindow.h \
+ /home/dem/final_main/FAK/FAK/mainwindow.cpp /usr/include/stdc-predef.h \
+ /home/dem/final_main/FAK/FAK/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -348,7 +348,7 @@ CMakeFiles/FieldManager.dir/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
- /home/dem/progect_FAK/FAK/FAK/fieldgroup.h \
+ /home/dem/final_main/FAK/FAK/fieldgroup.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \

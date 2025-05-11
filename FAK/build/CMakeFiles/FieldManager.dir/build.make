@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1461/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1463/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1461/bin/cmake -E rm -f
+RM = /snap/cmake/1463/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dem/progect_FAK/FAK/FAK
+CMAKE_SOURCE_DIR = /home/dem/final_main/FAK/FAK
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dem/progect_FAK/FAK/FAK/build
+CMAKE_BINARY_DIR = /home/dem/final_main/FAK/FAK/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/FieldManager.dir/depend.make
@@ -69,17 +69,17 @@ include CMakeFiles/FieldManager.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/FieldManager.dir/flags.make
 
-ui_mainwindow.h: /home/dem/progect_FAK/FAK/FAK/mainwindow.ui
+ui_mainwindow.h: /home/dem/final_main/FAK/FAK/mainwindow.ui
 ui_mainwindow.h: /usr/lib/qt6/libexec/uic
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dem/progect_FAK/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ui_mainwindow.h"
-	/usr/lib/qt6/libexec/uic -o /home/dem/progect_FAK/FAK/FAK/build/ui_mainwindow.h /home/dem/progect_FAK/FAK/FAK/mainwindow.ui
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dem/final_main/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ui_mainwindow.h"
+	/usr/lib/qt6/libexec/uic -o /home/dem/final_main/FAK/FAK/build/ui_mainwindow.h /home/dem/final_main/FAK/FAK/mainwindow.ui
 
 FieldManager_autogen/timestamp: /usr/lib/qt6/libexec/moc
 FieldManager_autogen/timestamp: /usr/lib/qt6/libexec/uic
 FieldManager_autogen/timestamp: CMakeFiles/FieldManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dem/progect_FAK/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic MOC and UIC for target FieldManager"
-	/snap/cmake/1461/bin/cmake -E cmake_autogen /home/dem/progect_FAK/FAK/FAK/build/CMakeFiles/FieldManager_autogen.dir/AutogenInfo.json ""
-	/snap/cmake/1461/bin/cmake -E touch /home/dem/progect_FAK/FAK/FAK/build/FieldManager_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/dem/final_main/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic MOC and UIC for target FieldManager"
+	/snap/cmake/1463/bin/cmake -E cmake_autogen /home/dem/final_main/FAK/FAK/build/CMakeFiles/FieldManager_autogen.dir/AutogenInfo.json ""
+	/snap/cmake/1463/bin/cmake -E touch /home/dem/final_main/FAK/FAK/build/FieldManager_autogen/timestamp
 
 CMakeFiles/FieldManager.dir/codegen:
 .PHONY : CMakeFiles/FieldManager.dir/codegen
@@ -87,58 +87,58 @@ CMakeFiles/FieldManager.dir/codegen:
 CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o: CMakeFiles/FieldManager.dir/flags.make
 CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o: FieldManager_autogen/mocs_compilation.cpp
 CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o: CMakeFiles/FieldManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dem/progect_FAK/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o -MF CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o -c /home/dem/progect_FAK/FAK/FAK/build/FieldManager_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dem/final_main/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o -MF CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o -c /home/dem/final_main/FAK/FAK/build/FieldManager_autogen/mocs_compilation.cpp
 
 CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dem/progect_FAK/FAK/FAK/build/FieldManager_autogen/mocs_compilation.cpp > CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dem/final_main/FAK/FAK/build/FieldManager_autogen/mocs_compilation.cpp > CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dem/progect_FAK/FAK/FAK/build/FieldManager_autogen/mocs_compilation.cpp -o CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dem/final_main/FAK/FAK/build/FieldManager_autogen/mocs_compilation.cpp -o CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/FieldManager.dir/main.cpp.o: CMakeFiles/FieldManager.dir/flags.make
-CMakeFiles/FieldManager.dir/main.cpp.o: /home/dem/progect_FAK/FAK/FAK/main.cpp
+CMakeFiles/FieldManager.dir/main.cpp.o: /home/dem/final_main/FAK/FAK/main.cpp
 CMakeFiles/FieldManager.dir/main.cpp.o: CMakeFiles/FieldManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dem/progect_FAK/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FieldManager.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FieldManager.dir/main.cpp.o -MF CMakeFiles/FieldManager.dir/main.cpp.o.d -o CMakeFiles/FieldManager.dir/main.cpp.o -c /home/dem/progect_FAK/FAK/FAK/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dem/final_main/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FieldManager.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FieldManager.dir/main.cpp.o -MF CMakeFiles/FieldManager.dir/main.cpp.o.d -o CMakeFiles/FieldManager.dir/main.cpp.o -c /home/dem/final_main/FAK/FAK/main.cpp
 
 CMakeFiles/FieldManager.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FieldManager.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dem/progect_FAK/FAK/FAK/main.cpp > CMakeFiles/FieldManager.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dem/final_main/FAK/FAK/main.cpp > CMakeFiles/FieldManager.dir/main.cpp.i
 
 CMakeFiles/FieldManager.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FieldManager.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dem/progect_FAK/FAK/FAK/main.cpp -o CMakeFiles/FieldManager.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dem/final_main/FAK/FAK/main.cpp -o CMakeFiles/FieldManager.dir/main.cpp.s
 
 CMakeFiles/FieldManager.dir/mainwindow.cpp.o: CMakeFiles/FieldManager.dir/flags.make
-CMakeFiles/FieldManager.dir/mainwindow.cpp.o: /home/dem/progect_FAK/FAK/FAK/mainwindow.cpp
+CMakeFiles/FieldManager.dir/mainwindow.cpp.o: /home/dem/final_main/FAK/FAK/mainwindow.cpp
 CMakeFiles/FieldManager.dir/mainwindow.cpp.o: CMakeFiles/FieldManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dem/progect_FAK/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FieldManager.dir/mainwindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FieldManager.dir/mainwindow.cpp.o -MF CMakeFiles/FieldManager.dir/mainwindow.cpp.o.d -o CMakeFiles/FieldManager.dir/mainwindow.cpp.o -c /home/dem/progect_FAK/FAK/FAK/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dem/final_main/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FieldManager.dir/mainwindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FieldManager.dir/mainwindow.cpp.o -MF CMakeFiles/FieldManager.dir/mainwindow.cpp.o.d -o CMakeFiles/FieldManager.dir/mainwindow.cpp.o -c /home/dem/final_main/FAK/FAK/mainwindow.cpp
 
 CMakeFiles/FieldManager.dir/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FieldManager.dir/mainwindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dem/progect_FAK/FAK/FAK/mainwindow.cpp > CMakeFiles/FieldManager.dir/mainwindow.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dem/final_main/FAK/FAK/mainwindow.cpp > CMakeFiles/FieldManager.dir/mainwindow.cpp.i
 
 CMakeFiles/FieldManager.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FieldManager.dir/mainwindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dem/progect_FAK/FAK/FAK/mainwindow.cpp -o CMakeFiles/FieldManager.dir/mainwindow.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dem/final_main/FAK/FAK/mainwindow.cpp -o CMakeFiles/FieldManager.dir/mainwindow.cpp.s
 
 CMakeFiles/FieldManager.dir/fieldgroup.cpp.o: CMakeFiles/FieldManager.dir/flags.make
-CMakeFiles/FieldManager.dir/fieldgroup.cpp.o: /home/dem/progect_FAK/FAK/FAK/fieldgroup.cpp
+CMakeFiles/FieldManager.dir/fieldgroup.cpp.o: /home/dem/final_main/FAK/FAK/fieldgroup.cpp
 CMakeFiles/FieldManager.dir/fieldgroup.cpp.o: CMakeFiles/FieldManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dem/progect_FAK/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FieldManager.dir/fieldgroup.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FieldManager.dir/fieldgroup.cpp.o -MF CMakeFiles/FieldManager.dir/fieldgroup.cpp.o.d -o CMakeFiles/FieldManager.dir/fieldgroup.cpp.o -c /home/dem/progect_FAK/FAK/FAK/fieldgroup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dem/final_main/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FieldManager.dir/fieldgroup.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FieldManager.dir/fieldgroup.cpp.o -MF CMakeFiles/FieldManager.dir/fieldgroup.cpp.o.d -o CMakeFiles/FieldManager.dir/fieldgroup.cpp.o -c /home/dem/final_main/FAK/FAK/fieldgroup.cpp
 
 CMakeFiles/FieldManager.dir/fieldgroup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FieldManager.dir/fieldgroup.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dem/progect_FAK/FAK/FAK/fieldgroup.cpp > CMakeFiles/FieldManager.dir/fieldgroup.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dem/final_main/FAK/FAK/fieldgroup.cpp > CMakeFiles/FieldManager.dir/fieldgroup.cpp.i
 
 CMakeFiles/FieldManager.dir/fieldgroup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FieldManager.dir/fieldgroup.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dem/progect_FAK/FAK/FAK/fieldgroup.cpp -o CMakeFiles/FieldManager.dir/fieldgroup.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dem/final_main/FAK/FAK/fieldgroup.cpp -o CMakeFiles/FieldManager.dir/fieldgroup.cpp.s
 
 # Object files for target FieldManager
 FieldManager_OBJECTS = \
@@ -162,7 +162,7 @@ FieldManager: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 FieldManager: /usr/lib/x86_64-linux-gnu/libGLX.so
 FieldManager: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 FieldManager: CMakeFiles/FieldManager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dem/progect_FAK/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable FieldManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dem/final_main/FAK/FAK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable FieldManager"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FieldManager.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -175,6 +175,6 @@ CMakeFiles/FieldManager.dir/clean:
 
 CMakeFiles/FieldManager.dir/depend: FieldManager_autogen/timestamp
 CMakeFiles/FieldManager.dir/depend: ui_mainwindow.h
-	cd /home/dem/progect_FAK/FAK/FAK/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dem/progect_FAK/FAK/FAK /home/dem/progect_FAK/FAK/FAK /home/dem/progect_FAK/FAK/FAK/build /home/dem/progect_FAK/FAK/FAK/build /home/dem/progect_FAK/FAK/FAK/build/CMakeFiles/FieldManager.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/dem/final_main/FAK/FAK/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dem/final_main/FAK/FAK /home/dem/final_main/FAK/FAK /home/dem/final_main/FAK/FAK/build /home/dem/final_main/FAK/FAK/build /home/dem/final_main/FAK/FAK/build/CMakeFiles/FieldManager.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/FieldManager.dir/depend
 

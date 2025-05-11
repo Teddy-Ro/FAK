@@ -1,7 +1,7 @@
 CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o: \
- /home/dem/progect_FAK/FAK/FAK/build/FieldManager_autogen/mocs_compilation.cpp \
+ /home/dem/final_main/FAK/FAK/build/FieldManager_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/dem/progect_FAK/FAK/FAK/build/FieldManager_autogen/EWIEGA46WW/moc_fieldgroup.cpp \
+ /home/dem/final_main/FAK/FAK/build/FieldManager_autogen/EWIEGA46WW/moc_fieldgroup.cpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -116,7 +116,7 @@ CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/dem/progect_FAK/FAK/FAK/build/FieldManager_autogen/EWIEGA46WW/../../../fieldgroup.h \
+ /home/dem/final_main/FAK/FAK/build/FieldManager_autogen/EWIEGA46WW/../../../fieldgroup.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -360,8 +360,8 @@ CMakeFiles/FieldManager.dir/FieldManager_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
- /home/dem/progect_FAK/FAK/FAK/build/FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp \
- /home/dem/progect_FAK/FAK/FAK/build/FieldManager_autogen/EWIEGA46WW/../../../mainwindow.h \
+ /home/dem/final_main/FAK/FAK/build/FieldManager_autogen/EWIEGA46WW/moc_mainwindow.cpp \
+ /home/dem/final_main/FAK/FAK/build/FieldManager_autogen/EWIEGA46WW/../../../mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollArea \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h

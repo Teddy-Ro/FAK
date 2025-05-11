@@ -1,5 +1,5 @@
-/home/dem/progect_FAK/FAK/FAK/build/FieldManager_autogen/EWIEGA46WW/moc_fieldgroup.cpp: /home/dem/progect_FAK/FAK/FAK/fieldgroup.h \
-  /home/dem/progect_FAK/FAK/FAK/build/FieldManager_autogen/moc_predefs.h \
+/home/dem/final_main/FAK/FAK/build/FieldManager_autogen/EWIEGA46WW/moc_fieldgroup.cpp: /home/dem/final_main/FAK/FAK/fieldgroup.h \
+  /home/dem/final_main/FAK/FAK/build/FieldManager_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
