@@ -12,12 +12,13 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
   /home/dem/final_main/FAK/FAK/classes/myDayTasks.ui \
   /home/dem/final_main/FAK/FAK/classes/taskGroupsDB.cpp \
   /home/dem/final_main/FAK/FAK/classes/taskGroupsDB.h \
+  /home/dem/final_main/FAK/FAK/databasemanager.cpp \
+  /home/dem/final_main/FAK/FAK/databasemanager.h \
   /home/dem/final_main/FAK/FAK/fieldgroup.cpp \
   /home/dem/final_main/FAK/FAK/fieldgroup.h \
   /home/dem/final_main/FAK/FAK/main.cpp \
   /home/dem/final_main/FAK/FAK/mainwindow.cpp \
   /home/dem/final_main/FAK/FAK/mainwindow.h \
-  /home/dem/final_main/FAK/FAK/mainwindow.ui \
   /home/dem/final_main/FAK/FAK/resources.qrc \
   /snap/cmake/1463/bin/cmake \
   /snap/cmake/1463/share/cmake-4.0/Modules/CMakeCXXInformation.cmake \
@@ -373,6 +374,7 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QStandardPaths \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QUuid \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
@@ -466,6 +468,7 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
@@ -487,7 +490,6 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h \
@@ -496,10 +498,6 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
@@ -517,26 +515,26 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
   /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenu \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollArea \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStackedWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
@@ -772,6 +770,8 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsTargets-none.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake:
@@ -830,6 +830,8 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h:
@@ -841,6 +843,8 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget:
 
@@ -857,10 +861,6 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox:
 
@@ -886,15 +886,11 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h:
 
@@ -905,8 +901,6 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h:
 
@@ -927,6 +921,8 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h:
 
@@ -963,8 +959,6 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h:
 
@@ -1058,6 +1052,8 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QUuid:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h:
@@ -1090,8 +1086,6 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
-
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
@@ -1122,7 +1116,7 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
-/usr/include/c++/13/bits/stl_uninitialized.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/13/bits/stl_multimap.h:
 
@@ -1137,10 +1131,6 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
 /usr/include/c++/13/bits/stl_algobase.h:
 
 /usr/include/c++/13/bits/std_function.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/c++/13/bits/functional_hash.h:
 
@@ -1181,6 +1171,8 @@ FAK_autogen/timestamp: /home/dem/final_main/FAK/FAK/CMakeLists.txt \
 /usr/include/c++/13/bits/node_handle.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/c++/13/bits/move_only_function.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake:
 
@@ -1248,8 +1240,6 @@ FAK_autogen/moc_predefs.h:
 
 /usr/include/c++/13/bits/concept_check.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h:
-
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/13/bits/move.h:
@@ -1266,6 +1256,8 @@ FAK_autogen/moc_predefs.h:
 
 /usr/include/c++/13/bits/stl_relops.h:
 
+/home/dem/final_main/FAK/FAK/databasemanager.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcore-config.h:
@@ -1277,8 +1269,6 @@ FAK_autogen/moc_predefs.h:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin/FindXKB.cmake:
 
 /usr/include/c++/13/bits/stl_tempbuf.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h:
 
 CMakeFiles/4.0.2/CMakeSystem.cmake:
 
@@ -1328,6 +1318,8 @@ CMakeFiles/4.0.2/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
+/home/dem/final_main/FAK/FAK/mainwindow.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginTargets.cmake:
 
 /usr/include/locale.h:
@@ -1357,6 +1349,14 @@ CMakeFiles/4.0.2/CMakeSystem.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h:
 
 /usr/include/c++/13/debug/assertions.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
+
+/usr/include/c++/13/bits/atomic_wait.h:
+
+/usr/include/x86_64-linux-gnu/sys/syscall.h:
+
+/snap/cmake/1463/share/cmake-4.0/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
 
@@ -1400,23 +1400,9 @@ CMakeFiles/4.0.2/CMakeSystem.cmake:
 
 /snap/cmake/1463/share/cmake-4.0/Modules/Linker/GNU.cmake:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout:
-
 /usr/include/c++/13/backward/binders.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/c++/13/bits/move_only_function.h:
-
-/home/dem/final_main/FAK/FAK/mainwindow.ui:
-
-/usr/include/c++/13/bits/atomic_base.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
@@ -1440,19 +1426,27 @@ CMakeFiles/4.0.2/CMakeSystem.cmake:
 
 /snap/cmake/1463/share/cmake-4.0/Modules/Platform/Linux-GNU.cmake:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginConfig.cmake:
 
-/usr/include/c++/13/bits/stl_iterator.h:
+/usr/include/c++/13/pstl/glue_numeric_defs.h:
 
-/usr/include/c++/13/bits/stl_iterator_base_types.h:
+/usr/include/c++/13/bits/std_abs.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h:
 
-/snap/cmake/1463/share/cmake-4.0/Modules/Compiler/GNU.cmake:
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
-/usr/include/c++/13/bits/ranges_util.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
-/usr/include/c++/13/bits/c++0x_warning.h:
+/home/dem/final_main/FAK/FAK/databasemanager.cpp:
+
+/usr/include/c++/13/bits/stl_construct.h:
+
+CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
+
+/snap/cmake/1463/share/cmake-4.0/Modules/FindOpenGL.cmake:
+
+/snap/cmake/1463/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake:
 
 /usr/include/c++/13/bits/stl_numeric.h:
 
@@ -1506,22 +1500,6 @@ CMakeFiles/4.0.2/CMakeSystem.cmake:
 
 /usr/include/c++/13/bits/uses_allocator_args.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h:
-
-/snap/cmake/1463/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsConfigVersionImpl.cmake:
-
-/usr/include/c++/13/bits/charconv.h:
-
-/usr/include/c++/13/bits/stl_construct.h:
-
-CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
-
-/snap/cmake/1463/share/cmake-4.0/Modules/FindOpenGL.cmake:
-
-/snap/cmake/1463/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake:
-
 /usr/include/c++/13/bits/alloc_traits.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h:
@@ -1530,13 +1508,43 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/home/dem/final_main/FAK/FAK/mainwindow.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h:
+
+/snap/cmake/1463/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsConfigVersionImpl.cmake:
+
+/usr/include/c++/13/bits/charconv.h:
+
+/usr/include/c++/13/bits/atomic_base.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h:
+
+/snap/cmake/1463/share/cmake-4.0/Modules/Compiler/GNU.cmake:
+
+/usr/include/c++/13/bits/ranges_util.h:
+
+/usr/include/c++/13/bits/c++0x_warning.h:
 
 /usr/include/c++/13/bits/shared_ptr_base.h:
 
 /usr/include/c++/13/bits/ranges_algo.h:
 
 /snap/cmake/1463/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollArea:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h:
 
@@ -1632,6 +1640,12 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/13/bits/algorithmfwd.h:
 
+/usr/include/c++/13/locale:
+
+/snap/cmake/1463/share/cmake-4.0/Modules/FindPackageMessage.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h:
@@ -1680,19 +1694,7 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /snap/cmake/1463/share/cmake-4.0/Modules/FeatureSummary.cmake:
 
-/usr/include/x86_64-linux-gnu/sys/syscall.h:
-
-/snap/cmake/1463/share/cmake-4.0/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
-
-/usr/include/c++/13/bits/atomic_wait.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6UiPlugin/Qt6UiPluginConfig.cmake:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/usr/include/c++/13/pstl/glue_numeric_defs.h:
+/usr/include/c++/13/bits/stl_uninitialized.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLTargets-none.cmake:
 
@@ -1758,8 +1760,6 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/13/concepts:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
 /usr/include/c++/13/cstring:
 
 /usr/include/c++/13/ctime:
@@ -1807,12 +1807,6 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime:
 
 /usr/include/c++/13/limits:
-
-/snap/cmake/1463/share/cmake-4.0/Modules/FindPackageMessage.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/c++/13/locale:
 
 /snap/cmake/1463/share/cmake-4.0/Modules/Internal/CheckFlagCommonConfig.cmake:
 

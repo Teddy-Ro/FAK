@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/dem/final_main/FAK/FAK/classes/deadlinepanel.cpp" "CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o" "gcc" "CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o.d"
   "/home/dem/final_main/FAK/FAK/classes/myDayTasks.cpp" "CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o" "gcc" "CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o.d"
   "/home/dem/final_main/FAK/FAK/classes/taskGroupsDB.cpp" "CMakeFiles/FAK.dir/classes/taskGroupsDB.cpp.o" "gcc" "CMakeFiles/FAK.dir/classes/taskGroupsDB.cpp.o.d"
+  "/home/dem/final_main/FAK/FAK/databasemanager.cpp" "CMakeFiles/FAK.dir/databasemanager.cpp.o" "gcc" "CMakeFiles/FAK.dir/databasemanager.cpp.o.d"
   "/home/dem/final_main/FAK/FAK/fieldgroup.cpp" "CMakeFiles/FAK.dir/fieldgroup.cpp.o" "gcc" "CMakeFiles/FAK.dir/fieldgroup.cpp.o.d"
   "/home/dem/final_main/FAK/FAK/main.cpp" "CMakeFiles/FAK.dir/main.cpp.o" "gcc" "CMakeFiles/FAK.dir/main.cpp.o.d"
   "/home/dem/final_main/FAK/FAK/mainwindow.cpp" "CMakeFiles/FAK.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/FAK.dir/mainwindow.cpp.o.d"

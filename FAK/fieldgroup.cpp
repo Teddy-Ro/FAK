@@ -1,201 +1,142 @@
 #include "fieldgroup.h"
-#include <QSpacerItem>
-#include <QSizePolicy>
-#include <QMouseEvent>
-#include <QStandardPaths>
-#include <QDir>
-#include <QSqlQuery>
-#include <QSqlError>
-#include <QInputDialog>
+#include <QPushButton>
+#include <QLineEdit>
+#include <QDebug>
 
-FieldGroup::FieldGroup(const QString &name, QWidget *parent)
-    : QWidget(parent), expanded(false), name(name)
+FieldGroup::FieldGroup(const QString &dbId, const QString &name, QWidget *parent)
+    : QWidget(parent), m_dbId(dbId), m_name(name)
 {
+    setupDatabase();
     initUI();
-    // Добавляем спейсер в конец layout
-    fields_layout->addStretch();
+    loadTasks();
+}
+
+FieldGroup::~FieldGroup()
+{
+    DatabaseManager::execute(m_dbId,
+        QString("UPDATE groups SET name = '%1' WHERE id = 1").arg(m_name));
+}
+
+void FieldGroup::setupDatabase()
+{
+    if (m_dbId.isEmpty()) {
+        m_dbId = DatabaseManager::createDatabase();
+
+        DatabaseManager::execute(m_dbId,
+            "CREATE TABLE IF NOT EXISTS tasks ("
+            "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+            "name TEXT NOT NULL, "
+            "db_id TEXT NOT NULL UNIQUE)");
+
+        DatabaseManager::execute(m_dbId,
+            "CREATE TABLE IF NOT EXISTS groups ("
+            "id INTEGER PRIMARY KEY, "
+            "name TEXT NOT NULL)");
+
+        DatabaseManager::execute(m_dbId,
+            QString("INSERT INTO groups (id, name) VALUES (1, '%1')").arg(m_name));
+    }
 }
 
 void FieldGroup::initUI()
 {
-    main_layout = new QVBoxLayout(this);
-    main_layout->setContentsMargins(0, 0, 0, 15);
-    main_layout->setSpacing(5);
+    m_mainLayout = new QVBoxLayout(this);
+    m_mainLayout->setContentsMargins(5, 5, 5, 5);
 
-    QPushButton *addGroupBtn = new QPushButton("＋ Создать новый список");
-    addGroupBtn->setStyleSheet("color: white; text-align: left; padding: 5px;");
-    connect(addGroupBtn, &QPushButton::clicked, this, &FieldGroup::create_new_group);
-    main_layout->addWidget(addGroupBtn);
+    QHBoxLayout *headerLayout = new QHBoxLayout();
 
-    QHBoxLayout *header_layout = new QHBoxLayout();
-    header_layout->setContentsMargins(0, 0, 0, 0);
+    QLineEdit *nameEdit = new QLineEdit(m_name);
+    nameEdit->setStyleSheet("color: white;");
+    connect(nameEdit, &QLineEdit::textChanged, [this](const QString &text) {
+        m_name = text;
+    });
+    headerLayout->addWidget(nameEdit);
 
-    name_field = new QLineEdit(name);
-    name_field->setStyleSheet("color: white;");
-    name_field->setReadOnly(false);
-    connect(name_field, &QLineEdit::textChanged, this, &FieldGroup::update_name);
-    header_layout->addWidget(name_field, 1);
+    QPushButton *addTaskBtn = new QPushButton("+ Задача");
+    addTaskBtn->setStyleSheet("color: white;");
+    connect(addTaskBtn, &QPushButton::clicked, this, &FieldGroup::onAddTaskClicked);
+    headerLayout->addWidget(addTaskBtn);
 
-    add_task_btn = new QPushButton("＋");
-    add_task_btn->setFixedSize(20, 20);
-    add_task_btn->setStyleSheet("color: white;");
-    connect(add_task_btn, &QPushButton::clicked, this, &FieldGroup::create_input_field);
-    header_layout->addWidget(add_task_btn);
+    QPushButton *addGroupBtn = new QPushButton("+ Группа");
+    addGroupBtn->setStyleSheet("color: white;");
+    connect(addGroupBtn, &QPushButton::clicked, this, &FieldGroup::onAddGroupClicked);
+    headerLayout->addWidget(addGroupBtn);
 
-    collapse_btn = new QPushButton("▲");
-    collapse_btn->setFixedSize(20, 20);
-    collapse_btn->setStyleSheet("color: white;");
-    connect(collapse_btn, &QPushButton::clicked, this, &FieldGroup::toggle_fields);
-    header_layout->addWidget(collapse_btn);
+    m_mainLayout->addLayout(headerLayout);
 
-    delete_group_btn = new QPushButton("×");
-    delete_group_btn->setFixedSize(20, 20);
-    delete_group_btn->setStyleSheet("color: white;");
-    connect(delete_group_btn, &QPushButton::clicked, this, &FieldGroup::delete_group);
-    header_layout->addWidget(delete_group_btn);
+    m_scrollArea = new QScrollArea();
+    m_scrollArea->setWidgetResizable(true);
 
-    main_layout->addLayout(header_layout);
+    m_scrollContent = new QWidget();
+    m_tasksLayout = new QVBoxLayout(m_scrollContent);
+    m_tasksLayout->setAlignment(Qt::AlignTop);
 
-    fields_container = new QWidget();
-    fields_container->setStyleSheet("color: white;");
-    fields_layout = new QVBoxLayout(fields_container);
-    fields_layout->setContentsMargins(30, 5, 0, 0);
-    main_layout->addWidget(fields_container);
-    fields_container->hide();
+    m_scrollArea->setWidget(m_scrollContent);
+    m_mainLayout->addWidget(m_scrollArea);
 }
 
-void FieldGroup::setTextColor(const QString &color)
+void FieldGroup::addTask(const QString &taskName, const QString &taskDbId)
 {
-    QString style = QString("color: %1;").arg(color);
-    this->setStyleSheet(style);
-    name_field->setStyleSheet(style);
+    QString dbId = taskDbId.isEmpty() ? DatabaseManager::createDatabase() : taskDbId;
+
+    // Создаем структуру БД для задачи, если это новая задача
+    if (taskDbId.isEmpty()) {
+        DatabaseManager::execute(dbId,
+            "CREATE TABLE IF NOT EXISTS items ("
+            "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+            "text TEXT NOT NULL, "
+            "completed BOOLEAN NOT NULL DEFAULT 0)");
+    }
+
+    QPushButton *taskBtn = new QPushButton(taskName);
+    taskBtn->setStyleSheet("color: white; text-align: left;");
+    taskBtn->setProperty("dbId", dbId);
+    connect(taskBtn, &QPushButton::clicked, this, &FieldGroup::onTaskClicked);
+
+    m_tasksLayout->addWidget(taskBtn);
+
+    DatabaseManager::execute(m_dbId,
+        QString("INSERT INTO tasks (name, db_id) VALUES ('%1', '%2')")
+        .arg(taskName).arg(dbId));
 }
 
-void FieldGroup::create_new_group()
+void FieldGroup::loadTasks()
+{
+    QSqlQuery query = DatabaseManager::query(m_dbId, "SELECT name, db_id FROM tasks");
+
+    while (query.next()) {
+        QString name = query.value(0).toString();
+        QString dbId = query.value(1).toString();
+
+        QPushButton *taskBtn = new QPushButton(name);
+        taskBtn->setStyleSheet("color: white; text-align: left;");
+        taskBtn->setProperty("dbId", dbId);
+        connect(taskBtn, &QPushButton::clicked, this, &FieldGroup::onTaskClicked);
+
+        m_tasksLayout->addWidget(taskBtn);
+    }
+}
+
+void FieldGroup::onAddTaskClicked()
+{
+    QString taskName = QString("Задача %1").arg(m_tasksLayout->count() + 1);
+    addTask(taskName);
+}
+
+void FieldGroup::onTaskClicked()
+{
+    QPushButton *btn = qobject_cast<QPushButton*>(sender());
+    if (btn) {
+        emit taskClicked(btn->property("dbId").toString());
+    }
+}
+
+void FieldGroup::onAddGroupClicked()
 {
     emit newGroupRequested();
 }
 
-void FieldGroup::add_first_field()
+QString FieldGroup::dbId() const
 {
-    if (fields.isEmpty()) {
-        create_input_field();
-        toggle_fields();
-    }
-}
-
-void FieldGroup::toggle_fields()
-{
-    expanded = !expanded;
-    fields_container->setVisible(expanded);
-    collapse_btn->setText(expanded ? "▼" : "▲");
-}
-
-void FieldGroup::show_field_settings(QPushButton* fieldBtn)
-{
-    bool ok;
-    QString text = QInputDialog::getText(this, tr("Изменить задачу"),
-                                    tr("Название задачи:"), QLineEdit::Normal,
-                                    fieldBtn->text(), &ok);
-    if (ok && !text.isEmpty()) {
-        fieldBtn->setText(text);
-        fieldBtn->setProperty("originalName", text);
-    }
-}
-
-void FieldGroup::create_input_field()
-{
-    QHBoxLayout *container = new QHBoxLayout();
-    container->setContentsMargins(0, 5, 0, 5);
-
-    QString taskName = QString("Задача %1").arg(fields.size() + 1);
-    QPushButton *fieldBtn = new QPushButton(taskName);
-    fieldBtn->setStyleSheet("text-align: left; padding: 5px; color: white;");
-    fieldBtn->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
-    fieldBtn->setProperty("originalName", taskName);
-
-    fieldBtn->setContextMenuPolicy(Qt::CustomContextMenu);
-    connect(fieldBtn, &QPushButton::customContextMenuRequested, [this, fieldBtn]() {
-        show_field_settings(fieldBtn);
-    });
-
-    connect(fieldBtn, &QPushButton::clicked, this, &FieldGroup::onTaskButtonClicked);
-
-    QPushButton *settingsBtn = new QPushButton("⋮");
-    settingsBtn->setFixedSize(25, 25);
-    settingsBtn->setStyleSheet("padding-bottom: 7px; color: white;");
-    connect(settingsBtn, &QPushButton::clicked, [this, fieldBtn]() {
-        show_field_settings(fieldBtn);
-    });
-
-    QPushButton *delete_btn = new QPushButton("×");
-    delete_btn->setFixedSize(25, 25);
-    delete_btn->setStyleSheet("color: white;");
-
-    connect(delete_btn, &QPushButton::clicked, [this, container, fieldBtn]() {
-        while (container->count()) {
-            QLayoutItem *item = container->takeAt(0);
-            if (QWidget *widget = item->widget()) {
-                widget->deleteLater();
-            }
-            delete item;
-        }
-
-        fields.removeOne(container);
-        fields_layout->removeItem(container);
-        delete container;
-
-        for (int i = 0; i < fields.size(); ++i) {
-            QHBoxLayout *layout = fields[i];
-            if (layout->count() > 0) {
-                if (QPushButton *btn = qobject_cast<QPushButton*>(layout->itemAt(0)->widget())) {
-                    btn->setText(QString("Задача %1").arg(i + 1));
-                    btn->setProperty("originalName", QString("Задача %1").arg(i + 1));
-                }
-            }
-        }
-    });
-
-    container->addWidget(fieldBtn, 1);
-    container->addWidget(settingsBtn);
-    container->addWidget(delete_btn);
-
-    fields_layout->addLayout(container);
-    fields.append(container);
-}
-
-
-void FieldGroup::addGroup(FieldGroup* group)
-{
-    // Добавляем новую группу в layout перед спейсером
-    fields_layout->insertWidget(fields_layout->count() - 1, group);
-
-    // Устанавливаем белый цвет текста для новой группы
-    group->setTextColor("white");
-
-    // Подключаем сигналы новой группы
-    connect(group, &FieldGroup::newGroupRequested,
-            this, &FieldGroup::newGroupRequested);
-    connect(group, &FieldGroup::taskClicked,
-            this, &FieldGroup::taskClicked);
-}
-
-
-void FieldGroup::onTaskButtonClicked()
-{
-    QPushButton *button = qobject_cast<QPushButton*>(sender());
-    if (button) {
-        QString fullTaskName = this->name + "::" + button->property("originalName").toString();
-        emit taskClicked(fullTaskName);
-    }
-}
-
-void FieldGroup::delete_group()
-{
-    deleteLater();
-}
-
-void FieldGroup::update_name()
-{
-    name = name_field->text();
+    return m_dbId;
 }

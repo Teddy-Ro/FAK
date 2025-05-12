@@ -321,6 +321,30 @@ classes/taskGroupsDB.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FAK.dir/build.make CMakeFiles/FAK.dir/classes/taskGroupsDB.cpp.s
 .PHONY : classes/taskGroupsDB.cpp.s
 
+databasemanager.o: databasemanager.cpp.o
+.PHONY : databasemanager.o
+
+# target to build an object file
+databasemanager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FAK.dir/build.make CMakeFiles/FAK.dir/databasemanager.cpp.o
+.PHONY : databasemanager.cpp.o
+
+databasemanager.i: databasemanager.cpp.i
+.PHONY : databasemanager.i
+
+# target to preprocess a source file
+databasemanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FAK.dir/build.make CMakeFiles/FAK.dir/databasemanager.cpp.i
+.PHONY : databasemanager.cpp.i
+
+databasemanager.s: databasemanager.cpp.s
+.PHONY : databasemanager.s
+
+# target to generate assembly for a file
+databasemanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FAK.dir/build.make CMakeFiles/FAK.dir/databasemanager.cpp.s
+.PHONY : databasemanager.cpp.s
+
 fieldgroup.o: fieldgroup.cpp.o
 .PHONY : fieldgroup.o
 
@@ -423,6 +447,9 @@ help:
 	@echo "... classes/taskGroupsDB.o"
 	@echo "... classes/taskGroupsDB.i"
 	@echo "... classes/taskGroupsDB.s"
+	@echo "... databasemanager.o"
+	@echo "... databasemanager.i"
+	@echo "... databasemanager.s"
 	@echo "... fieldgroup.o"
 	@echo "... fieldgroup.i"
 	@echo "... fieldgroup.s"

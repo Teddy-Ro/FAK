@@ -41,6 +41,8 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/dem/final_main/FAK/FAK/*.cpp")
 set(OLD_GLOB
   "/home/dem/final_main/FAK/FAK/build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "/home/dem/final_main/FAK/FAK/build/FAK_autogen/EWIEGA46WW/moc_databasehandler.cpp"
+  "/home/dem/final_main/FAK/FAK/build/FAK_autogen/EWIEGA46WW/moc_databasemanager.cpp"
   "/home/dem/final_main/FAK/FAK/build/FAK_autogen/EWIEGA46WW/moc_fieldgroup.cpp"
   "/home/dem/final_main/FAK/FAK/build/FAK_autogen/EWIEGA46WW/moc_mainwindow.cpp"
   "/home/dem/final_main/FAK/FAK/build/FAK_autogen/EWIEGA46WW/qrc_resources.cpp"
@@ -51,6 +53,7 @@ set(OLD_GLOB
   "/home/dem/final_main/FAK/FAK/classes/deadlinepanel.cpp"
   "/home/dem/final_main/FAK/FAK/classes/myDayTasks.cpp"
   "/home/dem/final_main/FAK/FAK/classes/taskGroupsDB.cpp"
+  "/home/dem/final_main/FAK/FAK/databasemanager.cpp"
   "/home/dem/final_main/FAK/FAK/fieldgroup.cpp"
   "/home/dem/final_main/FAK/FAK/main.cpp"
   "/home/dem/final_main/FAK/FAK/mainwindow.cpp"
@@ -72,12 +75,12 @@ endif()
 # _directory_contents at /usr/lib/x86_64-linux-gnu/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:83 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/dem/final_main/FAK/FAK/*.h")
 set(OLD_GLOB
-  "/home/dem/final_main/FAK/FAK/build/FAK_autogen/include/ui_mainwindow.h"
   "/home/dem/final_main/FAK/FAK/build/FAK_autogen/include/ui_myDayTasks.h"
   "/home/dem/final_main/FAK/FAK/build/FAK_autogen/moc_predefs.h"
   "/home/dem/final_main/FAK/FAK/classes/deadlinepanel.h"
   "/home/dem/final_main/FAK/FAK/classes/myDayTasks.h"
   "/home/dem/final_main/FAK/FAK/classes/taskGroupsDB.h"
+  "/home/dem/final_main/FAK/FAK/databasemanager.h"
   "/home/dem/final_main/FAK/FAK/fieldgroup.h"
   "/home/dem/final_main/FAK/FAK/libs/sqlite3/sqlite3.h"
   "/home/dem/final_main/FAK/FAK/mainwindow.h"

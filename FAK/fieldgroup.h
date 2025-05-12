@@ -3,49 +3,39 @@
 
 #include <QWidget>
 #include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <QPushButton>
-#include <QLineEdit>
-#include <QSqlDatabase>
-#include <QSqlQuery>
+#include <QScrollArea>
+#include "databasemanager.h"
 
 class FieldGroup : public QWidget
 {
     Q_OBJECT
-
 public:
-    explicit FieldGroup(const QString &name, QWidget *parent = nullptr);
-    void addGroup(FieldGroup* group);
-    void add_first_field();
-    void setTextColor(const QString &color);
+    explicit FieldGroup(const QString &dbId, const QString &name, QWidget *parent = nullptr);
+    ~FieldGroup();
+
+    void addTask(const QString &taskName, const QString &taskDbId = "");  // Изменили сигнатуру
+    void loadTasks();
+    QString dbId() const;
 
 signals:
+    void taskClicked(const QString &taskDbId);
     void newGroupRequested();
-    void taskClicked(const QString &taskData);
 
 private slots:
-    void toggle_fields();
-    void create_input_field();
-    void create_new_group();
-    void delete_group();
-    void update_name();
-    void show_field_settings(QPushButton* fieldBtn);
-    void onTaskButtonClicked();
+    void onAddTaskClicked();
+    void onTaskClicked();
+    void onAddGroupClicked();
 
 private:
     void initUI();
+    void setupDatabase();
 
-    bool expanded;
-    QList<QHBoxLayout*> fields;
-    QString name;
-    QVBoxLayout *main_layout;
-    QLineEdit *name_field;
-    QPushButton *collapse_btn;
-    QPushButton *delete_group_btn;
-    QPushButton *add_task_btn;
-    QWidget *fields_container;
-    QVBoxLayout *fields_layout;
-    QSqlDatabase db;
+    QString m_dbId;
+    QString m_name;
+    QVBoxLayout *m_mainLayout;
+    QScrollArea *m_scrollArea;
+    QWidget *m_scrollContent;
+    QVBoxLayout *m_tasksLayout;
 };
 
 #endif // FIELDGROUP_H

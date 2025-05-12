@@ -1,185 +1,83 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
-#include <QButtonGroup>
-#include <QStackedWidget>
 #include <QVBoxLayout>
-#include <QFile>
-#include <QtUiTools/QUiLoader>
-#include "classes/myDayTasks.h"
+#include <QScrollArea>
+#include "databasemanager.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+    initMainDatabase();
 
-    // Настройка цветов
-    ui->widget_2->setStyleSheet("color: white;");
+    QWidget *centralWidget = new QWidget();
+    QHBoxLayout *mainLayout = new QHBoxLayout(centralWidget);
 
-    // Инициализация менеджера задач
-    taskManagerWidget = new FieldGroup("Мои задачи");
-    taskManagerWidget->setTextColor("white");
-    QVBoxLayout *redWindowLayout = qobject_cast<QVBoxLayout*>(ui->widget_2->layout());
-    if (redWindowLayout) {
-        redWindowLayout->addWidget(taskManagerWidget);
-    }
+    // Левая панель с группами задач
+    m_mainGroup = new FieldGroup(m_mainDbId, "Мои задачи");
+    mainLayout->addWidget(m_mainGroup, 1);
 
-    connect(taskManagerWidget, &FieldGroup::newGroupRequested,
-            this, &MainWindow::createNewTaskGroup);
-    connect(taskManagerWidget, &FieldGroup::taskClicked,
+    // Правая панель с контентом задач
+    m_stackedWidget = new QStackedWidget();
+    mainLayout->addWidget(m_stackedWidget, 3);
+
+    setCentralWidget(centralWidget);
+
+    connect(m_mainGroup, &FieldGroup::taskClicked,
             this, &MainWindow::onTaskClicked);
+    connect(m_mainGroup, &FieldGroup::newGroupRequested,
+            this, &MainWindow::onCreateNewGroup);
 
-    // Остальная инициализация
-    deadlinePanel = new DeadlinePanel();
-    ui->horizontalLayout->addWidget(deadlinePanel);
-    deadlinePanel->hide();
+    loadGroups();
+}
 
-    connect(deadlinePanel, &DeadlinePanel::deadlineApplied,
-            this, &MainWindow::handleDeadlineApplied);
-    connect(deadlinePanel, &DeadlinePanel::cancelled,
-            this, &MainWindow::hideDeadlinePanel);
+void MainWindow::initMainDatabase()
+{
+    m_mainDbId = DatabaseManager::createDatabase("main_db");
 
-    buttonGroup = new QButtonGroup(this);
-    buttonGroup->setExclusive(true);
+    DatabaseManager::execute(m_mainDbId,
+        "CREATE TABLE IF NOT EXISTS groups ("
+        "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+        "name TEXT NOT NULL, "
+        "db_id TEXT NOT NULL UNIQUE)");
+}
 
-    buttonGroup->addButton(ui->myDayButton, 0);
-    buttonGroup->addButton(ui->importantButton, 1);
-    buttonGroup->addButton(ui->plannedButton, 2);
+void MainWindow::loadGroups()
+{
+    QSqlQuery query = DatabaseManager::query(m_mainDbId, "SELECT name, db_id FROM groups");
 
-    stackedWidget = new QStackedWidget();
-    QVBoxLayout* layout = qobject_cast<QVBoxLayout*>(ui->widget_3->layout());
-    if (layout) {
-        layout->addWidget(stackedWidget);
+    while (query.next()) {
+        QString name = query.value(0).toString();
+        QString dbId = query.value(1).toString();
+
+        FieldGroup *group = new FieldGroup(dbId, name);
+        m_mainGroup->addTask(name, dbId);  // Теперь соответствует новой сигнатуре
+    }
+}
+
+void MainWindow::onTaskClicked(const QString &taskDbId)
+{
+    if (!m_taskWidgets.contains(taskDbId)) {
+        QWidget *taskWidget = new QWidget();
+        // Здесь можно добавить интерфейс для работы с задачей
+        m_taskWidgets[taskDbId] = taskWidget;
+        m_stackedWidget->addWidget(taskWidget);
     }
 
-    stackedWidget->addWidget(new QWidget());
+    m_stackedWidget->setCurrentWidget(m_taskWidgets[taskDbId]);
+}
 
-    connect(ui->myDayButton, &QPushButton::clicked, [this]() { loadTabContent(0); });
-    connect(ui->importantButton, &QPushButton::clicked, [this]() { loadTabContent(1); });
-    connect(ui->plannedButton, &QPushButton::clicked, [this]() { loadTabContent(2); });
+void MainWindow::onCreateNewGroup()
+{
+    QString groupDbId = DatabaseManager::createDatabase();
+    QString groupName = QString("Группа %1").arg(m_mainGroup->dbId().toInt() + 1);
+
+    DatabaseManager::execute(m_mainDbId,
+        QString("INSERT INTO groups (name, db_id) VALUES ('%1', '%2')")
+        .arg(groupName).arg(groupDbId));
+
+    m_mainGroup->addTask(groupName, groupDbId);  // Теперь соответствует новой сигнатуре
 }
 
 MainWindow::~MainWindow()
 {
-    delete ui;
-}
-
-
-void MainWindow::createNewTaskGroup()
-{
-    groupCounter++;
-    FieldGroup *newGroup = new FieldGroup(QString("Список %1").arg(groupCounter));
-    newGroup->setTextColor("white");
-
-    // Добавляем первую задачу в новую группу
-    newGroup->add_first_field();
-
-    // Подключаем сигналы новой группы
-    connect(newGroup, &FieldGroup::taskClicked,
-            this, &MainWindow::onTaskClicked);
-    connect(newGroup, &FieldGroup::newGroupRequested,
-            this, &MainWindow::createNewTaskGroup);
-
-    // Добавляем новую группу в layout
-    QVBoxLayout *layout = qobject_cast<QVBoxLayout*>(ui->widget_2->layout());
-    if (layout) {
-        layout->insertWidget(layout->count() - 1, newGroup);
-    }
-}
-
-
-void MainWindow::showDeadlinePanel(QWidget* taskWidget)
-{
-    currentTaskWidget = taskWidget;
-    deadlinePanel->show();
-    deadlinePanel->setFixedWidth(300);
-
-    if (auto taskButton = taskWidget->findChild<QPushButton*>()) {
-        QDateTime deadline = MyDayTasks::extractDeadlineFromText(taskButton->text());
-        deadlinePanel->setDeadline(deadline.isValid() ? deadline : QDateTime::currentDateTime());
-    }
-
-    if (auto central = centralWidget()) {
-        central->setMinimumWidth(width() - 550);
-    }
-}
-
-void MainWindow::hideDeadlinePanel()
-{
-    deadlinePanel->hide();
-    currentTaskWidget = nullptr;
-}
-
-void MainWindow::handleDeadlineApplied(const QDateTime &deadline)
-{
-    if (currentTaskWidget) {
-        if (auto taskButton = currentTaskWidget->findChild<QPushButton*>()) {
-            QString baseText = MyDayTasks::extractBaseTaskText(taskButton->text());
-            QString newText = baseText + " (До: " + deadline.toString("dd.MM.yyyy HH:mm") + ")";
-            taskButton->setText(newText);
-
-            if (auto myDayTasks = qobject_cast<MyDayTasks*>(stackedWidget->currentWidget())) {
-                myDayTasks->updateTaskStyle(taskButton, taskButton->font().strikeOut());
-                myDayTasks->updateTaskDeadlineInDatabase(baseText, deadline);
-            }
-        }
-        hideDeadlinePanel();
-    }
-}
-
-void MainWindow::loadTabContent(int index)
-{
-    if (!stackedWidget) return;
-
-    if (stackedWidget->count() > index) {
-        QWidget* oldWidget = stackedWidget->widget(index);
-        stackedWidget->removeWidget(oldWidget);
-        delete oldWidget;
-    }
-
-    if (index == 0) {
-        MyDayTasks* myDayWidget = new MyDayTasks();
-        connect(myDayWidget, &MyDayTasks::showDeadlinePanelRequested,
-                this, &MainWindow::showDeadlinePanel);
-        stackedWidget->insertWidget(index, myDayWidget);
-        stackedWidget->setCurrentIndex(index);
-        return;
-    }
-
-    QString filePath;
-    switch (index) {
-        case 1: filePath = ":/ui/ui/importantList.ui"; break;
-        case 2: filePath = ":/ui/ui/planned.ui"; break;
-        default: return;
-    }
-
-    QUiLoader loader;
-    QFile file(filePath);
-    if (file.open(QFile::ReadOnly)) {
-        QWidget* tabContent = loader.load(&file);
-        file.close();
-        if (tabContent) {
-            stackedWidget->insertWidget(index, tabContent);
-            stackedWidget->setCurrentIndex(index);
-        }
-    }
-}
-
-void MainWindow::onTaskClicked(const QString &taskData)
-{
-   if (!taskDatabases.contains(taskData)) {
-        MyDayTasks* newTaskDB = new MyDayTasks();
-        newTaskDB->setDatabaseName(taskData);
-        taskDatabases[taskData] = newTaskDB;
-
-        connect(newTaskDB, &MyDayTasks::showDeadlinePanelRequested,
-                this, &MainWindow::showDeadlinePanel);
-    }
-
-    loadTabContent(0);
-    if (stackedWidget->currentWidget() != taskDatabases[taskData]) {
-        stackedWidget->removeWidget(stackedWidget->currentWidget());
-        stackedWidget->addWidget(taskDatabases[taskData]);
-        stackedWidget->setCurrentWidget(taskDatabases[taskData]);
-    }
+    DatabaseManager::execute(m_mainDbId, "VACUUM");
 }

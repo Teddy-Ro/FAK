@@ -13,12 +13,13 @@
  /home/dem/final_main/FAK/FAK/classes/myDayTasks.ui
  /home/dem/final_main/FAK/FAK/classes/taskGroupsDB.cpp
  /home/dem/final_main/FAK/FAK/classes/taskGroupsDB.h
+ /home/dem/final_main/FAK/FAK/databasemanager.cpp
+ /home/dem/final_main/FAK/FAK/databasemanager.h
  /home/dem/final_main/FAK/FAK/fieldgroup.cpp
  /home/dem/final_main/FAK/FAK/fieldgroup.h
  /home/dem/final_main/FAK/FAK/main.cpp
  /home/dem/final_main/FAK/FAK/mainwindow.cpp
  /home/dem/final_main/FAK/FAK/mainwindow.h
- /home/dem/final_main/FAK/FAK/mainwindow.ui
  /home/dem/final_main/FAK/FAK/resources.qrc
  /snap/cmake/1463/bin/cmake
  /snap/cmake/1463/share/cmake-4.0/Modules/CMakeCXXInformation.cmake
@@ -374,6 +375,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStandardPaths
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QUuid
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h
@@ -467,6 +469,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h
@@ -488,7 +491,6 @@
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h
@@ -497,10 +499,6 @@
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h
@@ -518,26 +516,26 @@
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenu
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollArea
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStackedWidget
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolButton
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedwidget.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h

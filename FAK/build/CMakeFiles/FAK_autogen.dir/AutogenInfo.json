@@ -398,6 +398,12 @@
 			null
 		],
 		[
+			"/home/dem/final_main/FAK/FAK/databasemanager.h",
+			"MU",
+			"EWIEGA46WW/moc_databasemanager.cpp",
+			null
+		],
+		[
 			"/home/dem/final_main/FAK/FAK/fieldgroup.h",
 			"MU",
 			"EWIEGA46WW/moc_fieldgroup.cpp",
@@ -489,6 +495,7 @@
 		[ "/home/dem/final_main/FAK/FAK/classes/deadlinepanel.cpp", "MU", null ],
 		[ "/home/dem/final_main/FAK/FAK/classes/myDayTasks.cpp", "MU", null ],
 		[ "/home/dem/final_main/FAK/FAK/classes/taskGroupsDB.cpp", "MU", null ],
+		[ "/home/dem/final_main/FAK/FAK/databasemanager.cpp", "MU", null ],
 		[ "/home/dem/final_main/FAK/FAK/fieldgroup.cpp", "MU", null ],
 		[ "/home/dem/final_main/FAK/FAK/main.cpp", "MU", null ],
 		[ "/home/dem/final_main/FAK/FAK/mainwindow.cpp", "MU", null ]

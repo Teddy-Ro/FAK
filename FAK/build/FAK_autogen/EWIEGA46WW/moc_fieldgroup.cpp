@@ -8,7 +8,6 @@
 
 #include <memory>
 #include "../../../fieldgroup.h"
-#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'fieldgroup.h' doesn't include <QObject>."
@@ -27,55 +26,37 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_FieldGroup_t {
-    uint offsetsAndSizes[28];
+    uint offsetsAndSizes[16];
     char stringdata0[11];
-    char stringdata1[18];
+    char stringdata1[12];
     char stringdata2[1];
-    char stringdata3[12];
-    char stringdata4[9];
-    char stringdata5[14];
-    char stringdata6[19];
-    char stringdata7[17];
-    char stringdata8[13];
-    char stringdata9[12];
-    char stringdata10[20];
-    char stringdata11[13];
-    char stringdata12[9];
-    char stringdata13[20];
+    char stringdata3[9];
+    char stringdata4[18];
+    char stringdata5[17];
+    char stringdata6[14];
+    char stringdata7[18];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_FieldGroup_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_FieldGroup_t qt_meta_stringdata_FieldGroup = {
     {
         QT_MOC_LITERAL(0, 10),  // "FieldGroup"
-        QT_MOC_LITERAL(11, 17),  // "newGroupRequested"
-        QT_MOC_LITERAL(29, 0),  // ""
-        QT_MOC_LITERAL(30, 11),  // "taskClicked"
-        QT_MOC_LITERAL(42, 8),  // "taskData"
-        QT_MOC_LITERAL(51, 13),  // "toggle_fields"
-        QT_MOC_LITERAL(65, 18),  // "create_input_field"
-        QT_MOC_LITERAL(84, 16),  // "create_new_group"
-        QT_MOC_LITERAL(101, 12),  // "delete_group"
-        QT_MOC_LITERAL(114, 11),  // "update_name"
-        QT_MOC_LITERAL(126, 19),  // "show_field_settings"
-        QT_MOC_LITERAL(146, 12),  // "QPushButton*"
-        QT_MOC_LITERAL(159, 8),  // "fieldBtn"
-        QT_MOC_LITERAL(168, 19)   // "onTaskButtonClicked"
+        QT_MOC_LITERAL(11, 11),  // "taskClicked"
+        QT_MOC_LITERAL(23, 0),  // ""
+        QT_MOC_LITERAL(24, 8),  // "taskDbId"
+        QT_MOC_LITERAL(33, 17),  // "newGroupRequested"
+        QT_MOC_LITERAL(51, 16),  // "onAddTaskClicked"
+        QT_MOC_LITERAL(68, 13),  // "onTaskClicked"
+        QT_MOC_LITERAL(82, 17)   // "onAddGroupClicked"
     },
     "FieldGroup",
-    "newGroupRequested",
-    "",
     "taskClicked",
-    "taskData",
-    "toggle_fields",
-    "create_input_field",
-    "create_new_group",
-    "delete_group",
-    "update_name",
-    "show_field_settings",
-    "QPushButton*",
-    "fieldBtn",
-    "onTaskButtonClicked"
+    "",
+    "taskDbId",
+    "newGroupRequested",
+    "onAddTaskClicked",
+    "onTaskClicked",
+    "onAddGroupClicked"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -86,7 +67,7 @@ Q_CONSTINIT static const uint qt_meta_data_FieldGroup[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -94,29 +75,21 @@ Q_CONSTINIT static const uint qt_meta_data_FieldGroup[] = {
        2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   68,    2, 0x06,    1 /* Public */,
-       3,    1,   69,    2, 0x06,    2 /* Public */,
+       1,    1,   44,    2, 0x06,    1 /* Public */,
+       4,    0,   47,    2, 0x06,    3 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       5,    0,   72,    2, 0x08,    4 /* Private */,
-       6,    0,   73,    2, 0x08,    5 /* Private */,
-       7,    0,   74,    2, 0x08,    6 /* Private */,
-       8,    0,   75,    2, 0x08,    7 /* Private */,
-       9,    0,   76,    2, 0x08,    8 /* Private */,
-      10,    1,   77,    2, 0x08,    9 /* Private */,
-      13,    0,   80,    2, 0x08,   11 /* Private */,
+       5,    0,   48,    2, 0x08,    4 /* Private */,
+       6,    0,   49,    2, 0x08,    5 /* Private */,
+       7,    0,   50,    2, 0x08,    6 /* Private */,
 
  // signals: parameters
+    QMetaType::Void, QMetaType::QString,    3,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QString,    4,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 11,   12,
     QMetaType::Void,
 
        0        // eod
@@ -131,25 +104,16 @@ Q_CONSTINIT const QMetaObject FieldGroup::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_FieldGroup_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<FieldGroup, std::true_type>,
-        // method 'newGroupRequested'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'taskClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
-        // method 'toggle_fields'
+        // method 'newGroupRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'create_input_field'
+        // method 'onAddTaskClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'create_new_group'
+        // method 'onTaskClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'delete_group'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'update_name'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'show_field_settings'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QPushButton *, std::false_type>,
-        // method 'onTaskButtonClicked'
+        // method 'onAddGroupClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -161,40 +125,25 @@ void FieldGroup::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<FieldGroup *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->newGroupRequested(); break;
-        case 1: _t->taskClicked((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 2: _t->toggle_fields(); break;
-        case 3: _t->create_input_field(); break;
-        case 4: _t->create_new_group(); break;
-        case 5: _t->delete_group(); break;
-        case 6: _t->update_name(); break;
-        case 7: _t->show_field_settings((*reinterpret_cast< std::add_pointer_t<QPushButton*>>(_a[1]))); break;
-        case 8: _t->onTaskButtonClicked(); break;
+        case 0: _t->taskClicked((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 1: _t->newGroupRequested(); break;
+        case 2: _t->onAddTaskClicked(); break;
+        case 3: _t->onTaskClicked(); break;
+        case 4: _t->onAddGroupClicked(); break;
         default: ;
-        }
-    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        switch (_id) {
-        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-        case 7:
-            switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-            case 0:
-                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QPushButton* >(); break;
-            }
-            break;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (FieldGroup::*)();
-            if (_t _q_method = &FieldGroup::newGroupRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (FieldGroup::*)(const QString & );
+            if (_t _q_method = &FieldGroup::taskClicked; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
         {
-            using _t = void (FieldGroup::*)(const QString & );
-            if (_t _q_method = &FieldGroup::taskClicked; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (FieldGroup::*)();
+            if (_t _q_method = &FieldGroup::newGroupRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 1;
                 return;
             }
@@ -221,28 +170,28 @@ int FieldGroup::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
-            qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        if (_id < 5)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 5;
     }
     return _id;
 }
 
 // SIGNAL 0
-void FieldGroup::newGroupRequested()
-{
-    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
-}
-
-// SIGNAL 1
 void FieldGroup::taskClicked(const QString & _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
-    QMetaObject::activate(this, &staticMetaObject, 1, _a);
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
+}
+
+// SIGNAL 1
+void FieldGroup::newGroupRequested()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE

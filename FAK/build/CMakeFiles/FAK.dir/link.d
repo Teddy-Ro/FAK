@@ -6,6 +6,7 @@ FAK: \
   CMakeFiles/FAK.dir/main.cpp.o \
   CMakeFiles/FAK.dir/mainwindow.cpp.o \
   CMakeFiles/FAK.dir/fieldgroup.cpp.o \
+  CMakeFiles/FAK.dir/databasemanager.cpp.o \
   CMakeFiles/FAK.dir/classes/taskGroupsDB.cpp.o \
   CMakeFiles/FAK.dir/classes/deadlinepanel.cpp.o \
   CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o \
@@ -46,7 +47,6 @@ FAK: \
   /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a \
   /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o \
-  /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.4.2 \
   /lib/x86_64-linux-gnu/libm.so.6 \
   /lib/x86_64-linux-gnu/libEGL.so.1 \
   /lib/x86_64-linux-gnu/libfontconfig.so.1 \
@@ -68,7 +68,6 @@ FAK: \
   /lib/x86_64-linux-gnu/libpcre2-16.so.0 \
   /lib/x86_64-linux-gnu/libzstd.so.1 \
   /lib64/ld-linux-x86-64.so.2 \
-  /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2 \
   /lib/x86_64-linux-gnu/libGLdispatch.so.0 \
   /lib/x86_64-linux-gnu/libexpat.so.1 \
   /lib/x86_64-linux-gnu/libxcb.so.1 \
@@ -104,6 +103,8 @@ CMakeFiles/FAK.dir/main.cpp.o:
 CMakeFiles/FAK.dir/mainwindow.cpp.o:
 
 CMakeFiles/FAK.dir/fieldgroup.cpp.o:
+
+CMakeFiles/FAK.dir/databasemanager.cpp.o:
 
 CMakeFiles/FAK.dir/classes/taskGroupsDB.cpp.o:
 
@@ -185,8 +186,6 @@ CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o:
 
-/usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.4.2:
-
 /lib/x86_64-linux-gnu/libm.so.6:
 
 /lib/x86_64-linux-gnu/libEGL.so.1:
@@ -228,8 +227,6 @@ CMakeFiles/FAK.dir/FAK_autogen/EWIEGA46WW/qrc_resources.cpp.o:
 /lib/x86_64-linux-gnu/libzstd.so.1:
 
 /lib64/ld-linux-x86-64.so.2:
-
-/usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2:
 
 /lib/x86_64-linux-gnu/libGLdispatch.so.0:
 

@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FAK.dir/classes/myDayTasks.cpp.o.d"
   "CMakeFiles/FAK.dir/classes/taskGroupsDB.cpp.o"
   "CMakeFiles/FAK.dir/classes/taskGroupsDB.cpp.o.d"
+  "CMakeFiles/FAK.dir/databasemanager.cpp.o"
+  "CMakeFiles/FAK.dir/databasemanager.cpp.o.d"
   "CMakeFiles/FAK.dir/fieldgroup.cpp.o"
   "CMakeFiles/FAK.dir/fieldgroup.cpp.o.d"
   "CMakeFiles/FAK.dir/main.cpp.o"

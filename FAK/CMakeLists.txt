@@ -27,6 +27,8 @@ set(PROJECT_SOURCES
         fieldgroup.h
         fieldgroup.cpp
         ${TS_FILES}
+        databasemanager.h
+        databasemanager.cpp
         classes/taskGroupsDB.h
         classes/taskGroupsDB.cpp
         classes/deadlinepanel.cpp
